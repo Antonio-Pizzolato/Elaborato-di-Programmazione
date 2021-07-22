@@ -4,8 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj"
   "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj"
   "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicSettings.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/GraphicSettings.cpp.obj"
+  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj"
+  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj"
+  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj"
   "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/main.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

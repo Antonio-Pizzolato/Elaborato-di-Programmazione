@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.cpp
-Game.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.h
+C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicSettings.h
 SFML/Graphics.hpp
 -
 SFML/Window.hpp
@@ -19,8 +15,6 @@ SFML/System.hpp
 -
 SFML/Audio.hpp
 -
-GraphicSettings.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicSettings.h
 iostream
 -
 ctime
@@ -31,28 +25,22 @@ sstream
 -
 vector
 -
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicSettings.h
-SFML/Graphics.hpp
--
-SFML/Window.hpp
+stack
 -
 fstream
 -
-iostream
--
-ctime
--
-cstdlib
--
-sstream
--
-vector
--
 
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/main.cpp
-Game.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.h
+C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.cpp
+GameState.h
+C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.h
+
+C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.h
+State.h
+C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.h
+
+C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.h
+../GraphicSettings.h
+C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicSettings.h
 
 C:/mingw64/include/SFML/Audio.hpp
 SFML/System.hpp

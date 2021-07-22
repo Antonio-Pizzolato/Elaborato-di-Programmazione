@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
@@ -94,6 +100,24 @@
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicSettings.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/main.cpp">

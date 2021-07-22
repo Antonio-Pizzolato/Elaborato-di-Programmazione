@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj"
   "CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj"
   "CMakeFiles/PROJECT_NAME.dir/GraphicSettings.cpp.obj"
+  "CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj"
+  "CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj"
+  "CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj"
   "CMakeFiles/PROJECT_NAME.dir/main.cpp.obj"
   "PROJECT_NAME.exe"
   "PROJECT_NAME.exe.manifest"

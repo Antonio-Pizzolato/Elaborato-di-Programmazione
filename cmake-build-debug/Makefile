@@ -141,6 +141,33 @@ PROJECT_NAME/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/build
 .PHONY : PROJECT_NAME/fast
 
+GUI.obj: GUI.cpp.obj
+
+.PHONY : GUI.obj
+
+# target to build an object file
+GUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj
+.PHONY : GUI.cpp.obj
+
+GUI.i: GUI.cpp.i
+
+.PHONY : GUI.i
+
+# target to preprocess a source file
+GUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI.cpp.i
+.PHONY : GUI.cpp.i
+
+GUI.s: GUI.cpp.s
+
+.PHONY : GUI.s
+
+# target to generate assembly for a file
+GUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI.cpp.s
+.PHONY : GUI.cpp.s
+
 Game.obj: Game.cpp.obj
 
 .PHONY : Game.obj
@@ -195,6 +222,87 @@ GraphicSettings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicSettings.cpp.s
 .PHONY : GraphicSettings.cpp.s
 
+States/GameState.obj: States/GameState.cpp.obj
+
+.PHONY : States/GameState.obj
+
+# target to build an object file
+States/GameState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj
+.PHONY : States/GameState.cpp.obj
+
+States/GameState.i: States/GameState.cpp.i
+
+.PHONY : States/GameState.i
+
+# target to preprocess a source file
+States/GameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.i
+.PHONY : States/GameState.cpp.i
+
+States/GameState.s: States/GameState.cpp.s
+
+.PHONY : States/GameState.s
+
+# target to generate assembly for a file
+States/GameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.s
+.PHONY : States/GameState.cpp.s
+
+States/MainMenuState.obj: States/MainMenuState.cpp.obj
+
+.PHONY : States/MainMenuState.obj
+
+# target to build an object file
+States/MainMenuState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj
+.PHONY : States/MainMenuState.cpp.obj
+
+States/MainMenuState.i: States/MainMenuState.cpp.i
+
+.PHONY : States/MainMenuState.i
+
+# target to preprocess a source file
+States/MainMenuState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.i
+.PHONY : States/MainMenuState.cpp.i
+
+States/MainMenuState.s: States/MainMenuState.cpp.s
+
+.PHONY : States/MainMenuState.s
+
+# target to generate assembly for a file
+States/MainMenuState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.s
+.PHONY : States/MainMenuState.cpp.s
+
+States/State.obj: States/State.cpp.obj
+
+.PHONY : States/State.obj
+
+# target to build an object file
+States/State.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj
+.PHONY : States/State.cpp.obj
+
+States/State.i: States/State.cpp.i
+
+.PHONY : States/State.i
+
+# target to preprocess a source file
+States/State.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/State.cpp.i
+.PHONY : States/State.cpp.i
+
+States/State.s: States/State.cpp.s
+
+.PHONY : States/State.s
+
+# target to generate assembly for a file
+States/State.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/State.cpp.s
+.PHONY : States/State.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -231,12 +339,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PROJECT_NAME
+	@echo ... GUI.obj
+	@echo ... GUI.i
+	@echo ... GUI.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
 	@echo ... GraphicSettings.obj
 	@echo ... GraphicSettings.i
 	@echo ... GraphicSettings.s
+	@echo ... States/GameState.obj
+	@echo ... States/GameState.i
+	@echo ... States/GameState.s
+	@echo ... States/MainMenuState.obj
+	@echo ... States/MainMenuState.i
+	@echo ... States/MainMenuState.s
+	@echo ... States/State.obj
+	@echo ... States/State.i
+	@echo ... States/State.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

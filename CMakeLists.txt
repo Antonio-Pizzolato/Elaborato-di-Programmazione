@@ -15,5 +15,5 @@ else()
     message("SFML FOUND!")
 endif()
 
-add_executable(PROJECT_NAME main.cpp Game.cpp Game.h GraphicSettings.cpp GraphicSettings.h)
+add_executable(PROJECT_NAME main.cpp Game.cpp Game.h GraphicSettings.cpp GraphicSettings.h States/State.cpp States/State.h States/GameState.cpp States/GameState.h States/MainMenuState.cpp States/MainMenuState.h GUI.cpp GUI.h)
 target_link_libraries(PROJECT_NAME sfml-audio sfml-network sfml-graphics sfml-window sfml-system -static)

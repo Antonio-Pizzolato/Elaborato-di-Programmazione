@@ -5,17 +5,7 @@
 #ifndef ELABORATO_DI_PROGRAMMAZIONE_GAME_H
 #define ELABORATO_DI_PROGRAMMAZIONE_GAME_H
 
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Audio.hpp>
-#include "GraphicSettings.h"
-
-#include <iostream>
-#include <ctime>
-#include <cstdlib>
-#include <sstream>
-#include <vector>
+#include "States/MainMenuState.h"
 
 class Game {
 
@@ -24,6 +14,7 @@ private:
 
     //Variables
     GraphicsSettings gfxSettings;
+    StateData stateData;
     sf::RenderWindow *window;
     sf::Event sfEvent;
 
@@ -31,6 +22,7 @@ private:
     sf::Clock dtClock;
     float dt;
 
+    std::stack<State*> states;
 
     std::map<std::string , int> supportedKeys;
 
@@ -41,6 +33,8 @@ private:
     void initGraphicsSettings();
     void initWindow();
     void initKeys();
+    void initStateData();
+    void initStates();
 
 
 public:
