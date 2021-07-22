@@ -57,19 +57,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione
+CMAKE_SOURCE_DIR = D:\C++\Elaborato-di-Programmazione
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug
+CMAKE_BINARY_DIR = D:\C++\Elaborato-di-Programmazione\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ CMAKE_BINARY_DIR = C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cm
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles D:\C++\Elaborato-di-Programmazione\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,141 @@ PROJECT_NAME/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/build
 .PHONY : PROJECT_NAME/fast
 
+Components/AnimationComponent.obj: Components/AnimationComponent.cpp.obj
+
+.PHONY : Components/AnimationComponent.obj
+
+# target to build an object file
+Components/AnimationComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj
+.PHONY : Components/AnimationComponent.cpp.obj
+
+Components/AnimationComponent.i: Components/AnimationComponent.cpp.i
+
+.PHONY : Components/AnimationComponent.i
+
+# target to preprocess a source file
+Components/AnimationComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.i
+.PHONY : Components/AnimationComponent.cpp.i
+
+Components/AnimationComponent.s: Components/AnimationComponent.cpp.s
+
+.PHONY : Components/AnimationComponent.s
+
+# target to generate assembly for a file
+Components/AnimationComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.s
+.PHONY : Components/AnimationComponent.cpp.s
+
+Components/HitboxComponent.obj: Components/HitboxComponent.cpp.obj
+
+.PHONY : Components/HitboxComponent.obj
+
+# target to build an object file
+Components/HitboxComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj
+.PHONY : Components/HitboxComponent.cpp.obj
+
+Components/HitboxComponent.i: Components/HitboxComponent.cpp.i
+
+.PHONY : Components/HitboxComponent.i
+
+# target to preprocess a source file
+Components/HitboxComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.i
+.PHONY : Components/HitboxComponent.cpp.i
+
+Components/HitboxComponent.s: Components/HitboxComponent.cpp.s
+
+.PHONY : Components/HitboxComponent.s
+
+# target to generate assembly for a file
+Components/HitboxComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.s
+.PHONY : Components/HitboxComponent.cpp.s
+
+Components/MovementComponent.obj: Components/MovementComponent.cpp.obj
+
+.PHONY : Components/MovementComponent.obj
+
+# target to build an object file
+Components/MovementComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj
+.PHONY : Components/MovementComponent.cpp.obj
+
+Components/MovementComponent.i: Components/MovementComponent.cpp.i
+
+.PHONY : Components/MovementComponent.i
+
+# target to preprocess a source file
+Components/MovementComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.i
+.PHONY : Components/MovementComponent.cpp.i
+
+Components/MovementComponent.s: Components/MovementComponent.cpp.s
+
+.PHONY : Components/MovementComponent.s
+
+# target to generate assembly for a file
+Components/MovementComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.s
+.PHONY : Components/MovementComponent.cpp.s
+
+Entities/Entity.obj: Entities/Entity.cpp.obj
+
+.PHONY : Entities/Entity.obj
+
+# target to build an object file
+Entities/Entity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj
+.PHONY : Entities/Entity.cpp.obj
+
+Entities/Entity.i: Entities/Entity.cpp.i
+
+.PHONY : Entities/Entity.i
+
+# target to preprocess a source file
+Entities/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.i
+.PHONY : Entities/Entity.cpp.i
+
+Entities/Entity.s: Entities/Entity.cpp.s
+
+.PHONY : Entities/Entity.s
+
+# target to generate assembly for a file
+Entities/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.s
+.PHONY : Entities/Entity.cpp.s
+
+Entities/Player.obj: Entities/Player.cpp.obj
+
+.PHONY : Entities/Player.obj
+
+# target to build an object file
+Entities/Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj
+.PHONY : Entities/Player.cpp.obj
+
+Entities/Player.i: Entities/Player.cpp.i
+
+.PHONY : Entities/Player.i
+
+# target to preprocess a source file
+Entities/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.i
+.PHONY : Entities/Player.cpp.i
+
+Entities/Player.s: Entities/Player.cpp.s
+
+.PHONY : Entities/Player.s
+
+# target to generate assembly for a file
+Entities/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.s
+.PHONY : Entities/Player.cpp.s
+
 GUI.obj: GUI.cpp.obj
 
 .PHONY : GUI.obj
@@ -167,6 +302,33 @@ GUI.s: GUI.cpp.s
 GUI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI.cpp.s
 .PHONY : GUI.cpp.s
+
+GUI/PauseMenu.obj: GUI/PauseMenu.cpp.obj
+
+.PHONY : GUI/PauseMenu.obj
+
+# target to build an object file
+GUI/PauseMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj
+.PHONY : GUI/PauseMenu.cpp.obj
+
+GUI/PauseMenu.i: GUI/PauseMenu.cpp.i
+
+.PHONY : GUI/PauseMenu.i
+
+# target to preprocess a source file
+GUI/PauseMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.i
+.PHONY : GUI/PauseMenu.cpp.i
+
+GUI/PauseMenu.s: GUI/PauseMenu.cpp.s
+
+.PHONY : GUI/PauseMenu.s
+
+# target to generate assembly for a file
+GUI/PauseMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.s
+.PHONY : GUI/PauseMenu.cpp.s
 
 Game.obj: Game.cpp.obj
 
@@ -195,32 +357,32 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
-GraphicSettings.obj: GraphicSettings.cpp.obj
+GraphicsSettings.obj: GraphicsSettings.cpp.obj
 
-.PHONY : GraphicSettings.obj
+.PHONY : GraphicsSettings.obj
 
 # target to build an object file
-GraphicSettings.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicSettings.cpp.obj
-.PHONY : GraphicSettings.cpp.obj
+GraphicsSettings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj
+.PHONY : GraphicsSettings.cpp.obj
 
-GraphicSettings.i: GraphicSettings.cpp.i
+GraphicsSettings.i: GraphicsSettings.cpp.i
 
-.PHONY : GraphicSettings.i
+.PHONY : GraphicsSettings.i
 
 # target to preprocess a source file
-GraphicSettings.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicSettings.cpp.i
-.PHONY : GraphicSettings.cpp.i
+GraphicsSettings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.i
+.PHONY : GraphicsSettings.cpp.i
 
-GraphicSettings.s: GraphicSettings.cpp.s
+GraphicsSettings.s: GraphicsSettings.cpp.s
 
-.PHONY : GraphicSettings.s
+.PHONY : GraphicsSettings.s
 
 # target to generate assembly for a file
-GraphicSettings.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicSettings.cpp.s
-.PHONY : GraphicSettings.cpp.s
+GraphicsSettings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.s
+.PHONY : GraphicsSettings.cpp.s
 
 States/GameState.obj: States/GameState.cpp.obj
 
@@ -275,6 +437,33 @@ States/MainMenuState.s: States/MainMenuState.cpp.s
 States/MainMenuState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.s
 .PHONY : States/MainMenuState.cpp.s
+
+States/SettingState.obj: States/SettingState.cpp.obj
+
+.PHONY : States/SettingState.obj
+
+# target to build an object file
+States/SettingState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj
+.PHONY : States/SettingState.cpp.obj
+
+States/SettingState.i: States/SettingState.cpp.i
+
+.PHONY : States/SettingState.i
+
+# target to preprocess a source file
+States/SettingState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.i
+.PHONY : States/SettingState.cpp.i
+
+States/SettingState.s: States/SettingState.cpp.s
+
+.PHONY : States/SettingState.s
+
+# target to generate assembly for a file
+States/SettingState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.s
+.PHONY : States/SettingState.cpp.s
 
 States/State.obj: States/State.cpp.obj
 
@@ -339,21 +528,42 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PROJECT_NAME
+	@echo ... Components/AnimationComponent.obj
+	@echo ... Components/AnimationComponent.i
+	@echo ... Components/AnimationComponent.s
+	@echo ... Components/HitboxComponent.obj
+	@echo ... Components/HitboxComponent.i
+	@echo ... Components/HitboxComponent.s
+	@echo ... Components/MovementComponent.obj
+	@echo ... Components/MovementComponent.i
+	@echo ... Components/MovementComponent.s
+	@echo ... Entities/Entity.obj
+	@echo ... Entities/Entity.i
+	@echo ... Entities/Entity.s
+	@echo ... Entities/Player.obj
+	@echo ... Entities/Player.i
+	@echo ... Entities/Player.s
 	@echo ... GUI.obj
 	@echo ... GUI.i
 	@echo ... GUI.s
+	@echo ... GUI/PauseMenu.obj
+	@echo ... GUI/PauseMenu.i
+	@echo ... GUI/PauseMenu.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
-	@echo ... GraphicSettings.obj
-	@echo ... GraphicSettings.i
-	@echo ... GraphicSettings.s
+	@echo ... GraphicsSettings.obj
+	@echo ... GraphicsSettings.i
+	@echo ... GraphicsSettings.s
 	@echo ... States/GameState.obj
 	@echo ... States/GameState.i
 	@echo ... States/GameState.s
 	@echo ... States/MainMenuState.obj
 	@echo ... States/MainMenuState.i
 	@echo ... States/MainMenuState.s
+	@echo ... States/SettingState.obj
+	@echo ... States/SettingState.i
+	@echo ... States/SettingState.s
 	@echo ... States/State.obj
 	@echo ... States/State.i
 	@echo ... States/State.s

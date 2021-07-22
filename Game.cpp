@@ -47,10 +47,6 @@ void Game::initKeys() {
 
     ifs.close();
 
-    /*for(auto i : this->supportedKeys){
-        std::cout << i.first << " " << i.second << "\n";
-    }*/
-
 }
 
 
@@ -92,7 +88,6 @@ Game::~Game() {
 //Functions
 
 void Game::endApplication() {
-    //std::cout << "Ending Application" << "\n";
 }
 
 void Game::updateDt() {

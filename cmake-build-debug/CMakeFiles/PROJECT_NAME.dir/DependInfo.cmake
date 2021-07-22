@@ -4,13 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj"
-  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj"
-  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicSettings.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/GraphicSettings.cpp.obj"
-  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj"
-  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj"
-  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj"
-  "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/main.cpp" "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/main.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/Components/AnimationComponent.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/Components/HitboxComponent.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/Components/MovementComponent.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/Entities/Entity.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/Entities/Player.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/GUI.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/GUI/PauseMenu.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/Game.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/GraphicsSettings.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/States/GameState.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/States/MainMenuState.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/States/SettingState.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/States/State.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj"
+  "D:/C++/Elaborato-di-Programmazione/main.cpp" "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +28,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/mingw64/include"
+  "C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include"
   )
 
 # Targets to which this target links.

@@ -1,6 +1,3 @@
-//
-// Created by Antonio on 22/07/2021.
-//
 
 #include "MainMenuState.h"
 
@@ -114,6 +111,14 @@ void MainMenuState::updateButtons() {
         this->states->push(new GameState(this->stateData));
     }
 
+    //Setting
+    if(this->buttons["SETTINGS_STATE"]->isPressed()){
+        this->states->push(new SettingState(this->stateData));
+    }
+
+    //Editor
+    if(this->buttons["EDITOR_STATE"]->isPressed()){
+    }
     //Quit the game
     if(this->buttons["EXIT_STATE"]->isPressed()){
         this->endState();
@@ -144,4 +149,17 @@ void MainMenuState::render(sf::RenderTarget* target) {
     target->draw(this->background);
 
     this->renderButtons(*target);
+
+
 }
+
+
+
+
+
+
+
+
+
+
+

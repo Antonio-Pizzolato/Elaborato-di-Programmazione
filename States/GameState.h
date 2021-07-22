@@ -7,6 +7,10 @@
 
 
 #include "State.h"
+#include "../GUI/PauseMenu.h"
+
+class PauseMenu;
+class Player;
 
 class GameState :
         public State
@@ -17,8 +21,9 @@ private:
     sf::Sprite renderSprite;
 
     sf::Font font;
+    PauseMenu *pmenu;
+    Player* player;
     sf::Texture texture;
-
 
     //Functions
     void initView();

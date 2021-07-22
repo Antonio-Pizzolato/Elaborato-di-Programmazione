@@ -2,7 +2,7 @@
 // Created by Antonio on 22/07/2021.
 //
 
-#include "GraphicSettings.h"
+#include "GraphicsSettings.h"
 
 GraphicsSettings::GraphicsSettings() {
 

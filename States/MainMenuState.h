@@ -4,7 +4,7 @@
 
 #ifndef ELABORATO_DI_PROGRAMMAZIONE_MAINMENUSTATE_H
 #define ELABORATO_DI_PROGRAMMAZIONE_MAINMENUSTATE_H
-
+#include "SettingState.h"
 #include "GameState.h"
 #include "../GUI.h"
 

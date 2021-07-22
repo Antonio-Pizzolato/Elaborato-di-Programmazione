@@ -5,7 +5,8 @@
 #ifndef ELABORATO_DI_PROGRAMMAZIONE_STATE_H
 #define ELABORATO_DI_PROGRAMMAZIONE_STATE_H
 
-#include "../GraphicSettings.h"
+#include "../Entities/Player.h"
+#include "../GraphicsSettings.h"
 
 class GraphicsSettings;
 class State;
