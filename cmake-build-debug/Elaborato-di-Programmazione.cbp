@@ -5,186 +5,168 @@
 		<Option title="Elaborato-di-Programmazione"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\mingw64\;CMake Files\..\..\..\..\mingw64\lib\;CMake Files\..\..\..\..\mingw64\lib\cmake\;CMake Files\..\..\..\..\mingw64\lib\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\;CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\;CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\;CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\;CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug"/>
+				<Option working_dir="D:/C++/Elaborato-di-Programmazione/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug"/>
+				<Option working_dir="D:/C++/Elaborato-di-Programmazione/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PROJECT_NAME">
-				<Option output="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/PROJECT_NAME.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug"/>
+				<Option output="D:/C++/Elaborato-di-Programmazione/cmake-build-debug/PROJECT_NAME.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/C++/Elaborato-di-Programmazione/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="C:/mingw64/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 PROJECT_NAME"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 PROJECT_NAME"/>
+					<CompileFile command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PROJECT_NAME/fast">
-				<Option output="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/PROJECT_NAME.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug"/>
+				<Option output="D:/C++/Elaborato-di-Programmazione/cmake-build-debug/PROJECT_NAME.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/C++/Elaborato-di-Programmazione/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="C:/mingw64/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 PROJECT_NAME/fast"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 PROJECT_NAME/fast"/>
+					<CompileFile command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug"/>
+				<Option working_dir="D:/C++/Elaborato-di-Programmazione/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/C++/Elaborato-di-Programmazione/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AnimationComponent.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Components/AnimationComponent.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AnimationComponent.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Components/AnimationComponent.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/HitboxComponent.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Components/HitboxComponent.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/HitboxComponent.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Components/HitboxComponent.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/MovementComponent.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Components/MovementComponent.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/MovementComponent.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Components/MovementComponent.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Entity.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Entity.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Entity.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Entity.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Player.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Player.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Player.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Player.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/GUI.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/GUI.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/PauseMenu.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/GUI/PauseMenu.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/PauseMenu.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/GUI/PauseMenu.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Game.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Game.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicsSettings.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/GraphicsSettings.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicsSettings.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/GraphicsSettings.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Input.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.h">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/Input.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.cpp">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/main.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.h">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/SettingState.cpp">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/SettingState.h">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.cpp">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.h">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/main.cpp">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/CMakeLists.txt">
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/../../../../mingw64/lib/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\mingw64\lib\cmake\SFML\"/>
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/../../../../mingw64/lib/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\mingw64\lib\cmake\SFML\"/>
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/../../../../mingw64/lib/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\mingw64\lib\cmake\SFML\"/>
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/../../../../mingw64/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\mingw64\lib\cmake\SFML\"/>
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/../../../../mingw64/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\mingw64\lib\cmake\SFML\"/>
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
+			<Option virtualFolder="CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/../../../../mingw64/lib/cmake/SFML/SFMLStaticTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\mingw64\lib\cmake\SFML\"/>
+		<Unit filename="D:/C++/Elaborato-di-Programmazione/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/lib/cmake/SFML/SFMLStaticTargets.cmake">
+			<Option virtualFolder="CMake Files\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
