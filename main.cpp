@@ -4,11 +4,15 @@
 
 #include"Game.h"
 
-
 int main()
 {
-    Game game;
-    game.run();
+    // Create the main game object.
+    sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Dungeon");
+    Game game(&window);
+
+    // Initialize and run the game object.
+    game.Initialize();
+    game.Run();    //gameLoop
 
     return 0;
 }

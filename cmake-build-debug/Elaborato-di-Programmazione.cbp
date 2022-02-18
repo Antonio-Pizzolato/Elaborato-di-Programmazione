@@ -84,22 +84,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Achievements.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Achievements.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AnimationComponent.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AnimationComponent.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/HitboxComponent.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AttributeComponent.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/HitboxComponent.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AttributeComponent.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/MovementComponent.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/EnemyAttributeComponent.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/MovementComponent.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/EnemyAttributeComponent.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/ConditionAchievement.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/ConditionAchievement.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Archer.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Archer.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Enemy.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Enemy.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Entity.cpp">
@@ -108,16 +132,40 @@
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Entity.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Humanoid.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Humanoid.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Player.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Player.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Slime.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Slime.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Warrior.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Warrior.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Wizard.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Wizard.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/GUI.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/GUI.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/PauseMenu.cpp">
@@ -126,40 +174,106 @@
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/PauseMenu.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/PlayerGUI.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GUI/PlayerGUI.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Game.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicsSettings.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Input.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/GraphicsSettings.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Input.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Gold.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/GameState.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Gold.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Items.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/MainMenuState.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Items.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/SettingState.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Level.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/SettingState.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Level.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.cpp">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Object.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/States/State.h">
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Object.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Potion.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Potion.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Torch.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Torch.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Observable.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Observable.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Observer.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Projectile/Projectile.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Projectile/Projectile.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/CharacterSelection.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/CharacterSelection.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/MainMenu.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/MainMenu.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/Shop.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/Shop.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/TextTagSystem.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Systems/TextTagSystem.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/TextureManager.cpp">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/TextureManager.h">
+			<Option target="PROJECT_NAME"/>
+		</Unit>
+		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Util.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/main.cpp">

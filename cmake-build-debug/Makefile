@@ -141,6 +141,33 @@ PROJECT_NAME/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/build
 .PHONY : PROJECT_NAME/fast
 
+Achievements.obj: Achievements.cpp.obj
+
+.PHONY : Achievements.obj
+
+# target to build an object file
+Achievements.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.obj
+.PHONY : Achievements.cpp.obj
+
+Achievements.i: Achievements.cpp.i
+
+.PHONY : Achievements.i
+
+# target to preprocess a source file
+Achievements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.i
+.PHONY : Achievements.cpp.i
+
+Achievements.s: Achievements.cpp.s
+
+.PHONY : Achievements.s
+
+# target to generate assembly for a file
+Achievements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.s
+.PHONY : Achievements.cpp.s
+
 Components/AnimationComponent.obj: Components/AnimationComponent.cpp.obj
 
 .PHONY : Components/AnimationComponent.obj
@@ -168,59 +195,140 @@ Components/AnimationComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.s
 .PHONY : Components/AnimationComponent.cpp.s
 
-Components/HitboxComponent.obj: Components/HitboxComponent.cpp.obj
+Components/AttributeComponent.obj: Components/AttributeComponent.cpp.obj
 
-.PHONY : Components/HitboxComponent.obj
-
-# target to build an object file
-Components/HitboxComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj
-.PHONY : Components/HitboxComponent.cpp.obj
-
-Components/HitboxComponent.i: Components/HitboxComponent.cpp.i
-
-.PHONY : Components/HitboxComponent.i
-
-# target to preprocess a source file
-Components/HitboxComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.i
-.PHONY : Components/HitboxComponent.cpp.i
-
-Components/HitboxComponent.s: Components/HitboxComponent.cpp.s
-
-.PHONY : Components/HitboxComponent.s
-
-# target to generate assembly for a file
-Components/HitboxComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.s
-.PHONY : Components/HitboxComponent.cpp.s
-
-Components/MovementComponent.obj: Components/MovementComponent.cpp.obj
-
-.PHONY : Components/MovementComponent.obj
+.PHONY : Components/AttributeComponent.obj
 
 # target to build an object file
-Components/MovementComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj
-.PHONY : Components/MovementComponent.cpp.obj
+Components/AttributeComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.obj
+.PHONY : Components/AttributeComponent.cpp.obj
 
-Components/MovementComponent.i: Components/MovementComponent.cpp.i
+Components/AttributeComponent.i: Components/AttributeComponent.cpp.i
 
-.PHONY : Components/MovementComponent.i
+.PHONY : Components/AttributeComponent.i
 
 # target to preprocess a source file
-Components/MovementComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.i
-.PHONY : Components/MovementComponent.cpp.i
+Components/AttributeComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.i
+.PHONY : Components/AttributeComponent.cpp.i
 
-Components/MovementComponent.s: Components/MovementComponent.cpp.s
+Components/AttributeComponent.s: Components/AttributeComponent.cpp.s
 
-.PHONY : Components/MovementComponent.s
+.PHONY : Components/AttributeComponent.s
 
 # target to generate assembly for a file
-Components/MovementComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.s
-.PHONY : Components/MovementComponent.cpp.s
+Components/AttributeComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.s
+.PHONY : Components/AttributeComponent.cpp.s
+
+Components/EnemyAttributeComponent.obj: Components/EnemyAttributeComponent.cpp.obj
+
+.PHONY : Components/EnemyAttributeComponent.obj
+
+# target to build an object file
+Components/EnemyAttributeComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.obj
+.PHONY : Components/EnemyAttributeComponent.cpp.obj
+
+Components/EnemyAttributeComponent.i: Components/EnemyAttributeComponent.cpp.i
+
+.PHONY : Components/EnemyAttributeComponent.i
+
+# target to preprocess a source file
+Components/EnemyAttributeComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.i
+.PHONY : Components/EnemyAttributeComponent.cpp.i
+
+Components/EnemyAttributeComponent.s: Components/EnemyAttributeComponent.cpp.s
+
+.PHONY : Components/EnemyAttributeComponent.s
+
+# target to generate assembly for a file
+Components/EnemyAttributeComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.s
+.PHONY : Components/EnemyAttributeComponent.cpp.s
+
+ConditionAchievement.obj: ConditionAchievement.cpp.obj
+
+.PHONY : ConditionAchievement.obj
+
+# target to build an object file
+ConditionAchievement.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.obj
+.PHONY : ConditionAchievement.cpp.obj
+
+ConditionAchievement.i: ConditionAchievement.cpp.i
+
+.PHONY : ConditionAchievement.i
+
+# target to preprocess a source file
+ConditionAchievement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.i
+.PHONY : ConditionAchievement.cpp.i
+
+ConditionAchievement.s: ConditionAchievement.cpp.s
+
+.PHONY : ConditionAchievement.s
+
+# target to generate assembly for a file
+ConditionAchievement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.s
+.PHONY : ConditionAchievement.cpp.s
+
+Entities/Archer.obj: Entities/Archer.cpp.obj
+
+.PHONY : Entities/Archer.obj
+
+# target to build an object file
+Entities/Archer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.obj
+.PHONY : Entities/Archer.cpp.obj
+
+Entities/Archer.i: Entities/Archer.cpp.i
+
+.PHONY : Entities/Archer.i
+
+# target to preprocess a source file
+Entities/Archer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.i
+.PHONY : Entities/Archer.cpp.i
+
+Entities/Archer.s: Entities/Archer.cpp.s
+
+.PHONY : Entities/Archer.s
+
+# target to generate assembly for a file
+Entities/Archer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.s
+.PHONY : Entities/Archer.cpp.s
+
+Entities/Enemy.obj: Entities/Enemy.cpp.obj
+
+.PHONY : Entities/Enemy.obj
+
+# target to build an object file
+Entities/Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.obj
+.PHONY : Entities/Enemy.cpp.obj
+
+Entities/Enemy.i: Entities/Enemy.cpp.i
+
+.PHONY : Entities/Enemy.i
+
+# target to preprocess a source file
+Entities/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.i
+.PHONY : Entities/Enemy.cpp.i
+
+Entities/Enemy.s: Entities/Enemy.cpp.s
+
+.PHONY : Entities/Enemy.s
+
+# target to generate assembly for a file
+Entities/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.s
+.PHONY : Entities/Enemy.cpp.s
 
 Entities/Entity.obj: Entities/Entity.cpp.obj
 
@@ -249,6 +357,33 @@ Entities/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.s
 .PHONY : Entities/Entity.cpp.s
 
+Entities/Humanoid.obj: Entities/Humanoid.cpp.obj
+
+.PHONY : Entities/Humanoid.obj
+
+# target to build an object file
+Entities/Humanoid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj
+.PHONY : Entities/Humanoid.cpp.obj
+
+Entities/Humanoid.i: Entities/Humanoid.cpp.i
+
+.PHONY : Entities/Humanoid.i
+
+# target to preprocess a source file
+Entities/Humanoid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.i
+.PHONY : Entities/Humanoid.cpp.i
+
+Entities/Humanoid.s: Entities/Humanoid.cpp.s
+
+.PHONY : Entities/Humanoid.s
+
+# target to generate assembly for a file
+Entities/Humanoid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.s
+.PHONY : Entities/Humanoid.cpp.s
+
 Entities/Player.obj: Entities/Player.cpp.obj
 
 .PHONY : Entities/Player.obj
@@ -276,32 +411,113 @@ Entities/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.s
 .PHONY : Entities/Player.cpp.s
 
-GUI.obj: GUI.cpp.obj
+Entities/Slime.obj: Entities/Slime.cpp.obj
 
-.PHONY : GUI.obj
+.PHONY : Entities/Slime.obj
 
 # target to build an object file
-GUI.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj
-.PHONY : GUI.cpp.obj
+Entities/Slime.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj
+.PHONY : Entities/Slime.cpp.obj
 
-GUI.i: GUI.cpp.i
+Entities/Slime.i: Entities/Slime.cpp.i
 
-.PHONY : GUI.i
+.PHONY : Entities/Slime.i
 
 # target to preprocess a source file
-GUI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI.cpp.i
-.PHONY : GUI.cpp.i
+Entities/Slime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.i
+.PHONY : Entities/Slime.cpp.i
 
-GUI.s: GUI.cpp.s
+Entities/Slime.s: Entities/Slime.cpp.s
 
-.PHONY : GUI.s
+.PHONY : Entities/Slime.s
 
 # target to generate assembly for a file
-GUI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI.cpp.s
-.PHONY : GUI.cpp.s
+Entities/Slime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.s
+.PHONY : Entities/Slime.cpp.s
+
+Entities/Warrior.obj: Entities/Warrior.cpp.obj
+
+.PHONY : Entities/Warrior.obj
+
+# target to build an object file
+Entities/Warrior.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj
+.PHONY : Entities/Warrior.cpp.obj
+
+Entities/Warrior.i: Entities/Warrior.cpp.i
+
+.PHONY : Entities/Warrior.i
+
+# target to preprocess a source file
+Entities/Warrior.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.i
+.PHONY : Entities/Warrior.cpp.i
+
+Entities/Warrior.s: Entities/Warrior.cpp.s
+
+.PHONY : Entities/Warrior.s
+
+# target to generate assembly for a file
+Entities/Warrior.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.s
+.PHONY : Entities/Warrior.cpp.s
+
+Entities/Wizard.obj: Entities/Wizard.cpp.obj
+
+.PHONY : Entities/Wizard.obj
+
+# target to build an object file
+Entities/Wizard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.obj
+.PHONY : Entities/Wizard.cpp.obj
+
+Entities/Wizard.i: Entities/Wizard.cpp.i
+
+.PHONY : Entities/Wizard.i
+
+# target to preprocess a source file
+Entities/Wizard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.i
+.PHONY : Entities/Wizard.cpp.i
+
+Entities/Wizard.s: Entities/Wizard.cpp.s
+
+.PHONY : Entities/Wizard.s
+
+# target to generate assembly for a file
+Entities/Wizard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.s
+.PHONY : Entities/Wizard.cpp.s
+
+GUI/GUI.obj: GUI/GUI.cpp.obj
+
+.PHONY : GUI/GUI.obj
+
+# target to build an object file
+GUI/GUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.obj
+.PHONY : GUI/GUI.cpp.obj
+
+GUI/GUI.i: GUI/GUI.cpp.i
+
+.PHONY : GUI/GUI.i
+
+# target to preprocess a source file
+GUI/GUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.i
+.PHONY : GUI/GUI.cpp.i
+
+GUI/GUI.s: GUI/GUI.cpp.s
+
+.PHONY : GUI/GUI.s
+
+# target to generate assembly for a file
+GUI/GUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.s
+.PHONY : GUI/GUI.cpp.s
 
 GUI/PauseMenu.obj: GUI/PauseMenu.cpp.obj
 
@@ -330,6 +546,33 @@ GUI/PauseMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.s
 .PHONY : GUI/PauseMenu.cpp.s
 
+GUI/PlayerGUI.obj: GUI/PlayerGUI.cpp.obj
+
+.PHONY : GUI/PlayerGUI.obj
+
+# target to build an object file
+GUI/PlayerGUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.obj
+.PHONY : GUI/PlayerGUI.cpp.obj
+
+GUI/PlayerGUI.i: GUI/PlayerGUI.cpp.i
+
+.PHONY : GUI/PlayerGUI.i
+
+# target to preprocess a source file
+GUI/PlayerGUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.i
+.PHONY : GUI/PlayerGUI.cpp.i
+
+GUI/PlayerGUI.s: GUI/PlayerGUI.cpp.s
+
+.PHONY : GUI/PlayerGUI.s
+
+# target to generate assembly for a file
+GUI/PlayerGUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.s
+.PHONY : GUI/PlayerGUI.cpp.s
+
 Game.obj: Game.cpp.obj
 
 .PHONY : Game.obj
@@ -357,140 +600,383 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
-GraphicsSettings.obj: GraphicsSettings.cpp.obj
+Input.obj: Input.cpp.obj
 
-.PHONY : GraphicsSettings.obj
-
-# target to build an object file
-GraphicsSettings.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj
-.PHONY : GraphicsSettings.cpp.obj
-
-GraphicsSettings.i: GraphicsSettings.cpp.i
-
-.PHONY : GraphicsSettings.i
-
-# target to preprocess a source file
-GraphicsSettings.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.i
-.PHONY : GraphicsSettings.cpp.i
-
-GraphicsSettings.s: GraphicsSettings.cpp.s
-
-.PHONY : GraphicsSettings.s
-
-# target to generate assembly for a file
-GraphicsSettings.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.s
-.PHONY : GraphicsSettings.cpp.s
-
-States/GameState.obj: States/GameState.cpp.obj
-
-.PHONY : States/GameState.obj
+.PHONY : Input.obj
 
 # target to build an object file
-States/GameState.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj
-.PHONY : States/GameState.cpp.obj
+Input.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj
+.PHONY : Input.cpp.obj
 
-States/GameState.i: States/GameState.cpp.i
+Input.i: Input.cpp.i
 
-.PHONY : States/GameState.i
+.PHONY : Input.i
 
 # target to preprocess a source file
-States/GameState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.i
-.PHONY : States/GameState.cpp.i
+Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Input.cpp.i
+.PHONY : Input.cpp.i
 
-States/GameState.s: States/GameState.cpp.s
+Input.s: Input.cpp.s
 
-.PHONY : States/GameState.s
+.PHONY : Input.s
 
 # target to generate assembly for a file
-States/GameState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.s
-.PHONY : States/GameState.cpp.s
+Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Input.cpp.s
+.PHONY : Input.cpp.s
 
-States/MainMenuState.obj: States/MainMenuState.cpp.obj
+Map/Gold.obj: Map/Gold.cpp.obj
 
-.PHONY : States/MainMenuState.obj
+.PHONY : Map/Gold.obj
 
 # target to build an object file
-States/MainMenuState.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj
-.PHONY : States/MainMenuState.cpp.obj
+Map/Gold.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj
+.PHONY : Map/Gold.cpp.obj
 
-States/MainMenuState.i: States/MainMenuState.cpp.i
+Map/Gold.i: Map/Gold.cpp.i
 
-.PHONY : States/MainMenuState.i
+.PHONY : Map/Gold.i
 
 # target to preprocess a source file
-States/MainMenuState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.i
-.PHONY : States/MainMenuState.cpp.i
+Map/Gold.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.i
+.PHONY : Map/Gold.cpp.i
 
-States/MainMenuState.s: States/MainMenuState.cpp.s
+Map/Gold.s: Map/Gold.cpp.s
 
-.PHONY : States/MainMenuState.s
+.PHONY : Map/Gold.s
 
 # target to generate assembly for a file
-States/MainMenuState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.s
-.PHONY : States/MainMenuState.cpp.s
+Map/Gold.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.s
+.PHONY : Map/Gold.cpp.s
 
-States/SettingState.obj: States/SettingState.cpp.obj
+Map/Items.obj: Map/Items.cpp.obj
 
-.PHONY : States/SettingState.obj
+.PHONY : Map/Items.obj
 
 # target to build an object file
-States/SettingState.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj
-.PHONY : States/SettingState.cpp.obj
+Map/Items.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj
+.PHONY : Map/Items.cpp.obj
 
-States/SettingState.i: States/SettingState.cpp.i
+Map/Items.i: Map/Items.cpp.i
 
-.PHONY : States/SettingState.i
+.PHONY : Map/Items.i
 
 # target to preprocess a source file
-States/SettingState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.i
-.PHONY : States/SettingState.cpp.i
+Map/Items.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.i
+.PHONY : Map/Items.cpp.i
 
-States/SettingState.s: States/SettingState.cpp.s
+Map/Items.s: Map/Items.cpp.s
 
-.PHONY : States/SettingState.s
+.PHONY : Map/Items.s
 
 # target to generate assembly for a file
-States/SettingState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.s
-.PHONY : States/SettingState.cpp.s
+Map/Items.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.s
+.PHONY : Map/Items.cpp.s
 
-States/State.obj: States/State.cpp.obj
+Map/Level.obj: Map/Level.cpp.obj
 
-.PHONY : States/State.obj
+.PHONY : Map/Level.obj
 
 # target to build an object file
-States/State.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj
-.PHONY : States/State.cpp.obj
+Map/Level.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.obj
+.PHONY : Map/Level.cpp.obj
 
-States/State.i: States/State.cpp.i
+Map/Level.i: Map/Level.cpp.i
 
-.PHONY : States/State.i
+.PHONY : Map/Level.i
 
 # target to preprocess a source file
-States/State.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/State.cpp.i
-.PHONY : States/State.cpp.i
+Map/Level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.i
+.PHONY : Map/Level.cpp.i
 
-States/State.s: States/State.cpp.s
+Map/Level.s: Map/Level.cpp.s
 
-.PHONY : States/State.s
+.PHONY : Map/Level.s
 
 # target to generate assembly for a file
-States/State.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/States/State.cpp.s
-.PHONY : States/State.cpp.s
+Map/Level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.s
+.PHONY : Map/Level.cpp.s
+
+Map/Object.obj: Map/Object.cpp.obj
+
+.PHONY : Map/Object.obj
+
+# target to build an object file
+Map/Object.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj
+.PHONY : Map/Object.cpp.obj
+
+Map/Object.i: Map/Object.cpp.i
+
+.PHONY : Map/Object.i
+
+# target to preprocess a source file
+Map/Object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.i
+.PHONY : Map/Object.cpp.i
+
+Map/Object.s: Map/Object.cpp.s
+
+.PHONY : Map/Object.s
+
+# target to generate assembly for a file
+Map/Object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.s
+.PHONY : Map/Object.cpp.s
+
+Map/Potion.obj: Map/Potion.cpp.obj
+
+.PHONY : Map/Potion.obj
+
+# target to build an object file
+Map/Potion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj
+.PHONY : Map/Potion.cpp.obj
+
+Map/Potion.i: Map/Potion.cpp.i
+
+.PHONY : Map/Potion.i
+
+# target to preprocess a source file
+Map/Potion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.i
+.PHONY : Map/Potion.cpp.i
+
+Map/Potion.s: Map/Potion.cpp.s
+
+.PHONY : Map/Potion.s
+
+# target to generate assembly for a file
+Map/Potion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.s
+.PHONY : Map/Potion.cpp.s
+
+Map/Torch.obj: Map/Torch.cpp.obj
+
+.PHONY : Map/Torch.obj
+
+# target to build an object file
+Map/Torch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj
+.PHONY : Map/Torch.cpp.obj
+
+Map/Torch.i: Map/Torch.cpp.i
+
+.PHONY : Map/Torch.i
+
+# target to preprocess a source file
+Map/Torch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.i
+.PHONY : Map/Torch.cpp.i
+
+Map/Torch.s: Map/Torch.cpp.s
+
+.PHONY : Map/Torch.s
+
+# target to generate assembly for a file
+Map/Torch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.s
+.PHONY : Map/Torch.cpp.s
+
+Observable.obj: Observable.cpp.obj
+
+.PHONY : Observable.obj
+
+# target to build an object file
+Observable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Observable.cpp.obj
+.PHONY : Observable.cpp.obj
+
+Observable.i: Observable.cpp.i
+
+.PHONY : Observable.i
+
+# target to preprocess a source file
+Observable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Observable.cpp.i
+.PHONY : Observable.cpp.i
+
+Observable.s: Observable.cpp.s
+
+.PHONY : Observable.s
+
+# target to generate assembly for a file
+Observable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Observable.cpp.s
+.PHONY : Observable.cpp.s
+
+Projectile/Projectile.obj: Projectile/Projectile.cpp.obj
+
+.PHONY : Projectile/Projectile.obj
+
+# target to build an object file
+Projectile/Projectile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.obj
+.PHONY : Projectile/Projectile.cpp.obj
+
+Projectile/Projectile.i: Projectile/Projectile.cpp.i
+
+.PHONY : Projectile/Projectile.i
+
+# target to preprocess a source file
+Projectile/Projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.i
+.PHONY : Projectile/Projectile.cpp.i
+
+Projectile/Projectile.s: Projectile/Projectile.cpp.s
+
+.PHONY : Projectile/Projectile.s
+
+# target to generate assembly for a file
+Projectile/Projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.s
+.PHONY : Projectile/Projectile.cpp.s
+
+Systems/CharacterSelection.obj: Systems/CharacterSelection.cpp.obj
+
+.PHONY : Systems/CharacterSelection.obj
+
+# target to build an object file
+Systems/CharacterSelection.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.obj
+.PHONY : Systems/CharacterSelection.cpp.obj
+
+Systems/CharacterSelection.i: Systems/CharacterSelection.cpp.i
+
+.PHONY : Systems/CharacterSelection.i
+
+# target to preprocess a source file
+Systems/CharacterSelection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.i
+.PHONY : Systems/CharacterSelection.cpp.i
+
+Systems/CharacterSelection.s: Systems/CharacterSelection.cpp.s
+
+.PHONY : Systems/CharacterSelection.s
+
+# target to generate assembly for a file
+Systems/CharacterSelection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.s
+.PHONY : Systems/CharacterSelection.cpp.s
+
+Systems/MainMenu.obj: Systems/MainMenu.cpp.obj
+
+.PHONY : Systems/MainMenu.obj
+
+# target to build an object file
+Systems/MainMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.obj
+.PHONY : Systems/MainMenu.cpp.obj
+
+Systems/MainMenu.i: Systems/MainMenu.cpp.i
+
+.PHONY : Systems/MainMenu.i
+
+# target to preprocess a source file
+Systems/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.i
+.PHONY : Systems/MainMenu.cpp.i
+
+Systems/MainMenu.s: Systems/MainMenu.cpp.s
+
+.PHONY : Systems/MainMenu.s
+
+# target to generate assembly for a file
+Systems/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.s
+.PHONY : Systems/MainMenu.cpp.s
+
+Systems/Shop.obj: Systems/Shop.cpp.obj
+
+.PHONY : Systems/Shop.obj
+
+# target to build an object file
+Systems/Shop.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.obj
+.PHONY : Systems/Shop.cpp.obj
+
+Systems/Shop.i: Systems/Shop.cpp.i
+
+.PHONY : Systems/Shop.i
+
+# target to preprocess a source file
+Systems/Shop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.i
+.PHONY : Systems/Shop.cpp.i
+
+Systems/Shop.s: Systems/Shop.cpp.s
+
+.PHONY : Systems/Shop.s
+
+# target to generate assembly for a file
+Systems/Shop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.s
+.PHONY : Systems/Shop.cpp.s
+
+Systems/TextTagSystem.obj: Systems/TextTagSystem.cpp.obj
+
+.PHONY : Systems/TextTagSystem.obj
+
+# target to build an object file
+Systems/TextTagSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.obj
+.PHONY : Systems/TextTagSystem.cpp.obj
+
+Systems/TextTagSystem.i: Systems/TextTagSystem.cpp.i
+
+.PHONY : Systems/TextTagSystem.i
+
+# target to preprocess a source file
+Systems/TextTagSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.i
+.PHONY : Systems/TextTagSystem.cpp.i
+
+Systems/TextTagSystem.s: Systems/TextTagSystem.cpp.s
+
+.PHONY : Systems/TextTagSystem.s
+
+# target to generate assembly for a file
+Systems/TextTagSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.s
+.PHONY : Systems/TextTagSystem.cpp.s
+
+TextureManager.obj: TextureManager.cpp.obj
+
+.PHONY : TextureManager.obj
+
+# target to build an object file
+TextureManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.obj
+.PHONY : TextureManager.cpp.obj
+
+TextureManager.i: TextureManager.cpp.i
+
+.PHONY : TextureManager.i
+
+# target to preprocess a source file
+TextureManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.i
+.PHONY : TextureManager.cpp.i
+
+TextureManager.s: TextureManager.cpp.s
+
+.PHONY : TextureManager.s
+
+# target to generate assembly for a file
+TextureManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.s
+.PHONY : TextureManager.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -528,45 +1014,99 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PROJECT_NAME
+	@echo ... Achievements.obj
+	@echo ... Achievements.i
+	@echo ... Achievements.s
 	@echo ... Components/AnimationComponent.obj
 	@echo ... Components/AnimationComponent.i
 	@echo ... Components/AnimationComponent.s
-	@echo ... Components/HitboxComponent.obj
-	@echo ... Components/HitboxComponent.i
-	@echo ... Components/HitboxComponent.s
-	@echo ... Components/MovementComponent.obj
-	@echo ... Components/MovementComponent.i
-	@echo ... Components/MovementComponent.s
+	@echo ... Components/AttributeComponent.obj
+	@echo ... Components/AttributeComponent.i
+	@echo ... Components/AttributeComponent.s
+	@echo ... Components/EnemyAttributeComponent.obj
+	@echo ... Components/EnemyAttributeComponent.i
+	@echo ... Components/EnemyAttributeComponent.s
+	@echo ... ConditionAchievement.obj
+	@echo ... ConditionAchievement.i
+	@echo ... ConditionAchievement.s
+	@echo ... Entities/Archer.obj
+	@echo ... Entities/Archer.i
+	@echo ... Entities/Archer.s
+	@echo ... Entities/Enemy.obj
+	@echo ... Entities/Enemy.i
+	@echo ... Entities/Enemy.s
 	@echo ... Entities/Entity.obj
 	@echo ... Entities/Entity.i
 	@echo ... Entities/Entity.s
+	@echo ... Entities/Humanoid.obj
+	@echo ... Entities/Humanoid.i
+	@echo ... Entities/Humanoid.s
 	@echo ... Entities/Player.obj
 	@echo ... Entities/Player.i
 	@echo ... Entities/Player.s
-	@echo ... GUI.obj
-	@echo ... GUI.i
-	@echo ... GUI.s
+	@echo ... Entities/Slime.obj
+	@echo ... Entities/Slime.i
+	@echo ... Entities/Slime.s
+	@echo ... Entities/Warrior.obj
+	@echo ... Entities/Warrior.i
+	@echo ... Entities/Warrior.s
+	@echo ... Entities/Wizard.obj
+	@echo ... Entities/Wizard.i
+	@echo ... Entities/Wizard.s
+	@echo ... GUI/GUI.obj
+	@echo ... GUI/GUI.i
+	@echo ... GUI/GUI.s
 	@echo ... GUI/PauseMenu.obj
 	@echo ... GUI/PauseMenu.i
 	@echo ... GUI/PauseMenu.s
+	@echo ... GUI/PlayerGUI.obj
+	@echo ... GUI/PlayerGUI.i
+	@echo ... GUI/PlayerGUI.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
-	@echo ... GraphicsSettings.obj
-	@echo ... GraphicsSettings.i
-	@echo ... GraphicsSettings.s
-	@echo ... States/GameState.obj
-	@echo ... States/GameState.i
-	@echo ... States/GameState.s
-	@echo ... States/MainMenuState.obj
-	@echo ... States/MainMenuState.i
-	@echo ... States/MainMenuState.s
-	@echo ... States/SettingState.obj
-	@echo ... States/SettingState.i
-	@echo ... States/SettingState.s
-	@echo ... States/State.obj
-	@echo ... States/State.i
-	@echo ... States/State.s
+	@echo ... Input.obj
+	@echo ... Input.i
+	@echo ... Input.s
+	@echo ... Map/Gold.obj
+	@echo ... Map/Gold.i
+	@echo ... Map/Gold.s
+	@echo ... Map/Items.obj
+	@echo ... Map/Items.i
+	@echo ... Map/Items.s
+	@echo ... Map/Level.obj
+	@echo ... Map/Level.i
+	@echo ... Map/Level.s
+	@echo ... Map/Object.obj
+	@echo ... Map/Object.i
+	@echo ... Map/Object.s
+	@echo ... Map/Potion.obj
+	@echo ... Map/Potion.i
+	@echo ... Map/Potion.s
+	@echo ... Map/Torch.obj
+	@echo ... Map/Torch.i
+	@echo ... Map/Torch.s
+	@echo ... Observable.obj
+	@echo ... Observable.i
+	@echo ... Observable.s
+	@echo ... Projectile/Projectile.obj
+	@echo ... Projectile/Projectile.i
+	@echo ... Projectile/Projectile.s
+	@echo ... Systems/CharacterSelection.obj
+	@echo ... Systems/CharacterSelection.i
+	@echo ... Systems/CharacterSelection.s
+	@echo ... Systems/MainMenu.obj
+	@echo ... Systems/MainMenu.i
+	@echo ... Systems/MainMenu.s
+	@echo ... Systems/Shop.obj
+	@echo ... Systems/Shop.i
+	@echo ... Systems/Shop.s
+	@echo ... Systems/TextTagSystem.obj
+	@echo ... Systems/TextTagSystem.i
+	@echo ... Systems/TextTagSystem.s
+	@echo ... TextureManager.obj
+	@echo ... TextureManager.i
+	@echo ... TextureManager.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

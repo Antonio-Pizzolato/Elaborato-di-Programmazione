@@ -103,38 +103,10 @@ CMakeFiles/PROJECT_NAME.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Game.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Game.cpp -o CMakeFiles\PROJECT_NAME.dir\Game.cpp.s
 
-CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj: ../States/State.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\States\State.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\State.cpp
-
-CMakeFiles/PROJECT_NAME.dir/States/State.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/States/State.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\State.cpp > CMakeFiles\PROJECT_NAME.dir\States\State.cpp.i
-
-CMakeFiles/PROJECT_NAME.dir/States/State.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/States/State.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\State.cpp -o CMakeFiles\PROJECT_NAME.dir\States\State.cpp.s
-
-CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj: ../States/GameState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\States\GameState.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\GameState.cpp
-
-CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\GameState.cpp > CMakeFiles\PROJECT_NAME.dir\States\GameState.cpp.i
-
-CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\GameState.cpp -o CMakeFiles\PROJECT_NAME.dir\States\GameState.cpp.s
-
 CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
 CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
 CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj: ../Entities/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Entity.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Entity.cpp
 
 CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.i: cmake_force
@@ -145,38 +117,10 @@ CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Entity.cpp -o CMakeFiles\PROJECT_NAME.dir\Entities\Entity.cpp.s
 
-CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj: ../States/MainMenuState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\States\MainMenuState.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\MainMenuState.cpp
-
-CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\MainMenuState.cpp > CMakeFiles\PROJECT_NAME.dir\States\MainMenuState.cpp.i
-
-CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\MainMenuState.cpp -o CMakeFiles\PROJECT_NAME.dir\States\MainMenuState.cpp.s
-
-CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj: ../GUI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\GUI.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI.cpp
-
-CMakeFiles/PROJECT_NAME.dir/GUI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/GUI.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI.cpp > CMakeFiles\PROJECT_NAME.dir\GUI.cpp.i
-
-CMakeFiles/PROJECT_NAME.dir/GUI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/GUI.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI.cpp -o CMakeFiles\PROJECT_NAME.dir\GUI.cpp.s
-
 CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
 CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
 CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj: ../Entities/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Player.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Player.cpp
 
 CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.i: cmake_force
@@ -190,7 +134,7 @@ CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.s: cmake_force
 CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
 CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
 CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj: ../GUI/PauseMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\GUI\PauseMenu.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\PauseMenu.cpp
 
 CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.i: cmake_force
@@ -201,38 +145,10 @@ CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\PauseMenu.cpp -o CMakeFiles\PROJECT_NAME.dir\GUI\PauseMenu.cpp.s
 
-CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj: ../States/SettingState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\States\SettingState.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\SettingState.cpp
-
-CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\SettingState.cpp > CMakeFiles\PROJECT_NAME.dir\States\SettingState.cpp.i
-
-CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\States\SettingState.cpp -o CMakeFiles\PROJECT_NAME.dir\States\SettingState.cpp.s
-
-CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj: ../GraphicsSettings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\GraphicsSettings.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GraphicsSettings.cpp
-
-CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GraphicsSettings.cpp > CMakeFiles\PROJECT_NAME.dir\GraphicsSettings.cpp.i
-
-CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GraphicsSettings.cpp -o CMakeFiles\PROJECT_NAME.dir\GraphicsSettings.cpp.s
-
 CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
 CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
 CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj: ../Components/AnimationComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Components\AnimationComponent.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\AnimationComponent.cpp
 
 CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.i: cmake_force
@@ -243,68 +159,440 @@ CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\AnimationComponent.cpp -o CMakeFiles\PROJECT_NAME.dir\Components\AnimationComponent.cpp.s
 
-CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj: ../Components/HitboxComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Components\HitboxComponent.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\HitboxComponent.cpp
+CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.obj: ../Components/AttributeComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Components\AttributeComponent.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\AttributeComponent.cpp
 
-CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\HitboxComponent.cpp > CMakeFiles\PROJECT_NAME.dir\Components\HitboxComponent.cpp.i
+CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\AttributeComponent.cpp > CMakeFiles\PROJECT_NAME.dir\Components\AttributeComponent.cpp.i
 
-CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\HitboxComponent.cpp -o CMakeFiles\PROJECT_NAME.dir\Components\HitboxComponent.cpp.s
+CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\AttributeComponent.cpp -o CMakeFiles\PROJECT_NAME.dir\Components\AttributeComponent.cpp.s
 
-CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
-CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
-CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj: ../Components/MovementComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Components\MovementComponent.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\MovementComponent.cpp
+CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.obj: ../Components/EnemyAttributeComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Components\EnemyAttributeComponent.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\EnemyAttributeComponent.cpp
 
-CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\MovementComponent.cpp > CMakeFiles\PROJECT_NAME.dir\Components\MovementComponent.cpp.i
+CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\EnemyAttributeComponent.cpp > CMakeFiles\PROJECT_NAME.dir\Components\EnemyAttributeComponent.cpp.i
 
-CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\MovementComponent.cpp -o CMakeFiles\PROJECT_NAME.dir\Components\MovementComponent.cpp.s
+CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Components\EnemyAttributeComponent.cpp -o CMakeFiles\PROJECT_NAME.dir\Components\EnemyAttributeComponent.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.obj: ../Entities/Archer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Archer.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Archer.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Archer.cpp > CMakeFiles\PROJECT_NAME.dir\Entities\Archer.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Archer.cpp -o CMakeFiles\PROJECT_NAME.dir\Entities\Archer.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.obj: ../Entities/Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Enemy.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Enemy.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Enemy.cpp > CMakeFiles\PROJECT_NAME.dir\Entities\Enemy.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Enemy.cpp -o CMakeFiles\PROJECT_NAME.dir\Entities\Enemy.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj: ../Entities/Humanoid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Humanoid.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Humanoid.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Humanoid.cpp > CMakeFiles\PROJECT_NAME.dir\Entities\Humanoid.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Humanoid.cpp -o CMakeFiles\PROJECT_NAME.dir\Entities\Humanoid.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj: ../Entities/Slime.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Slime.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Slime.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Slime.cpp > CMakeFiles\PROJECT_NAME.dir\Entities\Slime.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Slime.cpp -o CMakeFiles\PROJECT_NAME.dir\Entities\Slime.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj: ../Entities/Warrior.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Warrior.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Warrior.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Warrior.cpp > CMakeFiles\PROJECT_NAME.dir\Entities\Warrior.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Warrior.cpp -o CMakeFiles\PROJECT_NAME.dir\Entities\Warrior.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.obj: ../Entities/Wizard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Entities\Wizard.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Wizard.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Wizard.cpp > CMakeFiles\PROJECT_NAME.dir\Entities\Wizard.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Entities\Wizard.cpp -o CMakeFiles\PROJECT_NAME.dir\Entities\Wizard.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.obj: ../GUI/GUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\GUI\GUI.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\GUI.cpp
+
+CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\GUI.cpp > CMakeFiles\PROJECT_NAME.dir\GUI\GUI.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\GUI.cpp -o CMakeFiles\PROJECT_NAME.dir\GUI\GUI.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.obj: ../GUI/PlayerGUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\GUI\PlayerGUI.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\PlayerGUI.cpp
+
+CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\PlayerGUI.cpp > CMakeFiles\PROJECT_NAME.dir\GUI\PlayerGUI.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\GUI\PlayerGUI.cpp -o CMakeFiles\PROJECT_NAME.dir\GUI\PlayerGUI.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj: ../Map/Gold.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Map\Gold.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Gold.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Gold.cpp > CMakeFiles\PROJECT_NAME.dir\Map\Gold.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Gold.cpp -o CMakeFiles\PROJECT_NAME.dir\Map\Gold.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj: ../Map/Items.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Map\Items.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Items.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Items.cpp > CMakeFiles\PROJECT_NAME.dir\Map\Items.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Items.cpp -o CMakeFiles\PROJECT_NAME.dir\Map\Items.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.obj: ../Map/Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Map\Level.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Level.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Level.cpp > CMakeFiles\PROJECT_NAME.dir\Map\Level.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Level.cpp -o CMakeFiles\PROJECT_NAME.dir\Map\Level.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj: ../Map/Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Map\Object.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Object.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Object.cpp > CMakeFiles\PROJECT_NAME.dir\Map\Object.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Object.cpp -o CMakeFiles\PROJECT_NAME.dir\Map\Object.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj: ../Map/Potion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Map\Potion.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Potion.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Potion.cpp > CMakeFiles\PROJECT_NAME.dir\Map\Potion.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Potion.cpp -o CMakeFiles\PROJECT_NAME.dir\Map\Potion.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj: ../Map/Torch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Map\Torch.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Torch.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Torch.cpp > CMakeFiles\PROJECT_NAME.dir\Map\Torch.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Map\Torch.cpp -o CMakeFiles\PROJECT_NAME.dir\Map\Torch.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.obj: ../Projectile/Projectile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Projectile\Projectile.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Projectile\Projectile.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Projectile\Projectile.cpp > CMakeFiles\PROJECT_NAME.dir\Projectile\Projectile.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Projectile\Projectile.cpp -o CMakeFiles\PROJECT_NAME.dir\Projectile\Projectile.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.obj: ../Systems/CharacterSelection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Systems\CharacterSelection.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\CharacterSelection.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\CharacterSelection.cpp > CMakeFiles\PROJECT_NAME.dir\Systems\CharacterSelection.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\CharacterSelection.cpp -o CMakeFiles\PROJECT_NAME.dir\Systems\CharacterSelection.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.obj: ../Systems/MainMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Systems\MainMenu.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\MainMenu.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\MainMenu.cpp > CMakeFiles\PROJECT_NAME.dir\Systems\MainMenu.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\MainMenu.cpp -o CMakeFiles\PROJECT_NAME.dir\Systems\MainMenu.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.obj: ../Systems/Shop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Systems\Shop.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\Shop.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\Shop.cpp > CMakeFiles\PROJECT_NAME.dir\Systems\Shop.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\Shop.cpp -o CMakeFiles\PROJECT_NAME.dir\Systems\Shop.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.obj: ../Systems/TextTagSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Systems\TextTagSystem.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\TextTagSystem.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\TextTagSystem.cpp > CMakeFiles\PROJECT_NAME.dir\Systems\TextTagSystem.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Systems\TextTagSystem.cpp -o CMakeFiles\PROJECT_NAME.dir\Systems\TextTagSystem.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.obj: ../Achievements.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Achievements.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Achievements.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Achievements.cpp > CMakeFiles\PROJECT_NAME.dir\Achievements.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Achievements.cpp -o CMakeFiles\PROJECT_NAME.dir\Achievements.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.obj: ../ConditionAchievement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\ConditionAchievement.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\ConditionAchievement.cpp
+
+CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\ConditionAchievement.cpp > CMakeFiles\PROJECT_NAME.dir\ConditionAchievement.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\ConditionAchievement.cpp -o CMakeFiles\PROJECT_NAME.dir\ConditionAchievement.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj: ../Input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Input.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Input.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Input.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Input.cpp > CMakeFiles\PROJECT_NAME.dir\Input.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Input.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Input.cpp -o CMakeFiles\PROJECT_NAME.dir\Input.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/Observable.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/Observable.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/Observable.cpp.obj: ../Observable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/PROJECT_NAME.dir/Observable.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\Observable.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Observable.cpp
+
+CMakeFiles/PROJECT_NAME.dir/Observable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/Observable.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Observable.cpp > CMakeFiles\PROJECT_NAME.dir\Observable.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/Observable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/Observable.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\Observable.cpp -o CMakeFiles\PROJECT_NAME.dir\Observable.cpp.s
+
+CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.obj: CMakeFiles/PROJECT_NAME.dir/flags.make
+CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.obj: CMakeFiles/PROJECT_NAME.dir/includes_CXX.rsp
+CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.obj: ../TextureManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PROJECT_NAME.dir\TextureManager.cpp.obj -c C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\TextureManager.cpp
+
+CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\TextureManager.cpp > CMakeFiles\PROJECT_NAME.dir\TextureManager.cpp.i
+
+CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\TextureManager.cpp -o CMakeFiles\PROJECT_NAME.dir\TextureManager.cpp.s
 
 # Object files for target PROJECT_NAME
 PROJECT_NAME_OBJECTS = \
 "CMakeFiles/PROJECT_NAME.dir/main.cpp.obj" \
 "CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj" \
 "CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj" \
 "CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj" \
 "CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj" \
 "CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj" \
-"CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj"
+"CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/Observable.cpp.obj" \
+"CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.obj"
 
 # External object files for target PROJECT_NAME
 PROJECT_NAME_EXTERNAL_OBJECTS =
 
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/main.cpp.obj
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/States/State.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/States/GameState.cpp.obj
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/States/MainMenuState.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/GUI.cpp.obj
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/GUI/PauseMenu.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/States/SettingState.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/GraphicsSettings.cpp.obj
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Components/AnimationComponent.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Components/HitboxComponent.cpp.obj
-PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Components/MovementComponent.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Components/AttributeComponent.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Components/EnemyAttributeComponent.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Archer.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Enemy.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Entities/Wizard.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/GUI/GUI.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/GUI/PlayerGUI.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Map/Level.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Projectile/Projectile.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Systems/CharacterSelection.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Systems/MainMenu.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Systems/Shop.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Systems/TextTagSystem.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Achievements.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/ConditionAchievement.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/Observable.cpp.obj
+PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/TextureManager.cpp.obj
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/build.make
 PROJECT_NAME.exe: C:/mingw64/lib/libsfml-audio-s-d.a
 PROJECT_NAME.exe: C:/mingw64/lib/libsfml-network-s-d.a
@@ -321,7 +609,7 @@ PROJECT_NAME.exe: C:/mingw64/lib/libfreetype.a
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/linklibs.rsp
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/objects1.rsp
 PROJECT_NAME.exe: CMakeFiles/PROJECT_NAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable PROJECT_NAME.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Antonio\CLionProjects\Elaborato-di-Programmazione\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable PROJECT_NAME.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PROJECT_NAME.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
