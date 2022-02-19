@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione
+# Install script for directory: D:/C++/Elaborato-di-Programmazione
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/C++/Elaborato-di-Programmazione/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
