@@ -39,9 +39,6 @@ Game::Game(sf::RenderWindow* window) :
 Game::~Game() {
 
     delete player;
-
-
-
     enemies.clear();
 }
 
