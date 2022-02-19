@@ -79,7 +79,7 @@ const bool& AnimationComponent::play(const std::string& key, const float &dt, co
 
 const bool& AnimationComponent::play(const std::string& key, const float &dt, const float& modifier, const float& modifier_max, const bool priority) {
 
-    if(priorityAnimation){    //If there is a priority animation
+    if(priorityAnimation){   //If there is a priority animation
 
         if(priorityAnimation == animations[key]){
 
@@ -123,6 +123,5 @@ const bool& AnimationComponent::play(const std::string& key, const float &dt, co
     }
     return animations[key]->isDone();
 }
-
 
 

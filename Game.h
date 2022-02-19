@@ -16,9 +16,7 @@
 #include "GUI/PlayerGUI.h"
 #include "Achievements.h"
 
-static int const MAX_ITEM_SPAWN_COUNT = 50;
 static int const MAX_ENEMY_SPAWN_COUNT = 10;
-
 
 class Game {
 

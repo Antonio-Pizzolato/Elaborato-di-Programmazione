@@ -11,7 +11,6 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 
-
 class AnimationComponent {
 
 private:
