@@ -1,20 +1,14 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "TextureManager.h"
-
 
 std::map<std::string, std::pair<int, std::unique_ptr<sf::Texture>>> TextureManager::m_textures;
 int TextureManager::m_currentId = 0;
 
 // Default Constructor.
 TextureManager::TextureManager()
-{
-}
+= default;
 
 // Adds a texture to the manager, and returns its id in the map.
-int TextureManager::AddTexture(std::string filePath)
+int TextureManager::AddTexture(const std::string& filePath)
 {
     // First check if the texture has already been created. If so, simply return that one.
     auto it = m_textures.find(filePath);
@@ -54,13 +48,12 @@ void TextureManager::RemoveTexture(int textureID)
 // Gets a texture from the texture manager from an ID.
 sf::Texture& TextureManager::GetTexture(int textureID)
 {
-    for (auto it = m_textures.begin(); it != m_textures.end(); ++it)
+    for (auto & m_texture : m_textures)
     {
-        if (it->second.first == textureID)
+        if (m_texture.second.first == textureID)
         {
-            return *it->second.second;
+            return *m_texture.second.second;
         }
     }
 
-    // TODO: Return dummy object if not found required texture
 }

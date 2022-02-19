@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_OBSERVABLE_H
 #define MAIN_CPP_OBSERVABLE_H
 
@@ -9,7 +5,6 @@
 #include "Observer.h"
 #include <iostream>
 #include <list>
-
 
 using namespace std;
 

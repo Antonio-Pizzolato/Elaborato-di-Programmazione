@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 09/02/2022.
-//
-
 #ifndef MAIN_CPP_OBSERVER_H
 #define MAIN_CPP_OBSERVER_H
 

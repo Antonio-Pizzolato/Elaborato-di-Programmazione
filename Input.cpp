@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Input.h"
 #include "TextureManager.h"
 

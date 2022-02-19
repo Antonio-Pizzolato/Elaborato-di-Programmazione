@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_TEXTUREMANAGER_H
 #define MAIN_CPP_TEXTUREMANAGER_H
 
@@ -32,7 +28,7 @@ public:
      * @param The path to the image to load.
      * @return The id to the texture created, or the id in the map if it already exists.
      */
-    static int AddTexture(std::string filePath);
+    static int AddTexture(const std::string& filePath);
 
     /**
      * Removes a texture from the manager from a given id.

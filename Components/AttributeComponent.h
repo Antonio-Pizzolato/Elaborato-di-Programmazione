@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_ATTRIBUTECOMPONENT_H
 #define MAIN_CPP_ATTRIBUTECOMPONENT_H
 
@@ -17,7 +13,6 @@ public:
     int level;
     int exp;
     int expNext;
-    int attributePoints;
 
     //Attributes
     int vitality;
@@ -31,21 +26,18 @@ public:
     int hpMax;
     int damageMin;
     int damageMax;
-    int accuracy;
     int defence;
-    int luck;
 
     //Cons / Des
     AttributeComponent(PLAYER_CLASS playerClass);
     virtual ~AttributeComponent();
 
     //Functions
-    std::string debugPrint() const;
 
-    void loseHp(int hp);
-    void gainHp(int hp);
-    void loseExp(int exp);
-    void gainExp(int exp, PLAYER_CLASS playerClass);
+    void loseHp(int damage);
+    void gainHp(int heal);
+    void loseExp(int exp_date);
+    void gainExp(int exp_date, PLAYER_CLASS playerClass);
 
     bool isDead() const;
 

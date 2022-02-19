@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_UTIL_H
 #define MAIN_CPP_UTIL_H
 
@@ -16,27 +12,12 @@ enum class GAME_STATE {
     SHOP
 };
 
-// Game views.
-enum class VIEW {
-    MAIN,
-    GAME,
-    UI,
-    COUNT
-};
-
-enum ItemRarities {
-    COMMON, UNCOMMON, RARE, EPIC, LEGENDARY, MYTHIC
-};
-
 // Spawn_able items.
 enum class ITEM {
-    GEM,
     GOLD,
-    HEART,
-    POTION,
-    KEY,
-    COUNT
+    POTION
 };
+
 // Enemy types.
 enum class ENEMY {
     SLIME,
@@ -50,7 +31,6 @@ enum class HUMANOID {
     SKELETON,
     COUNT
 };
-
 
 // Animation states.
 enum class ANIMATION_STATE {
@@ -111,6 +91,5 @@ enum class Event{
     Kill,
     Die
 };
-
 
 #endif //MAIN_CPP_UTIL_H

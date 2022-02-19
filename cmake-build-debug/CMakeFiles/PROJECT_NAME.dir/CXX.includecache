@@ -6,117 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AnimationComponent.h
-iostream
--
-string
--
-map
--
-SFML/Graphics.hpp
--
-SFML/Window.hpp
--
-SFML/System.hpp
--
-SFML/Audio.hpp
--
-SFML/Network.hpp
--
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AttributeComponent.h
-cmath
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/cmath
-string
--
-sstream
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/sstream
-../Util.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Util.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Entity.h
-../Components/AnimationComponent.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AnimationComponent.h
-../Components/AttributeComponent.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Components/AttributeComponent.h
-../Map/Level.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Level.h
-../Map/Object.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Object.h
-../Util.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Util.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Player.h
-Entity.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Entity.h
-../Projectile/Projectile.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Projectile/Projectile.h
-../Input.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Input.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Warrior.cpp
-Warrior.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Warrior.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Warrior.h
-Player.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Entities/Player.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Input.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Items.h
-sstream
--
-fstream
--
-Object.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Object.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Level.h
-../TextureManager.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/TextureManager.h
-Torch.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Torch.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Object.h
-../TextureManager.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/TextureManager.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Torch.h
-Items.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Items.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Projectile/Projectile.h
-../Map/Object.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Map/Object.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/TextureManager.h
-iostream
--
-cstdlib
--
-vector
--
-fstream
--
-sstream
--
-memory
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/memory
-cmath
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/cmath
-SFML/Graphics.hpp
--
-SFML/Window.hpp
--
-SFML/System.hpp
--
-Util.h
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Util.h
-
-C:/Users/Antonio/CLionProjects/Elaborato-di-Programmazione/Util.h
-
-C:/mingw64/include/SFML/Audio.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio.hpp
 SFML/System.hpp
 -
 SFML/Audio/InputSoundFile.hpp
@@ -146,15 +36,15 @@ SFML/Audio/SoundSource.hpp
 SFML/Audio/SoundStream.hpp
 -
 
-C:/mingw64/include/SFML/Audio/AlResource.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/AlResource.hpp
 SFML/Audio/Export.hpp
 -
 
-C:/mingw64/include/SFML/Audio/Export.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Export.hpp
 SFML/Config.hpp
 -
 
-C:/mingw64/include/SFML/Audio/InputSoundFile.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/InputSoundFile.hpp
 SFML/Audio/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -166,13 +56,13 @@ string
 algorithm
 -
 
-C:/mingw64/include/SFML/Audio/Listener.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Listener.hpp
 SFML/Audio/Export.hpp
 -
 SFML/System/Vector3.hpp
 -
 
-C:/mingw64/include/SFML/Audio/Music.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Music.hpp
 SFML/Audio/Export.hpp
 -
 SFML/Audio/SoundStream.hpp
@@ -188,7 +78,7 @@ string
 vector
 -
 
-C:/mingw64/include/SFML/Audio/OutputSoundFile.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/OutputSoundFile.hpp
 SFML/Audio/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -196,7 +86,7 @@ SFML/System/NonCopyable.hpp
 string
 -
 
-C:/mingw64/include/SFML/Audio/Sound.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Sound.hpp
 SFML/Audio/Export.hpp
 -
 SFML/Audio/SoundSource.hpp
@@ -206,7 +96,7 @@ SFML/System/Time.hpp
 cstdlib
 -
 
-C:/mingw64/include/SFML/Audio/SoundBuffer.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundBuffer.hpp
 SFML/Audio/Export.hpp
 -
 SFML/Audio/AlResource.hpp
@@ -220,7 +110,7 @@ vector
 set
 -
 
-C:/mingw64/include/SFML/Audio/SoundBufferRecorder.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundBufferRecorder.hpp
 SFML/Audio/Export.hpp
 -
 SFML/Audio/SoundBuffer.hpp
@@ -230,7 +120,7 @@ SFML/Audio/SoundRecorder.hpp
 vector
 -
 
-C:/mingw64/include/SFML/Audio/SoundFileFactory.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileFactory.hpp
 SFML/Audio/Export.hpp
 -
 string
@@ -240,21 +130,21 @@ vector
 SFML/Audio/SoundFileFactory.inl
 -
 
-C:/mingw64/include/SFML/Audio/SoundFileFactory.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileFactory.inl
 
-C:/mingw64/include/SFML/Audio/SoundFileReader.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileReader.hpp
 SFML/Audio/Export.hpp
 -
 string
 -
 
-C:/mingw64/include/SFML/Audio/SoundFileWriter.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileWriter.hpp
 SFML/Audio/Export.hpp
 -
 string
 -
 
-C:/mingw64/include/SFML/Audio/SoundRecorder.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundRecorder.hpp
 SFML/Audio/Export.hpp
 -
 SFML/Audio/AlResource.hpp
@@ -268,7 +158,7 @@ vector
 string
 -
 
-C:/mingw64/include/SFML/Audio/SoundSource.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundSource.hpp
 SFML/Audio/Export.hpp
 -
 SFML/Audio/AlResource.hpp
@@ -276,7 +166,7 @@ SFML/Audio/AlResource.hpp
 SFML/System/Vector3.hpp
 -
 
-C:/mingw64/include/SFML/Audio/SoundStream.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundStream.hpp
 SFML/Audio/Export.hpp
 -
 SFML/Audio/SoundSource.hpp
@@ -290,11 +180,11 @@ SFML/System/Mutex.hpp
 cstdlib
 -
 
-C:/mingw64/include/SFML/Config.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Config.hpp
 TargetConditionals.h
-C:/mingw64/include/SFML/TargetConditionals.h
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/TargetConditionals.h
 
-C:/mingw64/include/SFML/Graphics.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics.hpp
 SFML/Window.hpp
 -
 SFML/Graphics/BlendMode.hpp
@@ -350,21 +240,21 @@ SFML/Graphics/VertexBuffer.hpp
 SFML/Graphics/View.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/BlendMode.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/BlendMode.hpp
 SFML/Graphics/Export.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/CircleShape.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/CircleShape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Shape.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Color.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Color.hpp
 SFML/Graphics/Export.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/ConvexShape.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/ConvexShape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Shape.hpp
@@ -372,17 +262,17 @@ SFML/Graphics/Shape.hpp
 vector
 -
 
-C:/mingw64/include/SFML/Graphics/Drawable.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Drawable.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/RenderStates.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Export.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Export.hpp
 SFML/Config.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Font.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Font.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Glyph.hpp
@@ -402,7 +292,7 @@ string
 vector
 -
 
-C:/mingw64/include/SFML/Graphics/Glsl.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.hpp
 SFML/Graphics/Transform.hpp
 -
 SFML/Graphics/Color.hpp
@@ -414,15 +304,15 @@ SFML/System/Vector3.hpp
 SFML/Graphics/Glsl.inl
 -
 
-C:/mingw64/include/SFML/Graphics/Glsl.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.inl
 
-C:/mingw64/include/SFML/Graphics/Glyph.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glyph.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Image.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Image.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -434,9 +324,9 @@ string
 vector
 -
 
-C:/mingw64/include/SFML/Graphics/PrimitiveType.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/PrimitiveType.hpp
 
-C:/mingw64/include/SFML/Graphics/Rect.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.hpp
 SFML/System/Vector2.hpp
 -
 algorithm
@@ -444,15 +334,15 @@ algorithm
 SFML/Graphics/Rect.inl
 -
 
-C:/mingw64/include/SFML/Graphics/Rect.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.inl
 
-C:/mingw64/include/SFML/Graphics/RectangleShape.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RectangleShape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Shape.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/RenderStates.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderStates.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/BlendMode.hpp
@@ -460,7 +350,7 @@ SFML/Graphics/BlendMode.hpp
 SFML/Graphics/Transform.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/RenderTarget.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTarget.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -482,7 +372,7 @@ SFML/Graphics/Vertex.hpp
 SFML/System/NonCopyable.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/RenderTexture.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTexture.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Texture.hpp
@@ -492,7 +382,7 @@ SFML/Graphics/RenderTarget.hpp
 SFML/Window/ContextSettings.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/RenderWindow.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderWindow.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/RenderTarget.hpp
@@ -504,7 +394,7 @@ SFML/Window/Window.hpp
 string
 -
 
-C:/mingw64/include/SFML/Graphics/Shader.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shader.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Glsl.hpp
@@ -522,7 +412,7 @@ map
 string
 -
 
-C:/mingw64/include/SFML/Graphics/Shape.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Drawable.hpp
@@ -534,7 +424,7 @@ SFML/Graphics/VertexArray.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Sprite.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Sprite.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Drawable.hpp
@@ -546,7 +436,7 @@ SFML/Graphics/Vertex.hpp
 SFML/Graphics/Rect.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Text.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Text.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Drawable.hpp
@@ -566,7 +456,7 @@ string
 vector
 -
 
-C:/mingw64/include/SFML/Graphics/Texture.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Texture.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Image.hpp
@@ -574,7 +464,7 @@ SFML/Graphics/Image.hpp
 SFML/Window/GlResource.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Transform.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transform.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
@@ -582,13 +472,13 @@ SFML/Graphics/Rect.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Transformable.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transformable.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Transform.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/Vertex.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Vertex.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -596,7 +486,7 @@ SFML/Graphics/Color.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/VertexArray.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexArray.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Vertex.hpp
@@ -610,7 +500,7 @@ SFML/Graphics/Drawable.hpp
 vector
 -
 
-C:/mingw64/include/SFML/Graphics/VertexBuffer.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexBuffer.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/PrimitiveType.hpp
@@ -620,7 +510,7 @@ SFML/Graphics/Drawable.hpp
 SFML/Window/GlResource.hpp
 -
 
-C:/mingw64/include/SFML/Graphics/View.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/View.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
@@ -630,7 +520,7 @@ SFML/Graphics/Transform.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Network.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network.hpp
 SFML/System.hpp
 -
 SFML/Network/Ftp.hpp
@@ -654,11 +544,11 @@ SFML/Network/TcpSocket.hpp
 SFML/Network/UdpSocket.hpp
 -
 
-C:/mingw64/include/SFML/Network/Export.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Export.hpp
 SFML/Config.hpp
 -
 
-C:/mingw64/include/SFML/Network/Ftp.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Ftp.hpp
 SFML/Network/Export.hpp
 -
 SFML/Network/TcpSocket.hpp
@@ -672,7 +562,7 @@ string
 vector
 -
 
-C:/mingw64/include/SFML/Network/Http.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Http.hpp
 SFML/Network/Export.hpp
 -
 SFML/Network/IpAddress.hpp
@@ -688,7 +578,7 @@ map
 string
 -
 
-C:/mingw64/include/SFML/Network/IpAddress.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/IpAddress.hpp
 SFML/Network/Export.hpp
 -
 SFML/System/Time.hpp
@@ -700,7 +590,7 @@ ostream
 string
 -
 
-C:/mingw64/include/SFML/Network/Packet.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Packet.hpp
 SFML/Network/Export.hpp
 -
 string
@@ -708,7 +598,7 @@ string
 vector
 -
 
-C:/mingw64/include/SFML/Network/Socket.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Socket.hpp
 SFML/Network/Export.hpp
 -
 SFML/Network/SocketHandle.hpp
@@ -718,19 +608,19 @@ SFML/System/NonCopyable.hpp
 vector
 -
 
-C:/mingw64/include/SFML/Network/SocketHandle.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/SocketHandle.hpp
 SFML/Config.hpp
 -
 basetsd.h
 -
 
-C:/mingw64/include/SFML/Network/SocketSelector.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/SocketSelector.hpp
 SFML/Network/Export.hpp
 -
 SFML/System/Time.hpp
 -
 
-C:/mingw64/include/SFML/Network/TcpListener.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/TcpListener.hpp
 SFML/Network/Export.hpp
 -
 SFML/Network/Socket.hpp
@@ -738,7 +628,7 @@ SFML/Network/Socket.hpp
 SFML/Network/IpAddress.hpp
 -
 
-C:/mingw64/include/SFML/Network/TcpSocket.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/TcpSocket.hpp
 SFML/Network/Export.hpp
 -
 SFML/Network/Socket.hpp
@@ -746,7 +636,7 @@ SFML/Network/Socket.hpp
 SFML/System/Time.hpp
 -
 
-C:/mingw64/include/SFML/Network/UdpSocket.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/UdpSocket.hpp
 SFML/Network/Export.hpp
 -
 SFML/Network/Socket.hpp
@@ -756,7 +646,7 @@ SFML/Network/IpAddress.hpp
 vector
 -
 
-C:/mingw64/include/SFML/System.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System.hpp
 SFML/Config.hpp
 -
 SFML/System/Clock.hpp
@@ -794,23 +684,23 @@ SFML/System/Vector2.hpp
 SFML/System/Vector3.hpp
 -
 
-C:/mingw64/include/SFML/System/Clock.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Clock.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Time.hpp
 -
 
-C:/mingw64/include/SFML/System/Err.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Err.hpp
 SFML/System/Export.hpp
 -
 ostream
 -
 
-C:/mingw64/include/SFML/System/Export.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Export.hpp
 SFML/Config.hpp
 -
 
-C:/mingw64/include/SFML/System/FileInputStream.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/FileInputStream.hpp
 SFML/Config.hpp
 -
 SFML/System/Export.hpp
@@ -824,19 +714,19 @@ cstdio
 string
 -
 
-C:/mingw64/include/SFML/System/InputStream.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/InputStream.hpp
 SFML/Config.hpp
 -
 SFML/System/Export.hpp
 -
 
-C:/mingw64/include/SFML/System/Lock.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Lock.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-C:/mingw64/include/SFML/System/MemoryInputStream.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/MemoryInputStream.hpp
 SFML/Config.hpp
 -
 SFML/System/InputStream.hpp
@@ -846,23 +736,23 @@ SFML/System/Export.hpp
 cstdlib
 -
 
-C:/mingw64/include/SFML/System/Mutex.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Mutex.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-C:/mingw64/include/SFML/System/NonCopyable.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/NonCopyable.hpp
 SFML/System/Export.hpp
 -
 
-C:/mingw64/include/SFML/System/Sleep.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Sleep.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Time.hpp
 -
 
-C:/mingw64/include/SFML/System/String.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Utf.hpp
@@ -876,9 +766,9 @@ string
 SFML/System/String.inl
 -
 
-C:/mingw64/include/SFML/System/String.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.inl
 
-C:/mingw64/include/SFML/System/Thread.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -888,9 +778,9 @@ cstdlib
 SFML/System/Thread.inl
 -
 
-C:/mingw64/include/SFML/System/Thread.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.inl
 
-C:/mingw64/include/SFML/System/ThreadLocal.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocal.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -898,19 +788,19 @@ SFML/System/NonCopyable.hpp
 cstdlib
 -
 
-C:/mingw64/include/SFML/System/ThreadLocalPtr.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.hpp
 SFML/System/ThreadLocal.hpp
 -
 SFML/System/ThreadLocalPtr.inl
 -
 
-C:/mingw64/include/SFML/System/ThreadLocalPtr.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.inl
 
-C:/mingw64/include/SFML/System/Time.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Time.hpp
 SFML/System/Export.hpp
 -
 
-C:/mingw64/include/SFML/System/Utf.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.hpp
 SFML/Config.hpp
 -
 algorithm
@@ -924,21 +814,21 @@ cstdlib
 SFML/System/Utf.inl
 -
 
-C:/mingw64/include/SFML/System/Utf.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.inl
 
-C:/mingw64/include/SFML/System/Vector2.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.hpp
 SFML/System/Vector2.inl
 -
 
-C:/mingw64/include/SFML/System/Vector2.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.inl
 
-C:/mingw64/include/SFML/System/Vector3.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.hpp
 SFML/System/Vector3.inl
 -
 
-C:/mingw64/include/SFML/System/Vector3.inl
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.inl
 
-C:/mingw64/include/SFML/Window.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window.hpp
 SFML/System.hpp
 -
 SFML/Window/Clipboard.hpp
@@ -970,13 +860,13 @@ SFML/Window/WindowHandle.hpp
 SFML/Window/WindowStyle.hpp
 -
 
-C:/mingw64/include/SFML/Window/Clipboard.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Clipboard.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/String.hpp
 -
 
-C:/mingw64/include/SFML/Window/Context.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Context.hpp
 SFML/Window/Export.hpp
 -
 SFML/Window/GlResource.hpp
@@ -986,11 +876,11 @@ SFML/Window/ContextSettings.hpp
 SFML/System/NonCopyable.hpp
 -
 
-C:/mingw64/include/SFML/Window/ContextSettings.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/ContextSettings.hpp
 SFML/Config.hpp
 -
 
-C:/mingw64/include/SFML/Window/Cursor.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Cursor.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -998,7 +888,7 @@ SFML/System/NonCopyable.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Window/Event.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Event.hpp
 SFML/Config.hpp
 -
 SFML/Window/Joystick.hpp
@@ -1010,33 +900,33 @@ SFML/Window/Mouse.hpp
 SFML/Window/Sensor.hpp
 -
 
-C:/mingw64/include/SFML/Window/Export.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Export.hpp
 SFML/Config.hpp
 -
 
-C:/mingw64/include/SFML/Window/GlResource.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/GlResource.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-C:/mingw64/include/SFML/Window/Joystick.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Joystick.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/String.hpp
 -
 
-C:/mingw64/include/SFML/Window/Keyboard.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Keyboard.hpp
 SFML/Window/Export.hpp
 -
 
-C:/mingw64/include/SFML/Window/Mouse.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Mouse.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Window/Sensor.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Sensor.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/Vector3.hpp
@@ -1044,19 +934,19 @@ SFML/System/Vector3.hpp
 SFML/System/Time.hpp
 -
 
-C:/mingw64/include/SFML/Window/Touch.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Touch.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Window/VideoMode.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/VideoMode.hpp
 SFML/Window/Export.hpp
 -
 vector
 -
 
-C:/mingw64/include/SFML/Window/Window.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Window.hpp
 SFML/Window/ContextSettings.hpp
 -
 SFML/Window/Cursor.hpp
@@ -1080,9 +970,343 @@ SFML/System/String.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/mingw64/include/SFML/Window/WindowHandle.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowHandle.hpp
 SFML/Config.hpp
 -
 
-C:/mingw64/include/SFML/Window/WindowStyle.hpp
+C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowStyle.hpp
+
+D:/C++/Elaborato-di-Programmazione/Achievements.cpp
+Achievements.h
+D:/C++/Elaborato-di-Programmazione/Achievements.h
+
+D:/C++/Elaborato-di-Programmazione/Achievements.h
+ConditionAchievement.h
+D:/C++/Elaborato-di-Programmazione/ConditionAchievement.h
+iostream
+-
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+
+D:/C++/Elaborato-di-Programmazione/Components/AnimationComponent.h
+iostream
+-
+string
+-
+map
+-
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+SFML/System.hpp
+-
+SFML/Audio.hpp
+-
+SFML/Network.hpp
+-
+
+D:/C++/Elaborato-di-Programmazione/Components/AttributeComponent.cpp
+AttributeComponent.h
+D:/C++/Elaborato-di-Programmazione/Components/AttributeComponent.h
+
+D:/C++/Elaborato-di-Programmazione/Components/AttributeComponent.h
+cmath
+D:/C++/Elaborato-di-Programmazione/Components/cmath
+string
+-
+sstream
+D:/C++/Elaborato-di-Programmazione/Components/sstream
+../Util.h
+D:/C++/Elaborato-di-Programmazione/Util.h
+
+D:/C++/Elaborato-di-Programmazione/Components/EnemyAttributeComponent.h
+cmath
+D:/C++/Elaborato-di-Programmazione/Components/cmath
+string
+-
+sstream
+D:/C++/Elaborato-di-Programmazione/Components/sstream
+../Util.h
+D:/C++/Elaborato-di-Programmazione/Util.h
+
+D:/C++/Elaborato-di-Programmazione/ConditionAchievement.cpp
+ConditionAchievement.h
+D:/C++/Elaborato-di-Programmazione/ConditionAchievement.h
+
+D:/C++/Elaborato-di-Programmazione/ConditionAchievement.h
+Observable.h
+D:/C++/Elaborato-di-Programmazione/Observable.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Archer.cpp
+Archer.h
+D:/C++/Elaborato-di-Programmazione/Entities/Archer.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Archer.h
+Player.h
+D:/C++/Elaborato-di-Programmazione/Entities/Player.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Enemy.cpp
+Enemy.h
+D:/C++/Elaborato-di-Programmazione/Entities/Enemy.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Enemy.h
+Entity.h
+D:/C++/Elaborato-di-Programmazione/Entities/Entity.h
+../Components/EnemyAttributeComponent.h
+D:/C++/Elaborato-di-Programmazione/Components/EnemyAttributeComponent.h
+../Map/Level.h
+D:/C++/Elaborato-di-Programmazione/Map/Level.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Entity.cpp
+Entity.h
+D:/C++/Elaborato-di-Programmazione/Entities/Entity.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Entity.h
+../Components/AnimationComponent.h
+D:/C++/Elaborato-di-Programmazione/Components/AnimationComponent.h
+../Components/AttributeComponent.h
+D:/C++/Elaborato-di-Programmazione/Components/AttributeComponent.h
+../Map/Level.h
+D:/C++/Elaborato-di-Programmazione/Map/Level.h
+../Map/Object.h
+D:/C++/Elaborato-di-Programmazione/Map/Object.h
+../Util.h
+D:/C++/Elaborato-di-Programmazione/Util.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Humanoid.cpp
+Humanoid.h
+D:/C++/Elaborato-di-Programmazione/Entities/Humanoid.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Humanoid.h
+Enemy.h
+D:/C++/Elaborato-di-Programmazione/Entities/Enemy.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Player.cpp
+Player.h
+D:/C++/Elaborato-di-Programmazione/Entities/Player.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Player.h
+Entity.h
+D:/C++/Elaborato-di-Programmazione/Entities/Entity.h
+../Projectile/Projectile.h
+D:/C++/Elaborato-di-Programmazione/Projectile/Projectile.h
+../Input.h
+D:/C++/Elaborato-di-Programmazione/Input.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Slime.cpp
+Slime.h
+D:/C++/Elaborato-di-Programmazione/Entities/Slime.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Slime.h
+Enemy.h
+D:/C++/Elaborato-di-Programmazione/Entities/Enemy.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Warrior.cpp
+Warrior.h
+D:/C++/Elaborato-di-Programmazione/Entities/Warrior.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Warrior.h
+Player.h
+D:/C++/Elaborato-di-Programmazione/Entities/Player.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Wizard.cpp
+Wizard.h
+D:/C++/Elaborato-di-Programmazione/Entities/Wizard.h
+
+D:/C++/Elaborato-di-Programmazione/Entities/Wizard.h
+Player.h
+D:/C++/Elaborato-di-Programmazione/Entities/Player.h
+
+D:/C++/Elaborato-di-Programmazione/GUI/GUI.h
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+SFML/System.hpp
+-
+SFML/Audio.hpp
+-
+iostream
+-
+ctime
+-
+cstdlib
+-
+sstream
+-
+vector
+-
+cmath
+-
+fstream
+-
+stack
+-
+map
+-
+
+D:/C++/Elaborato-di-Programmazione/GUI/PauseMenu.h
+../GUI/GUI.h
+D:/C++/Elaborato-di-Programmazione/GUI/GUI.h
+../Util.h
+D:/C++/Elaborato-di-Programmazione/Util.h
+
+D:/C++/Elaborato-di-Programmazione/GUI/PlayerGUI.cpp
+PlayerGUI.h
+D:/C++/Elaborato-di-Programmazione/GUI/PlayerGUI.h
+
+D:/C++/Elaborato-di-Programmazione/GUI/PlayerGUI.h
+GUI.h
+D:/C++/Elaborato-di-Programmazione/GUI/GUI.h
+../Entities/Player.h
+D:/C++/Elaborato-di-Programmazione/Entities/Player.h
+
+D:/C++/Elaborato-di-Programmazione/Game.cpp
+Game.h
+D:/C++/Elaborato-di-Programmazione/Game.h
+
+D:/C++/Elaborato-di-Programmazione/Game.h
+Entities/Warrior.h
+D:/C++/Elaborato-di-Programmazione/Entities/Warrior.h
+Entities/Wizard.h
+D:/C++/Elaborato-di-Programmazione/Entities/Wizard.h
+Entities/Archer.h
+D:/C++/Elaborato-di-Programmazione/Entities/Archer.h
+Input.h
+D:/C++/Elaborato-di-Programmazione/Input.h
+Systems/MainMenu.h
+D:/C++/Elaborato-di-Programmazione/Systems/MainMenu.h
+GUI/PauseMenu.h
+D:/C++/Elaborato-di-Programmazione/GUI/PauseMenu.h
+Systems/Shop.h
+D:/C++/Elaborato-di-Programmazione/Systems/Shop.h
+Entities/Humanoid.h
+D:/C++/Elaborato-di-Programmazione/Entities/Humanoid.h
+Entities/Slime.h
+D:/C++/Elaborato-di-Programmazione/Entities/Slime.h
+Map/Items.h
+D:/C++/Elaborato-di-Programmazione/Map/Items.h
+Map/Gold.h
+D:/C++/Elaborato-di-Programmazione/Map/Gold.h
+Map/Potion.h
+D:/C++/Elaborato-di-Programmazione/Map/Potion.h
+GUI/PlayerGUI.h
+D:/C++/Elaborato-di-Programmazione/GUI/PlayerGUI.h
+Achievements.h
+D:/C++/Elaborato-di-Programmazione/Achievements.h
+
+D:/C++/Elaborato-di-Programmazione/Input.h
+
+D:/C++/Elaborato-di-Programmazione/Map/Gold.h
+random
+-
+Items.h
+D:/C++/Elaborato-di-Programmazione/Map/Items.h
+
+D:/C++/Elaborato-di-Programmazione/Map/Items.h
+sstream
+-
+fstream
+-
+Object.h
+D:/C++/Elaborato-di-Programmazione/Map/Object.h
+
+D:/C++/Elaborato-di-Programmazione/Map/Level.h
+../TextureManager.h
+D:/C++/Elaborato-di-Programmazione/TextureManager.h
+Torch.h
+D:/C++/Elaborato-di-Programmazione/Map/Torch.h
+
+D:/C++/Elaborato-di-Programmazione/Map/Object.h
+../TextureManager.h
+D:/C++/Elaborato-di-Programmazione/TextureManager.h
+
+D:/C++/Elaborato-di-Programmazione/Map/Potion.h
+Items.h
+D:/C++/Elaborato-di-Programmazione/Map/Items.h
+
+D:/C++/Elaborato-di-Programmazione/Map/Torch.h
+Items.h
+D:/C++/Elaborato-di-Programmazione/Map/Items.h
+
+D:/C++/Elaborato-di-Programmazione/Observable.cpp
+Observable.h
+D:/C++/Elaborato-di-Programmazione/Observable.h
+
+D:/C++/Elaborato-di-Programmazione/Observable.h
+Observer.h
+D:/C++/Elaborato-di-Programmazione/Observer.h
+iostream
+-
+list
+-
+
+D:/C++/Elaborato-di-Programmazione/Observer.h
+Entities/Player.h
+D:/C++/Elaborato-di-Programmazione/Entities/Player.h
+
+D:/C++/Elaborato-di-Programmazione/Projectile/Projectile.h
+../Map/Object.h
+D:/C++/Elaborato-di-Programmazione/Map/Object.h
+
+D:/C++/Elaborato-di-Programmazione/Systems/CharacterSelection.cpp
+CharacterSelection.h
+D:/C++/Elaborato-di-Programmazione/Systems/CharacterSelection.h
+
+D:/C++/Elaborato-di-Programmazione/Systems/CharacterSelection.h
+../GUI/GUI.h
+D:/C++/Elaborato-di-Programmazione/GUI/GUI.h
+../Util.h
+D:/C++/Elaborato-di-Programmazione/Util.h
+../Entities/Warrior.h
+D:/C++/Elaborato-di-Programmazione/Entities/Warrior.h
+../Entities/Wizard.h
+D:/C++/Elaborato-di-Programmazione/Entities/Wizard.h
+../Entities/Archer.h
+D:/C++/Elaborato-di-Programmazione/Entities/Archer.h
+
+D:/C++/Elaborato-di-Programmazione/Systems/MainMenu.cpp
+MainMenu.h
+D:/C++/Elaborato-di-Programmazione/Systems/MainMenu.h
+
+D:/C++/Elaborato-di-Programmazione/Systems/MainMenu.h
+../Systems/CharacterSelection.h
+D:/C++/Elaborato-di-Programmazione/Systems/CharacterSelection.h
+
+D:/C++/Elaborato-di-Programmazione/Systems/Shop.h
+../GUI/GUI.h
+D:/C++/Elaborato-di-Programmazione/GUI/GUI.h
+
+D:/C++/Elaborato-di-Programmazione/TextureManager.h
+iostream
+-
+cstdlib
+-
+vector
+-
+fstream
+-
+sstream
+-
+memory
+D:/C++/Elaborato-di-Programmazione/memory
+cmath
+D:/C++/Elaborato-di-Programmazione/cmath
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+SFML/System.hpp
+-
+Util.h
+D:/C++/Elaborato-di-Programmazione/Util.h
+
+D:/C++/Elaborato-di-Programmazione/Util.h
+
+D:/C++/Elaborato-di-Programmazione/main.cpp
+Game.h
+D:/C++/Elaborato-di-Programmazione/Game.h
 

@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 22/07/2021.
-//
-
 #ifndef ELABORATO_DI_PROGRAMMAZIONE_GAME_H
 #define ELABORATO_DI_PROGRAMMAZIONE_GAME_H
 
@@ -35,32 +31,32 @@ private:
 
     sf::Vector2i mousePosWindow;
 
-    bool m_isRunning;
-    bool m_levelWasGenerated;
+    bool isRunning;
+    bool levelWasGenerated;
     bool end;
 
     sf::Font font;
-    sf::Vector2f m_screenCenter;
-    std::ostringstream m_stringStream;
+    sf::Vector2f screenCenter;
+    std::ostringstream stringStream;
     std::string m_string;
     sf::Text m_text;
 
     std::map<std::string, sf::Texture> textures;
-    Player* m_player;
-    Level m_level;
-    Tile* m_playerPreviousTile{};
+    Player* player;
+    Level level;
+    Tile* playerPreviousTile{};
 
-    sf::Clock m_timestepClock;
+    sf::Clock timeStepClock;
     sf::Clock keyTimer;
     float keyTimeMax;
 
-    std::vector<std::unique_ptr<Items>> m_items;
-    std::vector<std::unique_ptr<Enemy>> m_enemies;
+    std::vector<std::unique_ptr<Items>> items;
+    std::vector<std::unique_ptr<Enemy>> enemies;
     std::vector<std::unique_ptr<Projectile>> projectile;
-    int m_projectileTextureID;
+    int projectileTextureID;
 
-    GAME_STATE m_gameState;
-    PLAYER_CLASS m_playerClass;
+    GAME_STATE gameState;
+    PLAYER_CLASS playerClass;
     std::unique_ptr<MainMenu> mainMenu;
     std::unique_ptr<CharacterSelection> characterSelection;
     std::unique_ptr<Shop> shop;
@@ -79,7 +75,7 @@ private:
     void GenerateLevel();
 public:
 
-    int m_goldTotal;
+    int goldTotal;
 
     //Constructors/Destructors
     Game(sf::RenderWindow* window);
