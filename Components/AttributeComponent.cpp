@@ -60,16 +60,16 @@ void AttributeComponent::gainHp(int heal) {
         hp = hpMax;
 }
 
-void AttributeComponent::loseExp(int _exp) {
-    this->exp -= _exp;
-    if(this->exp < 0)
-        this->exp = 0;
+void AttributeComponent::loseExp(int exp_date) {
+    exp -= exp_date;
+    if(exp < 0)
+        exp = 0;
 }
-void AttributeComponent::gainExp(int _exp, PLAYER_CLASS playerClass) {
+void AttributeComponent::gainExp(int exp_date, PLAYER_CLASS playerClass) {
 
-    this->exp += _exp;
+    exp += exp_date;
 
-    this->updateLevel(playerClass);
+    updateLevel(playerClass);
 }
 
 bool AttributeComponent::isDead() const

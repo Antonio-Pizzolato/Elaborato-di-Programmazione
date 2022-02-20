@@ -11,7 +11,7 @@ CharacterSelection::CharacterSelection(sf::RenderWindow &window, sf::Font *font)
     background.setSize(sf::Vector2f(static_cast<float>(window.getSize().x),
                                     static_cast<float>(window.getSize().y)));
     backgroundTexture.loadFromFile("Resources/Images/Backgrounds/bg1.jpg");
-    background.setTexture(&this->backgroundTexture);
+    background.setTexture(&backgroundTexture);
 
     btnBackground.setSize(
             sf::Vector2f(
@@ -23,24 +23,24 @@ CharacterSelection::CharacterSelection(sf::RenderWindow &window, sf::Font *font)
     btnBackground.setFillColor(sf::Color(10, 10, 10, 220));
 
     //Buttons
-    this->buttons["WARRIOR"] = new GUI::Button(1000, 100,
+    buttons["WARRIOR"] = new GUI::Button(1000, 100,
                                                200, 200,
                                                font, "Warrior", 25,
                                                sf::Color(200, 200,200,200), sf::Color(255, 255, 255,255), sf::Color(20, 20, 20,50),
                                                sf::Color(70, 70, 70, 0), sf::Color(150, 150, 150, 0), sf::Color(20, 20, 20,0));
 
-    this->buttons["WIZARD"] = new GUI::Button(1000, 400,
+    buttons["WIZARD"] = new GUI::Button(1000, 400,
                                               200, 200,
                                               font, "Wizard", 25,
                                               sf::Color(200, 200,200,200), sf::Color(255, 255, 255,255), sf::Color(20, 20, 20,50),
                                               sf::Color(70, 70,70,0), sf::Color(150, 150, 150,0), sf::Color(20, 20, 20,0));
 
-    this->buttons["ARCHER"] = new GUI::Button(1000, 700,  200, 200,
+    buttons["ARCHER"] = new GUI::Button(1000, 700,  200, 200,
                                               font, "Archer", 25,
                                               sf::Color(200, 200,200,200), sf::Color(255, 255, 255,255), sf::Color(20, 20, 20,50),
                                               sf::Color(100, 100,100,0), sf::Color(150, 150, 150,0), sf::Color(20, 20, 20,0));
 
-    this->buttons["EXIT_STATE"] = new GUI::Button(1000, 900,  200, 200,
+    buttons["EXIT_STATE"] = new GUI::Button(1000, 900,  200, 200,
                                                   font, "Quit", 25,
                                                   sf::Color(200, 200,200,200), sf::Color(255, 255, 255,255), sf::Color(20, 20, 20,50),
                                                   sf::Color(100, 100,100,0), sf::Color(150, 150, 150,0), sf::Color(20, 20, 20,0));
@@ -50,8 +50,8 @@ CharacterSelection::CharacterSelection(sf::RenderWindow &window, sf::Font *font)
 
 }
 CharacterSelection::~CharacterSelection() {
-    auto it = this->buttons.begin();
-    for(it = this->buttons.begin(); it != this->buttons.end(); ++it){
+    auto it = buttons.begin();
+    for(it = buttons.begin(); it != buttons.end(); ++it){
         delete it->second;
     }
 }
@@ -59,12 +59,12 @@ CharacterSelection::~CharacterSelection() {
 void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *gameState, Player **player) {
 /*Updates all the buttons in the state and handles their functionality.*/
 
-    for(auto &it : this->buttons){
+    for(auto &it : buttons){
         it.second->update(mousePosWindow);
     }
 
     //New game
-    if(this->buttons["WARRIOR"]->isPressed()) {
+    if(buttons["WARRIOR"]->isPressed()) {
         *gameState = GAME_STATE::PLAYING;
         texture.loadFromFile("Resources/Images/Sprites/Player/texture_sheet.png");
 
@@ -74,7 +74,7 @@ void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *
     }
 
     //Setting
-    if(this->buttons["WIZARD"]->isPressed()){
+    if(buttons["WIZARD"]->isPressed()){
         *gameState = GAME_STATE::PLAYING;
         texture.loadFromFile("Resources/Images/Sprites/Player/Wizard/Wizard.png");
 
@@ -84,7 +84,7 @@ void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *
     }
 
     //Quit the game
-    if(this->buttons["ARCHER"]->isPressed()){
+    if(buttons["ARCHER"]->isPressed()){
         *gameState = GAME_STATE::PLAYING;
         texture.loadFromFile("Resources/Images/Sprites/Player/Archer/Archer.png");
 
@@ -94,7 +94,7 @@ void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *
     }
 
     //Quit the game
-    if(this->buttons["EXIT_STATE"]->isPressed()){
+    if(buttons["EXIT_STATE"]->isPressed()){
         *gameState = GAME_STATE::MAIN_MENU;
     }
 }
@@ -104,7 +104,7 @@ void CharacterSelection::Draw(sf::RenderWindow &window) {
 
     window.draw(btnBackground);
 
-    for(auto &it : this->buttons){
+    for(auto &it : buttons){
         it.second->render(window);
     }
 }

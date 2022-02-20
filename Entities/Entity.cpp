@@ -10,18 +10,18 @@ Entity::Entity(int level)
 
 Entity::~Entity() {
 
-    delete this->animationComponent;
-    delete this->attributeComponent;
+    delete animationComponent;
+    delete attributeComponent;
 }
 
 //Component functions
 void Entity::setTexture(sf::Texture& texture) {
-    this->m_sprite.setTexture(texture);
+    m_sprite.setTexture(texture);
 }
 
 
 void Entity::createAnimationComponent(sf::Texture& texture_sheet) {
-    this->animationComponent = new AnimationComponent(this->m_sprite, texture_sheet);
+    animationComponent = new AnimationComponent(m_sprite, texture_sheet);
 }
 
 void Entity::createAttributeComponent(PLAYER_CLASS playerClass) {
@@ -30,32 +30,32 @@ void Entity::createAttributeComponent(PLAYER_CLASS playerClass) {
 
 const sf::Vector2f &Entity::getPosition() const {
 
-    return this->m_sprite.getPosition();
+    return m_sprite.getPosition();
 }
 
 sf::Vector2f Entity::getCenter() const {
-    return this->m_sprite.getPosition() + sf::Vector2f(this->m_sprite.getGlobalBounds().width / 2.f, this->m_sprite.getGlobalBounds().height / 2.f);
+    return m_sprite.getPosition() + sf::Vector2f(m_sprite.getGlobalBounds().width / 2.f, m_sprite.getGlobalBounds().height / 2.f);
 }
 
 sf::Vector2i Entity::getGridPosition(const int gridSizeI) const {
-    return sf::Vector2i(static_cast<int>(this->m_sprite.getPosition().x) / gridSizeI,
-                        static_cast<int>(this->m_sprite.getPosition().y) / gridSizeI);
+    return sf::Vector2i(static_cast<int>(m_sprite.getPosition().x) / gridSizeI,
+                        static_cast<int>(m_sprite.getPosition().y) / gridSizeI);
 }
 
 sf::FloatRect Entity::getGlobalBounds() const {
-    return this->m_sprite.getGlobalBounds();
+    return m_sprite.getGlobalBounds();
 }
 
 /*const sf::FloatRect Entity::getNextPositionBounds(const float& dt) const {
-    if(this->hitboxComponent && this->movementComponent){
-        return this->hitboxComponent->getNextPosition(this->movementComponent->getVelocity() * dt);
+    if(hitboxComponent && movementComponent){
+        return hitboxComponent->getNextPosition(movementComponent->getVelocity() * dt);
     }
     return sf::FloatRect(-1.f, -1.f, -1.f, -1.f);
 }*/
 
 //Functions
 void Entity::setPosition(const float x, const float y) {
-    this->m_sprite.setPosition(x, y);
+    m_sprite.setPosition(x, y);
 
 }
 
@@ -66,12 +66,12 @@ void Entity::setPosition(const float x, const float y) {
 
 float Entity::getDistance(const Entity& entity) const
 {
-    return sqrt(pow(this->getCenter().x - entity.getCenter().x, 2) + pow(this->getCenter().y - entity.getCenter().y, 2));
+    return sqrt(pow(getCenter().x - entity.getCenter().x, 2) + pow(getCenter().y - entity.getCenter().y, 2));
 }
 
 float Entity::getSpriteDistance(const Entity& entity) const
 {
-    //return sqrt(pow(this->getSpriteCenter().x - entity.getSpriteCenter().x, 2) + pow(this->getSpriteCenter().y - entity.getSpriteCenter().y, 2));
+    //return sqrt(pow(getSpriteCenter().x - entity.getSpriteCenter().x, 2) + pow(getSpriteCenter().y - entity.getSpriteCenter().y, 2));
 }
 
 // Override the default Object::Update function.

@@ -14,22 +14,22 @@ PlayerGUI::PlayerGUI(Player* player, sf::RenderWindow &window, const sf::Font& f
     float x =  GUI::p2pX(1.f, window);
     float y =  GUI::p2pY(1.9f, window);
 
-    this->levelBarBack.setSize(sf::Vector2f(width, height));
-    this->levelBarBack.setFillColor(sf::Color(50, 50, 50, 200));
-    this->levelBarBack.setPosition(x, y);
+    levelBarBack.setSize(sf::Vector2f(width, height));
+    levelBarBack.setFillColor(sf::Color(50, 50, 50, 200));
+    levelBarBack.setPosition(x, y);
 
-    this->levelBarText.setFont(m_font);
-    this->levelBarText.setCharacterSize(25);
-    this->levelBarText.setPosition(
-            this->levelBarBack.getPosition().x +  GUI::p2pX(0.53f, window),
-            this->levelBarBack.getPosition().y +  GUI::p2pY(0.5f, window));
+    levelBarText.setFont(m_font);
+    levelBarText.setCharacterSize(25);
+    levelBarText.setPosition(
+            levelBarBack.getPosition().x +  GUI::p2pX(0.53f, window),
+            levelBarBack.getPosition().y +  GUI::p2pY(0.5f, window));
 
-    this->expBar = new GUI::ProgressBar(
+    expBar = new GUI::ProgressBar(
             1.f, 5.6f, 10.4f, 1.9f,
             sf::Color::Blue, 220,
             window, &m_font);
 
-    this->hpBar = new GUI::ProgressBar(
+    hpBar = new GUI::ProgressBar(
             1.f, 8.3f, 10.4f, 2.8f,
             sf::Color::Red, 180,
             window, &m_font);
@@ -38,8 +38,8 @@ PlayerGUI::PlayerGUI(Player* player, sf::RenderWindow &window, const sf::Font& f
 
 PlayerGUI::~PlayerGUI() {
 
-    delete this->hpBar;
-    delete this->expBar;
+    delete hpBar;
+    delete expBar;
 
 }
 
@@ -48,7 +48,7 @@ PlayerGUI::~PlayerGUI() {
 void PlayerGUI::updateLevelBar()
 {
     levelBarString = std::to_string(m_player->getAttributeComponent()->level);
-    levelBarText.setString(this->levelBarString);
+    levelBarText.setString(levelBarString);
 }
 void PlayerGUI::updateExpBar()
 {
@@ -72,24 +72,24 @@ void PlayerGUI::update() {
 
 void PlayerGUI::renderLevelBar(sf::RenderWindow &window)
 {
-    window.draw(this->levelBarBack);
-    window.draw(this->levelBarText);
+    window.draw(levelBarBack);
+    window.draw(levelBarText);
 }
 
 void PlayerGUI::renderExpBar(sf::RenderWindow &window)
 {
-    this->expBar->render(window);
+    expBar->render(window);
 }
 
 void PlayerGUI::renderHpBar(sf::RenderWindow &window)
 {
-    this->hpBar->render(window);
+    hpBar->render(window);
 }
 
 void PlayerGUI::render(sf::RenderWindow &window) {
-    this->renderLevelBar(window);
-    this->renderExpBar(window);
-    this->renderHpBar(window);
+    renderLevelBar(window);
+    renderExpBar(window);
+    renderHpBar(window);
 
 }
 

@@ -28,7 +28,7 @@ EnemyAttributeComponent::EnemyAttributeComponent(int level, ENEMY enemy)
 
 
 
-    this->updateStats();
+    updateStats();
 
 }
 
@@ -36,10 +36,10 @@ EnemyAttributeComponent::~EnemyAttributeComponent() {
 
 }
 
-void EnemyAttributeComponent::loseHp(int hp) {
-    this->hp -= hp;
-    if(this->hp < 0)
-        this->hp = 0;
+void EnemyAttributeComponent::loseHp(int damage) {
+    hp -= damage;
+    if(hp < 0)
+        hp = 0;
 }
 
 bool EnemyAttributeComponent::isDead() const {

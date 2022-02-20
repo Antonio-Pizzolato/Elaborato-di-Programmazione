@@ -10,21 +10,21 @@ Shop::Shop(sf::RenderWindow &window) {
                                     static_cast<float>(window.getSize().y) / 3));
     container0.setFillColor(sf::Color(20, 20, 20, 200));
     container0.setPosition(
-            static_cast<float>(window.getSize().x) / 6.f - this->container0.getSize().x / 7.f,
+            static_cast<float>(window.getSize().x) / 6.f - container0.getSize().x / 7.f,
             600.f);
 
     container1.setSize(sf::Vector2f(static_cast<float>(window.getSize().x) / 5,
                                     static_cast<float>(window.getSize().y) / 3));
     container1.setFillColor(sf::Color(20, 20, 20, 200));
     container1.setPosition(
-            static_cast<float>(window.getSize().x) / 2 - this->container1.getSize().x / 1.85,
+            static_cast<float>(window.getSize().x) / 2 - container1.getSize().x / 1.85,
             600.f);
 
     container2.setSize(sf::Vector2f(static_cast<float>(window.getSize().x) / 5,
                                     static_cast<float>(window.getSize().y) / 3));
     container2.setFillColor(sf::Color(20, 20, 20, 200));
     container2.setPosition(
-            static_cast<float>(window.getSize().x) / 1.5 - this->container2.getSize().x / 8,
+            static_cast<float>(window.getSize().x) / 1.5 - container2.getSize().x / 8,
             600.f);
 
 
@@ -40,25 +40,25 @@ Shop::Shop(sf::RenderWindow &window) {
 void Shop::addButtons(const std::string &key, float x, float y, const sf::Texture &texture) {
     float w0 = container0.getPosition().x + x;
     float h0 = container0.getPosition().y + y;
-    this->slot0[key] = new GUI::Slot(w0, h0, texture);
+    slot0[key] = new GUI::Slot(w0, h0, texture);
 
     float w1 = container1.getPosition().x + x;
     float h1 = container1.getPosition().y + y;
-    this->slot1[key] = new GUI::Slot(w1, h1, texture);
+    slot1[key] = new GUI::Slot(w1, h1, texture);
 
     float w2 = container2.getPosition().x + x;
     float h2 = container2.getPosition().y + y;
-    this->slot2[key] = new GUI::Slot(w2, h2, texture);
+    slot2[key] = new GUI::Slot(w2, h2, texture);
 }
 
 void Shop::Update(const sf::Vector2i &mousePosWindow) {
-    for(auto &i : this->slot0){
+    for(auto &i : slot0){
         i.second->update(mousePosWindow);
     }
-    for(auto &i : this->slot1){
+    for(auto &i : slot1){
         i.second->update(mousePosWindow);
     }
-    for(auto &i : this->slot2){
+    for(auto &i : slot2){
         i.second->update(mousePosWindow);
     }
 }
@@ -69,13 +69,13 @@ void Shop::Draw(sf::RenderWindow &window) {
     window.draw(container2);
 
 
-    for(auto &i : this->slot0){
+    for(auto &i : slot0){
         i.second->render(window);
     }
-    for(auto &i : this->slot1){
+    for(auto &i : slot1){
         i.second->render(window);
     }
-    for(auto &i : this->slot2){
+    for(auto &i : slot2){
         i.second->render(window);
     }
 

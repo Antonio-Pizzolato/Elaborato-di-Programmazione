@@ -32,7 +32,7 @@ public:
     virtual ~EnemyAttributeComponent();
 
     //Functions
-    void loseHp(int hp);
+    void loseHp(int damage);
 
     bool isDead() const;
 

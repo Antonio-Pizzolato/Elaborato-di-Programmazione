@@ -27,15 +27,15 @@ Player::~Player() {
 //Accessors
 AttributeComponent *Player::getAttributeComponent()
 {
-    return this->attributeComponent;
+    return attributeComponent;
 }
 
 
 std::string Player::toStringCharacterTab() const
 {
     std::stringstream ss;
-    const AttributeComponent* ac = this->attributeComponent;
-    //const Weapon* w = this->weapon;
+    const AttributeComponent* ac = attributeComponent;
+    //const Weapon* w = weapon;
 
     ss << "Level: " << ac->level << "\n"
        << "Exp: " << ac->exp << "\n"
@@ -45,8 +45,8 @@ std::string Player::toStringCharacterTab() const
         << "Weapon Type: " << w->getType() << "\n"
         << "Weapon Value: " << w->getValue() << "\n"
         << "Weapon Range: " << w->getRange() << "\n"
-        << "Weapon Damage Min: " << w->getDamageMin() + this->attributeComponent->damageMin << " (" << this->attributeComponent->damageMin << ")" << "\n"
-        << "Weapon Damage Max: " << w->getDamageMax() + this->attributeComponent->damageMax << " (" << this->attributeComponent->damageMax << ")" << "\n"*/;
+        << "Weapon Damage Min: " << w->getDamageMin() + attributeComponent->damageMin << " (" << attributeComponent->damageMin << ")" << "\n"
+        << "Weapon Damage Max: " << w->getDamageMax() + attributeComponent->damageMax << " (" << attributeComponent->damageMax << ")" << "\n"*/;
 
     return ss.str();
 }
@@ -54,9 +54,9 @@ std::string Player::toStringCharacterTab() const
 
 bool Player::getDamageTimer()
 {
-    if(this->damageTimer.getElapsedTime().asMilliseconds() >= this->damageTimerMax)
+    if(damageTimer.getElapsedTime().asMilliseconds() >= damageTimerMax)
     {
-        this->damageTimer.restart();
+        damageTimer.restart();
         return true;
     }
 
@@ -66,9 +66,9 @@ bool Player::getDamageTimer()
 int Player::getDamage() const
 {
     /*return rand() % (
-            (this->attributeComponent->damageMax + this->weapon->getDamageMax())
-            - (this->attributeComponent->damageMin + this->weapon->getDamageMin()) + 1)
-           + (this->attributeComponent->damageMin + this->weapon->getDamageMin());*/
+            (attributeComponent->damageMax + weapon->getDamageMax())
+            - (attributeComponent->damageMin + weapon->getDamageMin()) + 1)
+           + (attributeComponent->damageMin + weapon->getDamageMin());*/
 
     return attributeComponent->damageMax;
 }
@@ -118,24 +118,24 @@ bool Player::IsAttacking()
 //Functions
 void Player::loseHp(int hp)
 {
-    this->attributeComponent->loseHp(hp);
+    attributeComponent->loseHp(hp);
 }
 
 void Player::gainHp(int hp) {
-    this->attributeComponent->gainHp(hp);
+    attributeComponent->gainHp(hp);
 }
 
 void Player::loseExp(int exp) {
-    this->attributeComponent->loseExp(exp);
+    attributeComponent->loseExp(exp);
 }
 
 void Player::gainExp(int exp, PLAYER_CLASS playerClass) {
-    this->attributeComponent->gainExp(exp, playerClass);
+    attributeComponent->gainExp(exp, playerClass);
 }
 
 bool Player::isDead() const {
-    if (this->attributeComponent) {
-        return this->attributeComponent->isDead();
+    if (attributeComponent) {
+        return attributeComponent->isDead();
     }
     return false;
 }
@@ -144,31 +144,31 @@ bool Player::isDead() const {
 void Player::updateAnimation(const float &dt, ANIMATION_STATE animState) {
 
     if (animState == ANIMATION_STATE::IDLE_UP) {
-        this->animationComponent->play("IDLE", dt);
+        animationComponent->play("IDLE", dt);
     }
     else if (animState == ANIMATION_STATE::WALK_LEFT) {
 
-        /*if(this->sprite.getScale().x > 0.f){
-            this->sprite.setOrigin(100.f, 0.f);
-            this->sprite.setScale(-1.f, 1.f);
+        /*if(sprite.getScale().x > 0.f){
+            sprite.setOrigin(100.f, 0.f);
+            sprite.setScale(-1.f, 1.f);
         }*/
 
-        this->animationComponent->play("WALK_LEFT", dt, m_speed, m_speed);
+        animationComponent->play("WALK_LEFT", dt, m_speed, m_speed);
     }
     else if(animState == ANIMATION_STATE::WALK_RIGHT){
 
-        /*if(this->sprite.getScale().x < 0.f){
-            this->sprite.setOrigin(0.f, 0.f);
-            this->sprite.setScale(1.f, 1.f);
+        /*if(sprite.getScale().x < 0.f){
+            sprite.setOrigin(0.f, 0.f);
+            sprite.setScale(1.f, 1.f);
         }*/
 
-        this->animationComponent->play("WALK_RIGHT", dt, m_speed, m_speed);
+        animationComponent->play("WALK_RIGHT", dt, m_speed, m_speed);
     }
     else if(animState == ANIMATION_STATE::WALK_UP){
-        this->animationComponent->play("WALK_UP", dt, m_speed, m_speed);
+        animationComponent->play("WALK_UP", dt, m_speed, m_speed);
     }
     else if(animState == ANIMATION_STATE::WALK_DOWN){
-        this->animationComponent->play("WALK_DOWN", dt, m_speed, m_speed);
+        animationComponent->play("WALK_DOWN", dt, m_speed, m_speed);
     }
 }
 void Player::Update(float timeDelta, Level &level) {
@@ -263,7 +263,7 @@ void Player::Update(float timeDelta, Level &level) {
 
 
 
-    this->updateAnimation(timeDelta, animState);
+    updateAnimation(timeDelta, animState);
 
     // Determine if the player can take damage.
     if (!m_canTakeDamage)

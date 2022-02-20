@@ -44,9 +44,9 @@ Game::~Game() {
 
 bool Game::getKeyTime()
 {
-    if (this->keyTimer.getElapsedTime().asSeconds() >= this->keyTimeMax)
+    if (keyTimer.getElapsedTime().asSeconds() >= keyTimeMax)
     {
-        this->keyTimer.restart();
+        keyTimer.restart();
         return true;
     }
 
@@ -60,7 +60,7 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
         case PLAYER_CLASS::WIZARD:
             textures["PLAYER_SHEET"].loadFromFile("Resources/Images/Sprites/Player/Wizard/Wizard.png");
 
-            player = new Wizard(500, 500, this->textures["PLAYER_SHEET"], PLAYER_CLASS::WIZARD);
+            player = new Wizard(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::WIZARD);
 
             playerGui = new PlayerGUI(player, m_window, font);
 
@@ -68,14 +68,14 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
         case PLAYER_CLASS::ARCHER:
             textures["PLAYER_SHEET"].loadFromFile("Resources/Images/Sprites/Player/Archer/Archer.png");
 
-            player = new Archer(500, 500, this->textures["PLAYER_SHEET"], PLAYER_CLASS::ARCHER);
+            player = new Archer(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::ARCHER);
 
             playerGui = new PlayerGUI(player, m_window, font);
             break;
         case PLAYER_CLASS::WARRIOR:
             textures["PLAYER_SHEET"].loadFromFile("Resources/Images/Sprites/Player/texture_sheet.png");
 
-            player = new Warrior(500, 500, this->textures["PLAYER_SHEET"], PLAYER_CLASS::WARRIOR);
+            player = new Warrior(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::WARRIOR);
 
             playerGui = new PlayerGUI(player, m_window, font);
             break;

@@ -41,96 +41,96 @@ private:
             this->text.setCharacterSize(char_size);
             this->text.setString(text);
 
-            this->dirX = dir_x;
-            this->dirY = dir_y;
+            dirX = dir_x;
+            dirY = dir_y;
             this->lifetime = lifetime;
             this->speed = speed;
             this->acceleration = acceleration;
-            this->fadeValue = fade_value;
+            fadeValue = fade_value;
             this->reverse	= reverse;
 
             if (this->reverse)
             {
-                this->velocity.x = this->dirX * this->speed;
-                this->velocity.y = this->dirY * this->speed;
+                velocity.x = dirX * this->speed;
+                velocity.y = dirY * this->speed;
             }
         }
 
         TextTag(TextTag* tag, float pos_x, float pos_y, std::string str)
         {
-            this->text = tag->text;
-            this->text.setString(str);
-            this->text.setPosition(pos_x, pos_y);
+            text = tag->text;
+            text.setString(str);
+            text.setPosition(pos_x, pos_y);
 
-            this->dirX = tag->dirX;
-            this->dirY = tag->dirY;
-            this->lifetime = tag->lifetime;
-            this->speed = tag->speed;
-            this->acceleration = tag->acceleration;
-            this->fadeValue = tag->fadeValue;
-            this->reverse = tag->reverse;
-            this->velocity = tag->velocity;
+            dirX = tag->dirX;
+            dirY = tag->dirY;
+            lifetime = tag->lifetime;
+            speed = tag->speed;
+            acceleration = tag->acceleration;
+            fadeValue = tag->fadeValue;
+            reverse = tag->reverse;
+            velocity = tag->velocity;
         }
 
         ~TextTag()
         = default;
 
         //Accessor
-        inline const bool isExpired() const{ return this->lifetime <= 0.f; }
+        inline const bool isExpired() const{ return lifetime <= 0.f; }
 
         //Function
         void update(float dt)
         {
-            if (this->lifetime > 0.f)
+            if (lifetime > 0.f)
             {
                 //Update the lifetime
-                this->lifetime -= 100.f * dt;
+                lifetime -= 100.f * dt;
 
                 //Accelerate
-                if (this->acceleration > 0.f)
+                if (acceleration > 0.f)
                 {
-                    if (this->reverse)
+                    if (reverse)
                     {
-                        this->velocity.x -= this->dirX * this->acceleration * dt;
-                        this->velocity.y -= this->dirY * this->acceleration * dt;
+                        velocity.x -= dirX * acceleration * dt;
+                        velocity.y -= dirY * acceleration * dt;
 
-                        if (abs(this->velocity.x) < 0.f)
-                            this->velocity.x = 0.f;
+                        if (std::abs(velocity.x) < 0.f)
+                            velocity.x = 0.f;
 
-                        if (abs(this->velocity.y) < 0.f)
-                            this->velocity.y = 0.f;
+                        if (std::abs(velocity.y) < 0.f)
+                            velocity.y = 0.f;
 
-                        this->text.move(this->velocity * dt);
+                        text.move(velocity * dt);
                     }
                     else
                     {
-                        this->velocity.x += this->dirX * this->acceleration * dt;
-                        this->velocity.y += this->dirY * this->acceleration * dt;
+                        velocity.x += dirX * acceleration * dt;
+                        velocity.y += dirY * acceleration * dt;
 
-                        if (abs(this->velocity.x) > this->speed)
-                            this->velocity.x = this->dirX * this->speed;
+                        if (std::abs(velocity.x) > speed)
+                            velocity.x = dirX * speed;
 
-                        if (abs(this->velocity.y) > this->speed)
-                            this->velocity.y = this->dirY * this->speed;
+                        if (std::abs(velocity.y) > speed)
+                            velocity.y = dirY * speed;
 
-                        this->text.move(this->velocity * dt);
+                        text.move(velocity * dt);
                     }
                 }
                 else
                 {
                     //Move the tag
-                    this->text.move(this->dirX * this->speed * dt, this->dirY * this->speed * dt);
+                    text.move(dirX * speed * dt, dirY * speed * dt);
                 }
 
-                if (this->fadeValue > 0 && this->text.getFillColor().a >= this->fadeValue)
+                if (fadeValue > 0 && text.getFillColor().a >= fadeValue)
                 {
-                    this->text.setFillColor
+                    text.setFillColor
                             (
                                     sf::Color(
-                                            this->text.getFillColor().r,
-                                            this->text.getFillColor().g,
-                                            this->text.getFillColor().b,
-                                            this->text.getFillColor().a - this->fadeValue
+                                            text.getFillColor().r,
+                                            text.getFillColor().g,
+                                            text.getFillColor().b,
+                                            text.getFillColor().a - fadeValue
                                     )
                             );
                 }
@@ -139,7 +139,7 @@ private:
 
         void render(sf::RenderTarget& target)
         {
-            target.draw(this->text);
+            target.draw(text);
         }
     };
 
