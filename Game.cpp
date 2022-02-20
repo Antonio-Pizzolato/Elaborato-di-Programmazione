@@ -150,13 +150,13 @@ void Game::SpawnEnemy(ENEMY enemyType, sf::Vector2f position) {
     switch (enemyType)
     {
         case ENEMY::SLIME:
-            enemy = std::make_unique<Slime>(_level);
+            enemy = std::make_unique<Enemy>(_level, ENEMY::SLIME);
             break;
         case ENEMY::HUMANOID:
-            enemy = std::make_unique<Humanoid>(_level);
+            enemy = std::make_unique<Enemy>(_level, ENEMY::HUMANOID);
             break;
         default:
-            enemy = std::make_unique<Slime>(_level);
+            enemy = std::make_unique<Enemy>(_level, ENEMY::SLIME);
             break;
     }
     // Set spawn position.

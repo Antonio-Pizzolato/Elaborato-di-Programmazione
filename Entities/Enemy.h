@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_ENEMY_H
 #define MAIN_CPP_ENEMY_H
 
@@ -23,7 +19,7 @@ public:
     /**
      * Default constructor.
      */
-    Enemy(int level = 0);
+    Enemy(int level, ENEMY enemy_class);
     ~Enemy() override;
 
     void createEnemyAttributeComponent(int level, ENEMY enemy);

@@ -37,15 +37,6 @@ sf::Vector2f Entity::getCenter() const {
     return m_sprite.getPosition() + sf::Vector2f(m_sprite.getGlobalBounds().width / 2.f, m_sprite.getGlobalBounds().height / 2.f);
 }
 
-sf::Vector2i Entity::getGridPosition(const int gridSizeI) const {
-    return sf::Vector2i(static_cast<int>(m_sprite.getPosition().x) / gridSizeI,
-                        static_cast<int>(m_sprite.getPosition().y) / gridSizeI);
-}
-
-sf::FloatRect Entity::getGlobalBounds() const {
-    return m_sprite.getGlobalBounds();
-}
-
 /*const sf::FloatRect Entity::getNextPositionBounds(const float& dt) const {
     if(hitboxComponent && movementComponent){
         return hitboxComponent->getNextPosition(movementComponent->getVelocity() * dt);

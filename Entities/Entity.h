@@ -42,18 +42,12 @@ public:
     void createAnimationComponent(sf::Texture& texture_sheet);
     void createAttributeComponent(PLAYER_CLASS playerClass);
 
-    void createSkillComponent();
-
     //Accessors
     virtual const sf::Vector2f& getPosition() const;
     virtual sf::Vector2f getCenter() const;
-    virtual sf::Vector2i getGridPosition(const int gridSizeI) const;
-    virtual sf::FloatRect getGlobalBounds() const;
-    //virtual const sf::FloatRect getNextPositionBounds(const float& dt) const;
-    //int GetHealth() const;
 
     //Modifiers
-    virtual void setPosition(const float x, const float y);
+    virtual void setPosition(float x, float y);
     //Functions
 
 

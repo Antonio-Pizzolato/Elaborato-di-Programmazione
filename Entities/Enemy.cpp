@@ -1,19 +1,69 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Enemy.h"
 
-
 // Default constructor.
-Enemy::Enemy(int level) : enemyAttributeComponent(nullptr)
+Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
 {
+
+    if(enemy_class == ENEMY::SLIME)
+    {
+        // Load textures.
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_up.png"*/"Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_down.png"*/"Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_right.png"*/"Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_left.png"*/"Resources/enemies/slime/slimesprite1.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_up.png"*/"Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_down.png"*/"Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_right.png"*/"Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_left.png"*/"Resources/enemies/slime/slimesprite1.png");
+
+        // Set initial sprite.
+        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), false, 4, 6);
+
+
+        createEnemyAttributeComponent(level, ENEMY::SLIME);
+    }
+    else
+    {
+        // Generate a humanoid type.
+        auto humanoidType = static_cast<HUMANOID>(std::rand() % static_cast<int>(HUMANOID::COUNT));
+        std::string enemyName;
+
+        // Set enemy specific variables.
+        switch (humanoidType)
+        {
+            case HUMANOID::GOBLIN:
+                enemyName = "goblin";
+                break;
+            case HUMANOID::SKELETON:
+                enemyName = "skeleton";
+                break;
+            default:
+                enemyName = "skeleton";
+                break;
+        }
+
+        // Load textures.
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_up.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_down.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_right.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_left.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_up.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_down.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_right.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_left.png");
+
+        // Set initial sprite.
+        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)]), false, 8, 12);
+
+        createEnemyAttributeComponent(level, ENEMY::HUMANOID);
+    }
+
 
     // Set speed.
     m_speed = rand() % 51 + 150;
 }
 
-Enemy::~Enemy() noexcept {
+Enemy::~Enemy() {
     delete enemyAttributeComponent;
 }
 
