@@ -15,6 +15,8 @@ public:
      */
     sf::Vector2f m_velocity;
 
+    sf::Texture gettexture;
+
     /**
       * Default constructor.
       * @param texture The texture of the projectile.

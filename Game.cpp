@@ -100,7 +100,7 @@ void Game::Initialize()
             projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
             break;
         case PLAYER_CLASS::ARCHER:
-            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow.png");
+            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow1.png");
             break;
         default:
             projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
@@ -270,6 +270,19 @@ void Game::Update(float timeDelta)
             mousePosWindow = sf::Mouse::getPosition(m_window);
             characterSelection->Update(mousePosWindow, &gameState, &player);
             player->SetPosition(level.SpawnLocation());
+            switch (player->GetClass()) {
+
+                case PLAYER_CLASS::WIZARD:
+                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
+                    break;
+                case PLAYER_CLASS::ARCHER:
+                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow1.png");
+                    break;
+                default:
+                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
+                    break;
+            }
+
             playerGui = new PlayerGUI(player, m_window, font);
             break;
 

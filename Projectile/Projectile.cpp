@@ -15,6 +15,12 @@ Projectile::Projectile(sf::Texture& texture, sf::Vector2f origin, sf::Vector2f s
     // Set the position.
     m_position = origin;
 
+    if (origin.x > target.x) {
+
+        gettexture.loadFromFile("Resources/Images/Sprites/Weapon/Projectile/arrow.png");
+        m_sprite.setTexture(gettexture, false);
+    }
+
     // Calculate the velocity of the object.
     m_velocity = target - screenCenter;
 
@@ -27,7 +33,8 @@ Projectile::Projectile(sf::Texture& texture, sf::Vector2f origin, sf::Vector2f s
 void Projectile::Update(float timeDelta)
 {
     // Update rotation.
-    m_sprite.setRotation(m_sprite.getRotation() + (400.f * timeDelta));
+    //m_sprite.setRotation(m_sprite.getRotation() + (400.f * timeDelta));
+
 
     // Update position.
     m_sprite.setPosition(m_sprite.getPosition().x + (m_velocity.x * (500 * timeDelta)), m_sprite.getPosition().y + (m_velocity.y * (500 * timeDelta)));
