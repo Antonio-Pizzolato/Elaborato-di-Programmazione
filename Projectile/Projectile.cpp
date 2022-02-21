@@ -17,9 +17,20 @@ Projectile::Projectile(sf::Texture& texture, sf::Vector2f origin, sf::Vector2f s
 
     if (origin.x > target.x) {
 
-        gettexture.loadFromFile("Resources/Images/Sprites/Weapon/Projectile/arrow.png");
-        m_sprite.setTexture(gettexture, false);
+        m_sprite.setScale(-1,1);
     }
+    else if (origin.x < target.x) {
+
+        m_sprite.setScale(1,1);
+    }
+    else if(origin.y < target.y){
+        m_sprite.rotate(90);
+    }
+    else if(origin.y > target.y){
+        m_sprite.rotate(-90);
+    }
+
+
 
     // Calculate the velocity of the object.
     m_velocity = target - screenCenter;

@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_PROJECTILE_H
 #define MAIN_CPP_PROJECTILE_H
 
@@ -15,7 +11,6 @@ public:
      */
     sf::Vector2f m_velocity;
 
-    sf::Texture gettexture;
 
     /**
       * Default constructor.

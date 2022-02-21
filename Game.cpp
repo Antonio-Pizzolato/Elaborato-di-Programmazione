@@ -100,7 +100,7 @@ void Game::Initialize()
             projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
             break;
         case PLAYER_CLASS::ARCHER:
-            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow1.png");
+            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow.png");
             break;
         default:
             projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
@@ -276,7 +276,7 @@ void Game::Update(float timeDelta)
                     projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
                     break;
                 case PLAYER_CLASS::ARCHER:
-                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow1.png");
+                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow.png");
                     break;
                 default:
                     projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
