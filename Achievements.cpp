@@ -1,18 +1,10 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Achievements.h"
 
 Achievements::Achievements(Observable* conditionAchievement) : conditionAchievement(conditionAchievement),
-                                                               killNumber(0), gold(0), lifetime(200), kill(false), golda(false)
+                                                               killNumber(0), gold(0), lifetime(400), kill(false), golda(false), CanDraw(false)
 {
     conditionAchievement->addObserver(this);
-    //animation
-    setAnimation();
-
-    text.setPosition(0, 600);
-
+    sprite.setPosition(800,0);
 }
 
 void Achievements::update(float _killNumber, float _gold) {
@@ -27,7 +19,7 @@ void Achievements::update(float _killNumber, float _gold) {
 
     if (gold >= 15) {
 
-        unlockAchievement(Event::Die);
+        unlockAchievement(Event::Gold);
 
 
     }
@@ -35,19 +27,12 @@ void Achievements::update(float _killNumber, float _gold) {
 }
 
 
-void Achievements::setAnimation() {
-
-
-    //font
-    if (!font.loadFromFile("Fonts/Minecraft.ttf"))
-        std::cout << "ERROR::ACHIEVEMENTS::CAN'T LOAD THE FONT";
-    text = sf::Text(" 7000000", font, 30);
-
-}
 
 void Achievements::render(sf::RenderWindow &window) {
 
-    window.draw(text);
+    if(CanDraw){
+        window.draw(sprite);
+    }
 }
 
 void Achievements::update(float dt)
@@ -60,8 +45,8 @@ void Achievements::update(float dt)
 
     if (isExpired())
     {
-        text.setString(" ");
-        lifetime = 200.f;
+        CanDraw = false;
+        lifetime = 400.f;
     }
 }
 
@@ -75,15 +60,19 @@ void Achievements::unlockAchievement(Event event) {
     switch (event) {
         case Event::Kill:{
             if(!kill){
-                text.setString("Congratulation: you kill one enemy");
+                texture.loadFromFile("Resources/killAchievement.png");
+                sprite.setTexture(texture);
+                CanDraw = true;
                 kill = true;
             }
         }
             break;
-        case Event::Die:{
+        case Event::Gold:{
             if(!golda){
-                text.setString("gold!!!!!!");
                 golda = true;
+                texture.loadFromFile("Resources/goldAchiev.png");
+                sprite.setTexture(texture);
+                CanDraw = true;
             }
         }
     }

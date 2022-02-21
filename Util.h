@@ -89,7 +89,7 @@ enum class POTION {
 
 enum class Event{
     Kill,
-    Die
+    Gold
 };
 
 #endif //MAIN_CPP_UTIL_H

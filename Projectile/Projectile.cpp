@@ -15,11 +15,11 @@ Projectile::Projectile(sf::Texture& texture, sf::Vector2f origin, sf::Vector2f s
     // Set the position.
     m_position = origin;
 
-    if (origin.x > target.x) {
+    if (origin.x > target.x && origin.y - target.y < -10 && origin.y - target.y > 10) {
 
         m_sprite.setScale(-1,1);
     }
-    else if (origin.x < target.x) {
+    else if (origin.x < target.x && origin.y - target.y < -10 && origin.y - target.y > 10) {
 
         m_sprite.setScale(1,1);
     }

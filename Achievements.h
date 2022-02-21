@@ -21,9 +21,8 @@ public:
     Achievements(Observable* conditionAchievement);
     ~Achievements() override;
     //Update Treasure
-    void update(float _killNumber, float _gold);
+    void update(float _killNumber, float _gold) override;
     //Animation
-    void setAnimation();
     void render(sf::RenderWindow &window);
 
     void update(float dt);
@@ -34,12 +33,13 @@ private:
     Observable* conditionAchievement;
     float killNumber;
     float gold;
+    sf::Texture texture;
+    sf::Sprite sprite;
 
-    sf::Text text;
-    sf::Font font;
     float lifetime;
     bool kill;
     bool golda;
+    bool CanDraw;
     inline bool isExpired() const{ return lifetime <= 0.f; }
 
     void unlockAchievement(Event event);

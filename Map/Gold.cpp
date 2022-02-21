@@ -8,13 +8,11 @@
 Gold::Gold()
 {
     // Set gold value.
-    goldValue = 1+ std::rand() % 2;
-    /*std::random_device rd;
+    std::random_device rd;
     std::mt19937 mt(rd());
-    std::uniform_real_distribution<double> dist(1, std::nextafter(9, 10));
-    for (int i = 0; i < 3; ++i) {
-        goldValue = dist(mt);
-    }*/
+    std::uniform_int_distribution<int> dist(1.0, 20.0);
+    goldValue = dist(mt);
+
 
 
     // Set the sprite.

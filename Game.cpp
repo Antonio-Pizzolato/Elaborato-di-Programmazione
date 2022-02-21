@@ -517,11 +517,11 @@ void Game::Draw(float timeDelta)
                 goldString = "00000" + std::to_string(goldTotal);
             }
 
-            DrawString(goldString, sf::Vector2f(screenCenter.x + 220.f, 40.f), 40);
+            DrawString(goldString, sf::Vector2f(screenCenter.x + 420.f, 40.f), 40);
 
             std::string hp;
             hp = std::to_string(player->getAttributeComponent()->damageMax);
-            DrawString(hp, sf::Vector2f(screenCenter.x + 220.f, 80.f), 40);
+            DrawString(hp, sf::Vector2f(screenCenter.x + 420.f, 80.f), 40);
 
             achievements->render(m_window);
 
@@ -613,6 +613,7 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
                     }
 
                     player->gainExp(20, player->GetClass());
+                    player->killNumber += 1;
 
                     // Delete enemy.
                     enemyIterator = enemies.erase(enemyIterator);
