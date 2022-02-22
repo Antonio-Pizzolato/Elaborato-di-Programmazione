@@ -1,17 +1,12 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Gold.h"
 
 // Default constructor.
 Gold::Gold()
 {
     // Set gold value.
-    std::random_device rd;
-    std::mt19937 mt(rd());
-    std::uniform_int_distribution<int> dist(1.0, 20.0);
-    goldValue = dist(mt);
+    int range = 30 - 1 + 1;
+    int num = rand() % range + 1;
+    goldValue = num;
 
 
 

@@ -606,22 +606,22 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
                     sf::Vector2f position = enemy.GetPosition();
 
                     // Spawn loot.
-                    for (int i = 0; i < 5; i++)
+                    for (int i = 0; i < 2; i++)
                     {
                         position.x += std::rand() % 31 - 15;
                         position.y += std::rand() % 31 - 15;
 
-                        std::random_device rd_potion;
-                        std::mt19937 mt_potion(rd_potion());
-                        std::uniform_int_distribution<int> dist_potion(1, 2);
-                        int potion = dist_potion(mt_potion);
+                        int potion = std::rand() % 2;
                         SpawnItem(static_cast<ITEM>(potion), position);
 
-                        std::random_device rd_gold;
-                        std::mt19937 mt_gold(rd_gold());
-                        std::uniform_int_distribution<int> dist_gold(0, 5);
-                        int gold = dist_gold(mt_gold);
-                        SpawnItem(static_cast<ITEM>(gold), position);
+                    }
+                    for (int i = 0; i < 3; i++)
+                    {
+                        position.x += std::rand() % 31 - 25;
+                        position.y += std::rand() % 31 - 25;
+
+                        SpawnItem(static_cast<ITEM>(0), position);
+
                     }
 
                     player->gainExp(20, player->GetClass());
