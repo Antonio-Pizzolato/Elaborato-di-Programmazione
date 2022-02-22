@@ -44,7 +44,7 @@ public:
 
     //Accessors
     virtual const sf::Vector2f& getPosition() const;
-    virtual sf::Vector2f getCenter() const;
+
 
     //Modifiers
     virtual void setPosition(float x, float y);
@@ -52,10 +52,7 @@ public:
 
 
     //Calculations
-    virtual float getDistance(const Entity& entity) const;
-    virtual float getSpriteDistance(const Entity& entity) const;
-
-    virtual void Update(float dt) override;
+    virtual void Update(float dt, Level &level) = 0;
 
 };
 

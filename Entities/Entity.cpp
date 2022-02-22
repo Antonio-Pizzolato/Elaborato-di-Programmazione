@@ -33,16 +33,6 @@ const sf::Vector2f &Entity::getPosition() const {
     return m_sprite.getPosition();
 }
 
-sf::Vector2f Entity::getCenter() const {
-    return m_sprite.getPosition() + sf::Vector2f(m_sprite.getGlobalBounds().width / 2.f, m_sprite.getGlobalBounds().height / 2.f);
-}
-
-/*const sf::FloatRect Entity::getNextPositionBounds(const float& dt) const {
-    if(hitboxComponent && movementComponent){
-        return hitboxComponent->getNextPosition(movementComponent->getVelocity() * dt);
-    }
-    return sf::FloatRect(-1.f, -1.f, -1.f, -1.f);
-}*/
 
 //Functions
 void Entity::setPosition(const float x, const float y) {
@@ -50,55 +40,6 @@ void Entity::setPosition(const float x, const float y) {
 
 }
 
-
-
-
-
-
-float Entity::getDistance(const Entity& entity) const
-{
-    return sqrt(pow(getCenter().x - entity.getCenter().x, 2) + pow(getCenter().y - entity.getCenter().y, 2));
-}
-
-float Entity::getSpriteDistance(const Entity& entity) const
-{
-    //return sqrt(pow(getSpriteCenter().x - entity.getSpriteCenter().x, 2) + pow(getSpriteCenter().y - entity.getSpriteCenter().y, 2));
-}
-
-// Override the default Object::Update function.
-void Entity::Update(float timeDelta)
-{
-    // Choose animation state.
-    auto animState = ANIMATION_STATE::IDLE_UP;
-
-    if ((m_velocity.x != 0) || (m_velocity.y != 0))
-    {
-        if (std::abs(m_velocity.x) > std::abs(m_velocity.y))
-        {
-            if (m_velocity.x <= 0)
-            {
-                animState = ANIMATION_STATE::WALK_LEFT;
-            }
-            else
-            {
-                animState = ANIMATION_STATE::WALK_RIGHT;
-            }
-        }
-        else
-        {
-            if (m_velocity.y <= 0)
-            {
-                animState = ANIMATION_STATE::WALK_UP;
-            }
-            else
-            {
-                animState = ANIMATION_STATE::WALK_DOWN;
-            }
-        }
-    }
-
-
-}
 
 // Checks is the given movement will result in a collision.
 bool Entity::CausesCollision(sf::Vector2f movement, Level& level)

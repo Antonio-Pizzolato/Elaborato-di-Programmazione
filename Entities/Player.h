@@ -13,7 +13,6 @@ protected:
     PLAYER_CLASS m_class;
 
 
-
     bool initAttack;
     bool m_isAttacking;
     bool m_isDash;
@@ -88,7 +87,7 @@ public:
 
     virtual void updateAttack(const float& dt) = 0;
     virtual void updateAnimation(const float& dt, ANIMATION_STATE animState);
-    void Update(float timeDelta, Level& level);
+    void Update(float timeDelta, Level& level) override;
     virtual void render(sf::RenderWindow &window);
 
 

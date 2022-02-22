@@ -148,7 +148,35 @@ void Enemy::Update(float timeDelta, Level &level)
         m_velocity.y = 0.f;
     }
 
-    Entity::Update(timeDelta);
+    // Choose animation state.
+    auto animState = ANIMATION_STATE::IDLE_UP;
+
+    if ((m_velocity.x != 0) || (m_velocity.y != 0))
+    {
+        if (std::abs(m_velocity.x) > std::abs(m_velocity.y))
+        {
+            if (m_velocity.x <= 0)
+            {
+                animState = ANIMATION_STATE::WALK_LEFT;
+            }
+            else
+            {
+                animState = ANIMATION_STATE::WALK_RIGHT;
+            }
+        }
+        else
+        {
+            if (m_velocity.y <= 0)
+            {
+                animState = ANIMATION_STATE::WALK_UP;
+            }
+            else
+            {
+                animState = ANIMATION_STATE::WALK_DOWN;
+            }
+        }
+    }
+
 }
 
 

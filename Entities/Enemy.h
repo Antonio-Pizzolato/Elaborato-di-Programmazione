@@ -27,7 +27,7 @@ public:
     /**
      * Overrides the default Update function in Enemy
      */
-    void Update(float timeDelta, Level &level);
+    void Update(float timeDelta, Level &level) override;
 
     /**
      * Applies the given amount of damage to the enemy.
