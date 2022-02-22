@@ -27,7 +27,7 @@ Game::Game(sf::RenderWindow* window) :
 
     level = Level(*window);
 
-    font.loadFromFile("Fonts/Minecraft.ttf");
+    font.loadFromFile("Fonts/alagard.ttf");
 
     achievements = new Achievements(&conditionAchievement);
     InitializePlayer(playerClass);
@@ -188,7 +188,7 @@ void Game::SpawnItem(ITEM itemType, sf::Vector2f position) {
             item = std::make_unique<Gold>();
             break;
         default:
-            item = std::make_unique<Potion>();
+            item = std::make_unique<Gold>();
             break;
     }
 
@@ -213,13 +213,6 @@ void Game::Run() {
             {
                 m_window.close();
                 return;
-            }
-            else if((Input::IsKeyPressed(Input::KEY::KEY_I)) && getKeyTime()){
-                if(gameState == GAME_STATE::INVENTORY)
-                    gameState = GAME_STATE::PLAYING;
-                else
-                    gameState = GAME_STATE::INVENTORY;
-
             }
             else if((Input::IsKeyPressed(Input::KEY::KEY_P)) && getKeyTime()){
                 if(gameState == GAME_STATE::SHOP)
@@ -336,8 +329,18 @@ void Game::Update(float timeDelta)
                                         position.x += std::rand() % 31 - 15;
                                         position.y += std::rand() % 31 - 15;
 
-                                        int itemType = rand() % 2;
-                                        SpawnItem(static_cast<ITEM>(itemType), position);
+
+                                        std::random_device rd_potion;
+                                        std::mt19937 mt_potion(rd_potion());
+                                        std::uniform_int_distribution<int> dist_potion(0, 2);
+                                        int potion = dist_potion(mt_potion);
+                                        SpawnItem(static_cast<ITEM>(potion), position);
+
+                                        std::random_device rd_gold;
+                                        std::mt19937 mt_gold(rd_gold());
+                                        std::uniform_int_distribution<int> dist_gold(0, 5);
+                                        int gold = dist_gold(mt_gold);
+                                        SpawnItem(static_cast<ITEM>(gold), position);
                                     }
 
                                     player->gainExp(20, player->GetClass());
@@ -517,11 +520,11 @@ void Game::Draw(float timeDelta)
                 goldString = "00000" + std::to_string(goldTotal);
             }
 
-            DrawString(goldString, sf::Vector2f(screenCenter.x + 420.f, 40.f), 40);
+            DrawString(goldString, sf::Vector2f(screenCenter.x + 875.f, 40.f), 40);
 
             std::string hp;
             hp = std::to_string(player->getAttributeComponent()->damageMax);
-            DrawString(hp, sf::Vector2f(screenCenter.x + 420.f, 80.f), 40);
+            DrawString(hp, sf::Vector2f(screenCenter.x + 875.f, 80.f), 40);
 
             achievements->render(m_window);
 
@@ -608,8 +611,17 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
                         position.x += std::rand() % 31 - 15;
                         position.y += std::rand() % 31 - 15;
 
-                        int itemType = std::rand() % 2;
-                        SpawnItem(static_cast<ITEM>(itemType), position);
+                        std::random_device rd_potion;
+                        std::mt19937 mt_potion(rd_potion());
+                        std::uniform_int_distribution<int> dist_potion(1, 2);
+                        int potion = dist_potion(mt_potion);
+                        SpawnItem(static_cast<ITEM>(potion), position);
+
+                        std::random_device rd_gold;
+                        std::mt19937 mt_gold(rd_gold());
+                        std::uniform_int_distribution<int> dist_gold(0, 5);
+                        int gold = dist_gold(mt_gold);
+                        SpawnItem(static_cast<ITEM>(gold), position);
                     }
 
                     player->gainExp(20, player->GetClass());

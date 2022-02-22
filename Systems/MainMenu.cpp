@@ -58,9 +58,6 @@ void MainMenu::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *gameState,
     }
 
     //Setting
-    if(buttons["SETTINGS_STATE"]->isPressed()){
-        *gameState = GAME_STATE::INVENTORY;
-    }
 
     //Quit the game
     if(buttons["EXIT_STATE"]->isPressed()){

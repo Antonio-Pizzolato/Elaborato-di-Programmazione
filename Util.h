@@ -8,7 +8,6 @@ enum class GAME_STATE {
     PLAYING,
     GAME_OVER,
     PAUSED,
-    INVENTORY,
     SHOP
 };
 

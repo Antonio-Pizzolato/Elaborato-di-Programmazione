@@ -10,7 +10,7 @@ Items::Items() :
         m_textOffset({0.f, 0.f})
 {
     // Load font.
-    m_font.loadFromFile("Fonts/Minecraft.ttf");
+    m_font.loadFromFile("Fonts/alagard.ttf");
     m_text.setFont(m_font);
 
     // Setup the text.
