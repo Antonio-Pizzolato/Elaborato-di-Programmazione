@@ -24,7 +24,7 @@ public:
      * @param window The render window to draw the object to.
      * @param tileDelta The time, in MS, since the last draw call.
      */
-    virtual void Draw(sf::RenderWindow &window, float timeDelta);
+    void Draw(sf::RenderWindow &window, float timeDelta);
 
     /**
      * Sets the position of the object on screen. This is relative to the top-left of the game window.
@@ -56,11 +56,6 @@ public:
      */
     sf::Sprite& GetSprite();
 
-    /**
-     * Get the number of frames the object has.
-     * @return The number of frames the object has.
-     */
-    int GetFrameCount() const;
 
     /**
      * Gets the current animation state of the object.

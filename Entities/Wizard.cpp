@@ -32,7 +32,7 @@ Wizard::Wizard(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_clas
 
     initAnimations();
 
-    m_sprite.setOrigin(sf::Vector2f(40,50));
+    sprite.setOrigin(sf::Vector2f(40,50));
 }
 
 Wizard::~Wizard() {
@@ -56,22 +56,22 @@ void Wizard::updateAnimation(const float &dt, ANIMATION_STATE animState) {
     updateAttack(dt);
     if (animState == ANIMATION_STATE::IDLE_UP) {
         animationComponent->play("IDLE", dt);
-        m_sprite.setScale(1.2, 1.2);
+        sprite.setScale(1.2, 1.2);
     }
     else if (animState == ANIMATION_STATE::WALK_LEFT) {
 
-        if (m_sprite.getScale().x > 0.f) {
+        if (sprite.getScale().x > 0.f) {
 
-            m_sprite.setScale(-1.2, 1.2);
+            sprite.setScale(-1.2, 1.2);
         }
 
         animationComponent->play("WALK_LEFT", dt, m_speed,
                                        m_speed);
     } else if (animState == ANIMATION_STATE::WALK_RIGHT) {
 
-        if (m_sprite.getScale().x < 0.f) {
+        if (sprite.getScale().x < 0.f) {
 
-            m_sprite.setScale(1.2, 1.2);
+            sprite.setScale(1.2, 1.2);
         }
 
         animationComponent->play("WALK_RIGHT", dt, m_speed,

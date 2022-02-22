@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 27/11/2021.
-//
-
 #ifndef MAIN_CPP_POTION_H
 #define MAIN_CPP_POTION_H
 

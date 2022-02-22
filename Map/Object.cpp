@@ -1,8 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
-
 #include "Object.h"
 
 // Default constructor.
@@ -131,10 +126,4 @@ void Object::NextFrame()
     m_sprite.setTextureRect(sf::IntRect(m_frameWidth * m_currentFrame, 0, m_frameWidth, m_frameHeight));
 }
 
-// Gets the frame count of the object.
-int Object::GetFrameCount() const
-{
-    return m_frameCount;
-}
-
-Object::~Object() {};
+Object::~Object() = default;;

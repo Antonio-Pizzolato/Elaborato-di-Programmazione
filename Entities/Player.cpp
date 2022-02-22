@@ -174,7 +174,7 @@ void Player::updateAnimation(const float &dt, ANIMATION_STATE animState) {
 void Player::Update(float timeDelta, Level &level) {
     // Calculate movement speed based on the timeDelta since the last update.
     sf::Vector2f movementSpeed(0.f, 0.f);
-    sf::Vector2f previousPosition = m_position;
+    sf::Vector2f previousPosition = position;
 
     auto animState = ANIMATION_STATE::IDLE_UP;
 
@@ -219,25 +219,25 @@ void Player::Update(float timeDelta, Level &level) {
     // Calculate horizontal movement.
     if (CausesCollision(sf::Vector2f(movementSpeed.x, 0.0f), level))
     {
-        m_position.x = previousPosition.x;
+        position.x = previousPosition.x;
     }
     else
     {
-        m_position.x += movementSpeed.x;
+        position.x += movementSpeed.x;
     }
 
     // Calculate horizontal movement.
     if (CausesCollision(sf::Vector2f(0.0f, movementSpeed.y), level))
     {
-        m_position.y = previousPosition.y;
+        position.y = previousPosition.y;
     }
     else
     {
-        m_position.y += movementSpeed.y;
+        position.y += movementSpeed.y;
     }
 
     // update the sprite position
-    m_sprite.setPosition(m_position);
+    sprite.setPosition(position);
 
     // Calculate aim based on mouse.
     sf::Vector2i mousePos = sf::Mouse::getPosition();
@@ -286,7 +286,7 @@ sf::Sprite& Player::GetAimSprite()
 void Player::render(sf::RenderWindow &window) {
 
 
-    window.draw(m_sprite);
+    window.draw(sprite);
 
 
 }

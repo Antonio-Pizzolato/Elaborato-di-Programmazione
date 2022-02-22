@@ -27,7 +27,7 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
         a = static_cast<sf::Uint8>((std::rand() % 156) + 100);
 
         sf::Color color(r, g, b, a);
-        m_sprite.setColor(color);
+        sprite.setColor(color);
 
         createEnemyAttributeComponent(level, ENEMY::SLIME);
     }
@@ -101,13 +101,13 @@ void Enemy::createEnemyAttributeComponent(int level, ENEMY enemy) {
 // Overrides the default Update function of Entity.
 void Enemy::Update(float timeDelta, Level &level)
 {
-    sf::Vector2f previousPosition = m_position;
+    sf::Vector2f previousPosition = position;
 
     // Move towards current target location.
     if (!m_targetPositions.empty())
     {
         sf::Vector2f targetLocation = m_targetPositions.front();
-        m_velocity = sf::Vector2f(targetLocation.x - m_position.x, targetLocation.y - m_position.y);
+        m_velocity = sf::Vector2f(targetLocation.x - position.x, targetLocation.y - position.y);
 
         if (std::abs(m_velocity.x) < 10.f && std::abs(m_velocity.y) < 10.f)
         {
@@ -120,26 +120,26 @@ void Enemy::Update(float timeDelta, Level &level)
             // Calculate horizontal movement.
             if (CausesCollision(sf::Vector2f(m_velocity.x, 0.0f), level))
             {
-                m_position.x = previousPosition.x;
+                position.x = previousPosition.x;
             }
             else
             {
                 m_velocity.x /= length;
-                m_position.x += m_velocity.x * (m_speed * timeDelta);
+                position.x += m_velocity.x * (m_speed * timeDelta);
             }
 
             // Calculate horizontal movement.
             if (CausesCollision(sf::Vector2f(0.0f, m_velocity.y), level))
             {
-                m_position.y = previousPosition.y;
+                position.y = previousPosition.y;
             }
             else
             {
                 m_velocity.y /= length;
-                m_position.y += m_velocity.y * (m_speed * timeDelta);
+                position.y += m_velocity.y * (m_speed * timeDelta);
             }
 
-            m_sprite.setPosition(m_position);
+            sprite.setPosition(position);
         }
     }
     else
@@ -211,7 +211,7 @@ void Enemy::UpdatePathfinding(Level &level, sf::Vector2f playerPosition)
     level.ResetNodes();
 
     // Store the start and goal nodes.
-    Tile* startNode = level.GetTile(m_position);
+    Tile* startNode = level.GetTile(position);
     Tile* goalNode = level.GetTile(playerPosition);
 
     // Check we have a valid path to find. If not we can just end the

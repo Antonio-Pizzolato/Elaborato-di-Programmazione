@@ -319,7 +319,7 @@ void Game::Update(float timeDelta)
                             // Get the enemy object from the iterator.
                             Enemy &enemy = **enemyIterator;
 
-                            if (DistanceBetweenPoints(enemy.GetPosition(), player->getPosition()) < 80.f) {
+                            if (DistanceBetweenPoints(enemy.GetPosition(), player->GetPosition()) < 80.f) {
                                 // Damage the enemy.
                                 enemy.Damage(player->getDamage());
                                 if (enemy.IsDead()) {
@@ -370,7 +370,7 @@ void Game::Update(float timeDelta)
                         sf::Vector2f target(static_cast<float>(sf::Mouse::getPosition().x),
                                             static_cast<float>(sf::Mouse::getPosition().y));
                         std::unique_ptr<Projectile> proj = std::make_unique<Projectile>(
-                                TextureManager::GetTexture(projectileTextureID), player->getPosition(), player->getPosition(),
+                                TextureManager::GetTexture(projectileTextureID), player->GetPosition(), player->GetPosition(),
                                 target);
                         projectile.push_back(std::move(proj));
 
