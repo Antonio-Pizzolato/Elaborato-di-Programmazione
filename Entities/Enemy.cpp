@@ -19,10 +19,19 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
         // Set initial sprite.
         SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), false, 4, 6);
 
+        // Set a random color for the slime sprite.
+        sf::Uint8 r, g, b, a;
+        r = static_cast<sf::Uint8>(std::rand() % 256);
+        g = static_cast<sf::Uint8>(std::rand() % 256);
+        b = static_cast<sf::Uint8>(std::rand() % 256);
+        a = static_cast<sf::Uint8>((std::rand() % 156) + 100);
+
+        sf::Color color(r, g, b, a);
+        m_sprite.setColor(color);
 
         createEnemyAttributeComponent(level, ENEMY::SLIME);
     }
-    else
+    else if(enemy_class == ENEMY::HUMANOID)
     {
         // Generate a humanoid type.
         auto humanoidType = static_cast<HUMANOID>(std::rand() % static_cast<int>(HUMANOID::COUNT));
@@ -53,9 +62,27 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
         m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_left.png");
 
         // Set initial sprite.
-        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)]), false, 8, 12);
+        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), false, 8, 12);
 
         createEnemyAttributeComponent(level, ENEMY::HUMANOID);
+    }
+    else if(enemy_class == ENEMY::RAT)
+    {
+        // Load textures.
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkup.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkdown.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkright.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkleft.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+
+        // Set initial sprite.
+        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), false, 4, 12);
+
+        createEnemyAttributeComponent(level, ENEMY::RAT);
+
     }
 
 

@@ -5,6 +5,7 @@
 #include "Entity.h"
 #include "../Components/EnemyAttributeComponent.h"
 #include "../Map/Level.h"
+#include "../Components/AnimationComponent.h"
 
 static const int ENEMY_MAX_DAMAGE = 25;
 static const float ENEMY_DEXTERITY_DAMAGE_SCALE = 0.025f;

@@ -8,16 +8,16 @@ EnemyAttributeComponent::EnemyAttributeComponent(int level, ENEMY enemy)
     switch (enemy) {
 
         case ENEMY::SLIME:
-            vitality = 1;
+            vitality = 2;
             strength = 1;
             break;
         case ENEMY::HUMANOID:
             vitality = 3;
             strength = 2;
             break;
-        case ENEMY::COUNT:
+        case ENEMY::RAT:
             vitality = 1;
-            strength = 1;
+            strength = 2;
             break;
         default:
             vitality = 1;

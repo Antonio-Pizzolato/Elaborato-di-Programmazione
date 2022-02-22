@@ -100,7 +100,7 @@ void Game::Initialize()
             projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
             break;
         case PLAYER_CLASS::ARCHER:
-            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow.png");
+            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow123.png");
             break;
         default:
             projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
@@ -154,6 +154,9 @@ void Game::SpawnEnemy(ENEMY enemyType, sf::Vector2f position) {
             break;
         case ENEMY::HUMANOID:
             enemy = std::make_unique<Enemy>(_level, ENEMY::HUMANOID);
+            break;
+        case ENEMY::RAT:
+            enemy = std::make_unique<Enemy>(_level, ENEMY::RAT);
             break;
         default:
             enemy = std::make_unique<Enemy>(_level, ENEMY::SLIME);
@@ -269,7 +272,7 @@ void Game::Update(float timeDelta)
                     projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
                     break;
                 case PLAYER_CLASS::ARCHER:
-                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow.png");
+                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow123.png");
                     break;
                 default:
                     projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
@@ -338,7 +341,7 @@ void Game::Update(float timeDelta)
 
                                         std::random_device rd_gold;
                                         std::mt19937 mt_gold(rd_gold());
-                                        std::uniform_int_distribution<int> dist_gold(0, 5);
+                                        std::uniform_int_distribution<int> dist_gold(0, 3);
                                         int gold = dist_gold(mt_gold);
                                         SpawnItem(static_cast<ITEM>(gold), position);
                                     }
@@ -520,11 +523,29 @@ void Game::Draw(float timeDelta)
                 goldString = "00000" + std::to_string(goldTotal);
             }
 
+            //draw gold in the top right of the screen
             DrawString(goldString, sf::Vector2f(screenCenter.x + 875.f, 40.f), 40);
 
-            std::string hp;
-            hp = std::to_string(player->getAttributeComponent()->damageMax);
-            DrawString(hp, sf::Vector2f(screenCenter.x + 875.f, 80.f), 40);
+            //draw player attributes in the top right of the screen
+            std::string vitality;
+            vitality = "vitality = " + std::to_string(player->getAttributeComponent()->vitality);
+            DrawString(vitality, sf::Vector2f(screenCenter.x + 835.f, 80.f), 40);
+
+            std::string strength;
+            strength = "strength = " + std::to_string(player->getAttributeComponent()->strength);
+            DrawString(strength, sf::Vector2f(screenCenter.x + 820.f, 120.f), 40);
+
+            std::string dex;
+            dex = "dexterity = " + std::to_string(player->getAttributeComponent()->dexterity);
+            DrawString(dex, sf::Vector2f(screenCenter.x + 815.f, 160.f), 40);
+
+            std::string agility;
+            agility = "agility = " + std::to_string(player->getAttributeComponent()->agility);
+            DrawString(agility, sf::Vector2f(screenCenter.x + 843.f, 200.f), 40);
+
+            std::string intel;
+            intel = "intelligence = " + std::to_string(player->getAttributeComponent()->intelligence);
+            DrawString(intel, sf::Vector2f(screenCenter.x + 793.f, 240.f), 40);
 
             achievements->render(m_window);
 

@@ -21,6 +21,7 @@ enum class ITEM {
 enum class ENEMY {
     SLIME,
     HUMANOID,
+    RAT,
     COUNT
 };
 

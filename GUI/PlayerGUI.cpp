@@ -21,11 +21,11 @@ PlayerGUI::PlayerGUI(Player* player, sf::RenderWindow &window, const sf::Font& f
     levelBarText.setFont(m_font);
     levelBarText.setCharacterSize(25);
     levelBarText.setPosition(
-            levelBarBack.getPosition().x +  GUI::p2pX(0.53f, window),
-            levelBarBack.getPosition().y +  GUI::p2pY(0.5f, window));
+            levelBarBack.getPosition().x +  GUI::p2pX(0.60f, window),
+            levelBarBack.getPosition().y +  GUI::p2pY(0.10f, window));
 
     expBar = new GUI::ProgressBar(
-            1.f, 5.6f, 10.4f, 1.9f,
+            1.f, 5.6f, 10.4f, 2.2f,
             sf::Color::Blue, 220,
             window, &m_font);
 

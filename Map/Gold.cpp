@@ -16,9 +16,9 @@ Gold::Gold()
     {
         textureID = TextureManager::AddTexture("Resources/loot/gold/spr_pickup_gold_small.png");
     }
-    else if (goldValue >= 16)
+    else if (goldValue >= 25)
     {
-        textureID = TextureManager::AddTexture("Resources/loot/gold/spr_pickup_gold_large.png");
+        textureID = TextureManager::AddTexture("Resources/loot/gold/Gold_Purse1.png");
     }
     else
     {
@@ -26,7 +26,7 @@ Gold::Gold()
     }
 
     // Set the sprite.
-    SetSprite(TextureManager::GetTexture(textureID), false, 8, 12);
+    SetSprite(TextureManager::GetTexture(textureID), true, 4, 9);
 
     // Set the item type.
     m_type = ITEM::GOLD;
