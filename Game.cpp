@@ -84,8 +84,6 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
 
 }
 
-
-
 void Game::Initialize()
 {
 
@@ -362,9 +360,9 @@ void Game::Update(float timeDelta)
                     }
                 }
 
-                /*if(player->isDead()){
-                    gameState = GAME_STATE::MAIN_MENU;   //death
-                }*/
+                if(player->isDead()){
+                    gameState = GAME_STATE::PAUSED;   //death
+                }
 
                 // Update all items.
                 UpdateItems(player->GetPosition());
@@ -685,7 +683,6 @@ void Game::UpdateProjectiles(float timeDelta) {
         }
     }
 }
-
 
 void Game::UpdateItems(sf::Vector2f playerPosition) {
     // Update all items.

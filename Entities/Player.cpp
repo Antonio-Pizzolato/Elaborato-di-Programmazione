@@ -209,7 +209,7 @@ void Player::Update(float timeDelta, Level &level) {
     // Determine if the player can take damage.
     if (!canTakeDamage)
     {
-        if ((damageDelta += timeDelta) > 3.f)
+        if ((damageDelta += timeDelta) > 0.5f)
         {
             canTakeDamage = true;
             damageDelta = 0.f;
