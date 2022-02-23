@@ -8,11 +8,18 @@
 
 class Items : public Object
 {
+
+private:
+
+    ITEM type;
+    int goldValue;
+    int hpPotionValue;
+
 public:
     /**
      * Default constructor.
      */
-    Items();
+    explicit Items(ITEM itemType);
 
     /**
      * Gets the item type.
@@ -20,14 +27,10 @@ public:
      */
     ITEM GetType() const;
 
-protected:
+    int GetValue() const;
 
-public:
+    void Update(float _timeDelta) override;
 
-    /**
-     * The type of item.
-     */
-    ITEM m_type;
 };
 
 

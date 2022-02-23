@@ -2,8 +2,8 @@
 
 Entity::Entity(int level)
         : animationComponent(nullptr),
-          attributeComponent(nullptr), m_speed(0),
-          m_velocity({0.f, 0.f}),
+          attributeComponent(nullptr), speed(0),
+          velocity({0.f, 0.f}),
           position{ 0.f, 0.f },
           animationSpeed(0),
           isAnimated(false),
@@ -22,8 +22,6 @@ Entity::~Entity() {
 }
 
 //Component functions
-
-
 void Entity::createAnimationComponent(sf::Texture& texture_sheet) {
     animationComponent = new AnimationComponent(sprite, texture_sheet);
 }
@@ -31,9 +29,6 @@ void Entity::createAnimationComponent(sf::Texture& texture_sheet) {
 void Entity::createAttributeComponent(PLAYER_CLASS playerClass) {
     attributeComponent = new AttributeComponent(playerClass);
 }
-
-
-
 
 //Functions
 
@@ -124,25 +119,6 @@ sf::Vector2f Entity::GetPosition() const
 }
 
 
-// Draws the object to the given render window.
-void Entity::Draw(sf::RenderWindow &window, float _timeDelta)
-{
-    // check if the sprite is animated
-    if (isAnimated)
-    {
-        // add the elapsed time since the last draw call to the aggregate
-        timeDelta += _timeDelta;
-
-        // check if the frame should be updated
-        if (timeDelta >= (1.f / animationSpeed))
-        {
-            NextFrame();
-            timeDelta = 0;
-        }
-    }
-
-    window.draw(sprite);
-}
 
 // Advances the sprite forward a frame.
 void Entity::NextFrame()

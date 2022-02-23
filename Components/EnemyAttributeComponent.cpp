@@ -1,7 +1,7 @@
 #include "EnemyAttributeComponent.h"
 
 EnemyAttributeComponent::EnemyAttributeComponent(int level, ENEMY enemy)
-        : hp(0), hpMax(0), damageMin(1), damageMax(3), level(level)
+        : hp(0), hpMax(0), damageMax(3), level(level)
 {
 
 
@@ -48,7 +48,6 @@ bool EnemyAttributeComponent::isDead() const {
 
 void EnemyAttributeComponent::updateStats() {
     hpMax = (vitality * 5 + vitality + strength / 2) * level;
-    damageMin = (strength * 2 + this->strength / 4) * level;
     damageMax = (strength * 2 + this->strength / 2) * level;
     hp = hpMax;
 

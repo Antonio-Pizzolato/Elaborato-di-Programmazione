@@ -1,27 +1,7 @@
-//
-// Created by Antonio on 18/02/2022.
-//
 
 #include "GUI.h"
 
 //BUTTON
-
-const float GUI::p2pX(const float perc, const sf::VideoMode& vm)
-{
-    //Converts a percentage value to pixels relative to the current resolution in the x-axis.
-    return std::floor(static_cast<float>(vm.width) * (perc / 100.f));
-}
-
-const float GUI::p2pY(const float perc, const sf::VideoMode& vm)
-{
-    //Converts a percentage value to pixels relative to the current resolution in the y-axis.
-    return std::floor(static_cast<float>(vm.height) * (perc / 100.f));
-}
-
-const unsigned GUI::calcCharSize(const sf::VideoMode& vm, const unsigned modifier) {
-    //Calculates the character size for text using the current resolution and a constant.
-    return static_cast<unsigned>((vm.width + vm.height) / modifier);
-}
 
 float GUI::p2pX(const float perc, sf::RenderWindow &window)
 {
@@ -86,14 +66,14 @@ GUI::Button::~Button() {
 }
 
 //Accessors
-const bool GUI::Button::isPressed() const {
+bool GUI::Button::isPressed() const {
 
     if(buttonState == BTN_ACTIVE)
         return true;
     return false;
 }
 
-const std::string GUI::Button::getText() const {
+std::string GUI::Button::getText() const {
     return text.getString();
 }
 
@@ -103,12 +83,12 @@ const short unsigned &GUI::Button::getId() const {
 
 
 //Modifiers
-void GUI::Button::setText(const std::string text) {
-    this->text.setString(text);
+void GUI::Button::setText(const std::string& _text) {
+    text.setString(_text);
 }
 
-void GUI::Button::setId(const short unsigned id) {
-    this->id = id;
+void GUI::Button::setId(const short unsigned _id) {
+    id = _id;
 }
 
 
@@ -155,11 +135,6 @@ void GUI::Button::update(const sf::Vector2i& mousePosWindow) {
             text.setFillColor(textActiveColor);
             shape.setOutlineColor(outlineActiveColor);
             break;
-        default:
-            shape.setFillColor(sf::Color::Red);
-            text.setFillColor(sf::Color::Blue);
-            shape.setOutlineColor(sf::Color::Green);
-            break;
     }
 }
 
@@ -167,247 +142,6 @@ void GUI::Button::update(const sf::Vector2i& mousePosWindow) {
 void GUI::Button::render(sf::RenderWindow &window) {
     window.draw(shape);
     window.draw(text);
-}
-
-
-
-
-
-
-
-//================================================================================================================
-
-//DROP DOWN LIST
-
-GUI::DropDownList::DropDownList(float x, float y, float width, float height, sf::Font& font, std::string list[], unsigned nrOfElements, unsigned default_index)
-        : font(font), showList(false), keyTimeMax(1.f), keyTime(0.f)
-{
-    //unsigned nrOfElements = sizeof(list) / sizeof(std::string);
-    activeElement = new GUI::Button(
-            x, y, width, height,
-            &this->font, list[default_index], 14,
-            sf::Color(255, 255,255,150), sf::Color(255, 255, 255,200), sf::Color(20, 20, 20,50),
-            sf::Color(70, 70, 70, 200), sf::Color(150, 150, 150, 200), sf::Color(20, 20, 20, 200),
-            sf::Color(255, 255, 255, 200), sf::Color(255, 255, 255, 255), sf::Color(20, 20, 20, 50));
-
-
-    for(unsigned i = 0; i < nrOfElements; i++){
-        this->list.push_back(
-                new GUI::Button(
-                        x, y + ((i+1) * height), width, height,
-                        &this->font, list[i], 14,
-                        sf::Color(255, 255,255,150), sf::Color(255, 255, 255,255), sf::Color(20, 20, 20,50),
-                        sf::Color(70, 70, 70, 200), sf::Color(150, 150, 150, 200), sf::Color(20, 20, 20, 200),
-                        sf::Color(255, 255, 255, 0), sf::Color(255, 255, 255, 0), sf::Color(20, 20, 20, 0),
-                        i
-                )
-        );
-
-    }
-
-
-
-
-}
-
-GUI::DropDownList::~DropDownList() {
-    delete activeElement;
-    for(size_t i = 0; i < list.size(); i++){
-
-        delete list[i];
-    }
-}
-
-//Accessors
-
-
-
-const bool GUI::DropDownList::getKeyTime() {
-
-    if(keyTime >= keyTimeMax){
-
-        keyTime = 0.f;
-        return true;
-    }
-    return false;
-}
-
-const unsigned short &GUI::DropDownList::getActiveElementId() const {
-    return activeElement->getId();
-}
-
-//Functions
-void GUI::DropDownList::updateKeyTime(const float& dt) {
-
-    if(keyTime < keyTimeMax)
-        keyTime += 10.f * dt;
-}
-
-void GUI::DropDownList::update(const sf::Vector2i &mousePosWindow, const float& dt) {
-
-    updateKeyTime(dt);
-    activeElement->update(mousePosWindow);
-
-    //show and hide the list
-    if(activeElement->isPressed() && getKeyTime()){
-
-        if(showList)
-            showList = false;
-        else
-            showList = true;
-    }
-
-    if(showList){
-        for(auto &i : list){
-            i->update(mousePosWindow);
-
-            if(i->isPressed() && getKeyTime()){
-                showList = false;
-                activeElement->setText(i->getText());
-                activeElement->setId(i->getId());
-            }
-        }
-    }
-
-}
-
-void GUI::DropDownList::render(sf::RenderWindow &window) {
-
-    activeElement->render(window);
-    if(showList){
-        for(auto &i : list){
-            i->render(window);
-        }
-    }
-}
-
-//TEXTURE SELECTOR  ======================================================================================================
-
-GUI::TextureSelector::TextureSelector(float x, float y, float width, float height,
-                                      float gridSize, const sf::Texture *texture_sheet,
-                                      sf::Font& font, std::string text)
-        : keyTimeMax(1.f), keyTime(0.f){
-
-    this->gridSize = gridSize;
-    active = false;
-    hidden = false;
-    float offset = gridSize;
-
-    bounds.setSize(sf::Vector2f(width, height));
-    bounds.setPosition(x + offset, y);
-    bounds.setFillColor(sf::Color(50, 50, 50, 100));
-    bounds.setOutlineThickness(1.f);
-    bounds.setOutlineColor(sf::Color(255, 255, 255, 200));
-
-    sheet.setTexture(*texture_sheet);
-    sheet.setPosition(x + offset, y);
-
-    if(sheet.getGlobalBounds().width > bounds.getGlobalBounds().width){
-
-        sheet.setTextureRect(sf::IntRect(0, 0, static_cast<int>(bounds.getGlobalBounds().width), static_cast<int>(sheet.getGlobalBounds().height)));
-    }
-    if(sheet.getGlobalBounds().height > bounds.getGlobalBounds().height){
-        sheet.setTextureRect(sf::IntRect(0, 0, static_cast<int>(sheet.getGlobalBounds().width), static_cast<int>(bounds.getGlobalBounds().height)));
-    }
-
-    selector.setPosition(x + offset, y);
-    selector.setSize(sf::Vector2f(gridSize, gridSize));
-    selector.setFillColor(sf::Color::Transparent);
-    selector.setOutlineThickness(1.f);
-    selector.setOutlineColor(sf::Color::Red);
-
-    textureRect.width = static_cast<int>(gridSize);
-    textureRect.height = static_cast<int>(gridSize);
-
-    hide_btn = new GUI::Button(x, y, 50.f, 50.f,
-                                     &font, text, 16,
-                                     sf::Color(255, 255,255,200), sf::Color(255, 255, 255,250), sf::Color(255, 255, 255,50),
-                                     sf::Color(70, 70, 70, 200), sf::Color(150, 150, 150, 250), sf::Color(20, 20, 20, 50));
-
-
-}
-
-GUI::TextureSelector::~TextureSelector() {
-    delete hide_btn;
-
-}
-//Accessors
-const bool &GUI::TextureSelector::getActive() const {
-    return active;
-}
-
-const sf::IntRect &GUI::TextureSelector::getTextureRect() const {
-    return textureRect;
-}
-
-//Functions
-const bool GUI::TextureSelector::getKeyTime() {
-
-    if(keyTime >= keyTimeMax){
-
-        keyTime = 0.f;
-        return true;
-    }
-    return false;
-}
-
-void GUI::TextureSelector::updateKeyTime(const float &dt) {
-
-    if(keyTime < keyTimeMax)
-        keyTime += 10.f * dt;
-}
-
-void GUI::TextureSelector::update(const sf::Vector2i& mousePosWindow, const float& dt) {
-
-    updateKeyTime(dt);
-
-    hide_btn->update(mousePosWindow);
-
-    if(hide_btn->isPressed() && getKeyTime()){
-        if(hidden)
-            hidden = false;
-        else
-            hidden = true;
-    }
-
-    if(!hidden)
-    {
-        active = false;
-
-        if(bounds.getGlobalBounds().contains(static_cast<sf::Vector2f>(mousePosWindow)))
-        {
-            active = true;
-
-
-            mousePosGrid.x = (mousePosWindow.x - static_cast<int>(bounds.getPosition().x)) / static_cast<unsigned>(gridSize);
-            mousePosGrid.y = (mousePosWindow.y - static_cast<int>(bounds.getPosition().y)) / static_cast<unsigned>(gridSize);
-
-            selector.setPosition(
-                    bounds.getPosition().x + this->mousePosGrid.x * gridSize,
-                    bounds.getPosition().y + this->mousePosGrid.y * gridSize
-            );
-
-            //Update texture rectangle
-            textureRect.left = static_cast<int>(selector.getPosition().x - bounds.getPosition().x);
-            textureRect.top = static_cast<int>(selector.getPosition().y - bounds.getPosition().y);
-        }
-    }
-}
-
-void GUI::TextureSelector::render(sf::RenderWindow &window) {
-
-
-
-    if(!hidden){
-        window.draw(bounds);
-        window.draw(sheet);
-
-        if(active)
-            window.draw(selector);
-    }
-
-    hide_btn->render(window);
-
 }
 
 // PROGRESSBAR ============================================================================= PROGRESSBAR
@@ -522,8 +256,6 @@ void GUI::Slot::update(const sf::Vector2i& mousePosWindow) {
             break;
         case BTN_ACTIVE:
             shape.setColor(sf::Color::Red);
-            break;
-        default:
             break;
     }
 }

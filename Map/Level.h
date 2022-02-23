@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_LEVEL_H
 #define MAIN_CPP_LEVEL_H
 
@@ -43,7 +39,7 @@ public:
      * A renderWindow is needed in order for the level to calculate its position.
      * @param window The game window.
      */
-    Level(sf::RenderWindow& window);
+    explicit Level(sf::RenderWindow& window);
 
     /**
      * Returns true if the given tile index is solid.
@@ -82,7 +78,7 @@ public:
      * @param fileName The path to the level file to load.
      * return true if the level loaded succesfully.
      */
-    bool LoadLevelFromFile(std::string fileName);
+    bool LoadLevelFromFile(const std::string& fileName);
 
     /**
      * Gets the tile at the given position.
@@ -117,7 +113,7 @@ public:
      * @param rowIndex The column that the row is in.
      * @return True if the tile is valid.
      */
-    bool TileIsValid(int columnIndex, int rowIndex);
+    static bool TileIsValid(int columnIndex, int rowIndex);
 
     /**
      * Gets the current floor number.
@@ -141,13 +137,7 @@ public:
      * Gets the size of the level in terms of tiles.
      * @return The size of the level grid.
      */
-    sf::Vector2i GetSize() const;
-
-    /**
-     * Spawns a given number of torches in the level.
-     * @param torchCount The number of torches to create.
-     */
-    void SpawnTorches(int torchCount);
+    static sf::Vector2i GetSize() ;
 
     /**
      * Unlocks the door in the level.
@@ -167,13 +157,13 @@ public:
     * @param tile The tile to check
     * @return True if the given tile is a floor tile.
     */
-    bool IsFloor(const Tile& tile);
+    static bool IsFloor(const Tile& tile);
 
     /**
      * Returns the size of the tiles in the level.
      * @return The size of the tiles in the level.
      */
-    int GetTileSize() const;
+    static int GetTileSize() ;
 
     /**
     * Adds a tile to the level.
@@ -182,7 +172,7 @@ public:
     * @param tileType The type of tile that is being added.
     * @return The index of the tile. This is used when building levels.
     */
-    int AddTile(std::string fileName, TILE tileType);
+    int AddTile(const std::string& fileName, TILE tileType);
 
     /**
      * Get an absolute location for a tile.
@@ -190,7 +180,7 @@ public:
 	 * @param rowIndex The row that the tile is in.
      * @return Vector with `x` and `y` attributes.
      */
-    const sf::Vector2f GetActualTileLocation(int columnIndex, int rowIndex) const;
+    sf::Vector2f GetActualTileLocation(int columnIndex, int rowIndex) const;
 
     /**
      * Get a vector with locations for all existing floor tiles on the level.
@@ -268,60 +258,60 @@ private:
      * A 2D array that describes the level data.
      * The type is Tile, which holds a sprite and an index.
      */
-    Tile m_grid[GRID_WIDTH][GRID_HEIGHT];
+    Tile grid[GRID_WIDTH][GRID_HEIGHT];
 
     /**
      * A vector off all the sprites in the level.
      */
-    std::vector<sf::Sprite> m_tileSprites;
+    std::vector<sf::Sprite> tileSprites;
 
 
     /**
      *  A vector with locations of all reachable tiles on the map.
      *  Internally used for random objects spawning.
      */
-    std::vector<sf::Vector2f> m_reachableTiles;
+    std::vector<sf::Vector2f> reachableTiles;
 
     /**
      * The position of the level relative to the window.
      * This is to the top-left of the level grid.
      */
-    sf::Vector2i m_origin;
+    sf::Vector2i origin;
 
     /**
     * The floor number that the player is currently on.
     */
-    int m_floorNumber{};
+    int floorNumber{};
 
     /**
     * The room number that the player is currently in.
     */
-    int m_roomNumber{};
+    int roomNumber{};
 
     /**
     * A 2D array that contains the room layout for the current floor.
     */
-    int m_roomLayout[3][10]{};
+    int roomLayout[3][10]{};
 
     /**
      * An array containing all texture IDs of the level tiles.
      */
-    int m_textureIDs[static_cast<int>(TILE::COUNT)]{};
+    int textureIDs[static_cast<int>(TILE::COUNT)]{};
 
     /**
      * The indices of the tile containing the levels door.
      */
-    sf::Vector2i m_doorTileIndices;
+    sf::Vector2i doorTileIndices;
 
     /**
      * A vector of all tiles in the level.
      */
-    std::vector<std::shared_ptr<Torch>> m_torches;
+    std::vector<std::shared_ptr<Torch>> torches;
 
     /**
      * The spawn location for the current level.
      */
-    sf::Vector2f m_spawnLocation;
+    sf::Vector2f spawnLocation;
 };
 
 

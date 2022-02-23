@@ -1,7 +1,7 @@
 #include "AttributeComponent.h"
 
 AttributeComponent::AttributeComponent(PLAYER_CLASS playerClass):
-        level(1), exp(0), hp(0), hpMax(0), damageMin(0), damageMax(0), defence(0){
+        level(1), exp(0), hp(0), hpMax(0), damageMax(0), defence(0){
 
     expNext = static_cast<int>((50 / 3) * (pow(level + 1, 3) - 6 * pow(level + 1, 2) + ((level + 1) * 17) - 12));
 
@@ -79,7 +79,6 @@ bool AttributeComponent::isDead() const
 
 void AttributeComponent::updateStats(const bool reset) {
     hpMax = vitality * 5 + vitality + strength / 2 + intelligence / 5;
-    damageMin = strength * 2 + strength / 4 + intelligence / 5;
     damageMax = strength * 2 + strength / 2 + intelligence / 5;
     defence = agility * 2 + agility / 4 + intelligence / 5;
 

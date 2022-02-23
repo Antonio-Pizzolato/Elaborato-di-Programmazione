@@ -1,13 +1,10 @@
-//
-// Created by Antonio on 18/02/2022.
-//
 #include "PlayerGUI.h"
 
-PlayerGUI::PlayerGUI(Player* player, sf::RenderWindow &window, const sf::Font& font)
-        : m_font(font)
+PlayerGUI::PlayerGUI(Player* _player, sf::RenderWindow &window, const sf::Font& _font)
+        : font(_font)
 {
 
-    m_player = player;
+    player = _player;
 
     float width = GUI::p2pX(1.6f, window);
     float height =  GUI::p2pY(2.8f, window);
@@ -18,7 +15,7 @@ PlayerGUI::PlayerGUI(Player* player, sf::RenderWindow &window, const sf::Font& f
     levelBarBack.setFillColor(sf::Color(50, 50, 50, 200));
     levelBarBack.setPosition(x, y);
 
-    levelBarText.setFont(m_font);
+    levelBarText.setFont(font);
     levelBarText.setCharacterSize(25);
     levelBarText.setPosition(
             levelBarBack.getPosition().x +  GUI::p2pX(0.60f, window),
@@ -27,12 +24,12 @@ PlayerGUI::PlayerGUI(Player* player, sf::RenderWindow &window, const sf::Font& f
     expBar = new GUI::ProgressBar(
             1.f, 5.6f, 10.4f, 2.2f,
             sf::Color::Blue, 220,
-            window, &m_font);
+            window, &font);
 
     hpBar = new GUI::ProgressBar(
             1.f, 8.3f, 10.4f, 2.8f,
             sf::Color::Red, 180,
-            window, &m_font);
+            window, &font);
 
 }
 
@@ -43,53 +40,22 @@ PlayerGUI::~PlayerGUI() {
 
 }
 
-
 //Functions
-void PlayerGUI::updateLevelBar()
+void PlayerGUI::update()
 {
-    levelBarString = std::to_string(m_player->getAttributeComponent()->level);
+    levelBarString = std::to_string(player->getAttributeComponent()->level);
     levelBarText.setString(levelBarString);
-}
-void PlayerGUI::updateExpBar()
-{
-    expBar->update(m_player->getAttributeComponent()->exp, m_player->getAttributeComponent()->expNext);
-}
-void PlayerGUI::updateHpBar()
-{
-    hpBar->update(m_player->getAttributeComponent()->hp, m_player->getAttributeComponent()->hpMax);
-}
-
-
-
-void PlayerGUI::update() {
-
-    updateLevelBar();
-    updateExpBar();
-    updateHpBar();
+    expBar->update(player->getAttributeComponent()->exp, player->getAttributeComponent()->expNext);
+    hpBar->update(player->getAttributeComponent()->hp, player->getAttributeComponent()->hpMax);
 
 }
 
-
-void PlayerGUI::renderLevelBar(sf::RenderWindow &window)
+void PlayerGUI::render(sf::RenderWindow &window)
 {
     window.draw(levelBarBack);
     window.draw(levelBarText);
-}
-
-void PlayerGUI::renderExpBar(sf::RenderWindow &window)
-{
     expBar->render(window);
-}
-
-void PlayerGUI::renderHpBar(sf::RenderWindow &window)
-{
     hpBar->render(window);
-}
-
-void PlayerGUI::render(sf::RenderWindow &window) {
-    renderLevelBar(window);
-    renderExpBar(window);
-    renderHpBar(window);
 
 }
 

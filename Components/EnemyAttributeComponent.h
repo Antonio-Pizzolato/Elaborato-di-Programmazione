@@ -24,7 +24,6 @@ public:
     //Stats
     int hp;
     int hpMax;
-    int damageMin;
     int damageMax;
 
     //Cons / Des

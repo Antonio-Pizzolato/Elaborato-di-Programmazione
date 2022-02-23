@@ -29,6 +29,8 @@ public:
      */
     void Update(float timeDelta, Level &level) override;
 
+    void Draw(sf::RenderWindow &window, float _timeDelta) override;
+
     /**
      * Applies the given amount of damage to the enemy.
      * @param damage The amount of damage to deal to the enemy.
@@ -51,11 +53,13 @@ public:
      * Recalculates the target position of the enemy.
      */
     void UpdatePathfinding(Level& level, sf::Vector2f playerPosition);
+
+
 private:
     /**
      * The target positions of the enemy.
      */
-    std::vector<sf::Vector2f> m_targetPositions;
+    std::vector<sf::Vector2f> targetPositions;
 
     EnemyAttributeComponent* enemyAttributeComponent;
 

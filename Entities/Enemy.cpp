@@ -7,17 +7,17 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
     if(enemy_class == ENEMY::SLIME)
     {
         frameCount = 4;
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite1.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite1.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite1.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite1.png");
 
         // Set initial sprite.
-        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 6);
+        SetSprite(TextureManager::GetTexture(textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 6);
 
         // Set a random color for the slime sprite.
         sf::Uint8 r, g, b, a;
@@ -54,17 +54,17 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
         frameCount = 8;
 
         // Load textures.
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_up.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_down.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_right.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_left.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_up.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_down.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_right.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_left.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_up.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_down.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_right.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_left.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_up.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_down.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_right.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_left.png");
 
         // Set initial sprite.
-        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 12);
+        SetSprite(TextureManager::GetTexture(textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 12);
 
         createEnemyAttributeComponent(level, ENEMY::HUMANOID);
     }
@@ -72,17 +72,17 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
     {
         frameCount = 4;
         // Load textures.
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkup.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkdown.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkright.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkleft.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkup.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkdown.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkright.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkleft.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
+        textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
 
         // Set initial sprite.
-        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 12);
+        SetSprite(TextureManager::GetTexture(textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 12);
 
         createEnemyAttributeComponent(level, ENEMY::RAT);
 
@@ -90,7 +90,7 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
 
 
     // Set speed.
-    m_speed = rand() % 51 + 150;
+    speed = rand() % 51 + 150;
 }
 
 Enemy::~Enemy() {
@@ -107,39 +107,39 @@ void Enemy::Update(float timeDelta, Level &level)
     sf::Vector2f previousPosition = position;
 
     // Move towards current target location.
-    if (!m_targetPositions.empty())
+    if (!targetPositions.empty())
     {
-        sf::Vector2f targetLocation = m_targetPositions.front();
-        m_velocity = sf::Vector2f(targetLocation.x - position.x, targetLocation.y - position.y);
+        sf::Vector2f targetLocation = targetPositions.front();
+        velocity = sf::Vector2f(targetLocation.x - position.x, targetLocation.y - position.y);
 
-        if (std::abs(m_velocity.x) < 10.f && std::abs(m_velocity.y) < 10.f)
+        if (std::abs(velocity.x) < 10.f && std::abs(velocity.y) < 10.f)
         {
-            m_targetPositions.erase(m_targetPositions.begin());
+            targetPositions.erase(targetPositions.begin());
         }
         else
         {
-            float length = std::sqrt(m_velocity.x * m_velocity.x + m_velocity.y * m_velocity.y);
+            float length = std::sqrt(velocity.x * velocity.x + velocity.y * velocity.y);
 
             // Calculate horizontal movement.
-            if (CausesCollision(sf::Vector2f(m_velocity.x, 0.0f), level))
+            if (CausesCollision(sf::Vector2f(velocity.x, 0.0f), level))
             {
                 position.x = previousPosition.x;
             }
             else
             {
-                m_velocity.x /= length;
-                position.x += m_velocity.x * (m_speed * timeDelta);
+                velocity.x /= length;
+                position.x += velocity.x * (speed * timeDelta);
             }
 
             // Calculate horizontal movement.
-            if (CausesCollision(sf::Vector2f(0.0f, m_velocity.y), level))
+            if (CausesCollision(sf::Vector2f(0.0f, velocity.y), level))
             {
                 position.y = previousPosition.y;
             }
             else
             {
-                m_velocity.y /= length;
-                position.y += m_velocity.y * (m_speed * timeDelta);
+                velocity.y /= length;
+                position.y += velocity.y * (speed * timeDelta);
             }
 
             sprite.setPosition(position);
@@ -147,45 +147,64 @@ void Enemy::Update(float timeDelta, Level &level)
     }
     else
     {
-        m_velocity.x = 0.f;
-        m_velocity.y = 0.f;
+        velocity.x = 0.f;
+        velocity.y = 0.f;
     }
 
     // Choose animation state.
     auto animState = ANIMATION_STATE::IDLE_UP;
 
-    if ((m_velocity.x != 0) || (m_velocity.y != 0))
+    if ((velocity.x != 0) || (velocity.y != 0))
     {
-        if (std::abs(m_velocity.x) > std::abs(m_velocity.y))
+        if (std::abs(velocity.x) > std::abs(velocity.y))
         {
-            if (m_velocity.x <= 0)
+            if (velocity.x <= 0)
             {
                 animState = ANIMATION_STATE::WALK_LEFT;
-                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
+                SetSprite(TextureManager::GetTexture(textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
             else
             {
                 animState = ANIMATION_STATE::WALK_RIGHT;
-                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
+                SetSprite(TextureManager::GetTexture(textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
         }
         else
         {
-            if (m_velocity.y <= 0)
+            if (velocity.y <= 0)
             {
                 animState = ANIMATION_STATE::WALK_UP;
-                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
+                SetSprite(TextureManager::GetTexture(textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
             else
             {
                 animState = ANIMATION_STATE::WALK_DOWN;
-                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
+                SetSprite(TextureManager::GetTexture(textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
         }
     }
 
 }
 
+// Draws the object to the given render window.
+void Enemy::Draw(sf::RenderWindow &window, float _timeDelta)
+{
+    // check if the sprite is animated
+    if (isAnimated)
+    {
+        // add the elapsed time since the last draw call to the aggregate
+        timeDelta += _timeDelta;
+
+        // check if the frame should be updated
+        if (timeDelta >= (1.f / animationSpeed))
+        {
+            NextFrame();
+            timeDelta = 0;
+        }
+    }
+
+    window.draw(sprite);
+}
 
 // Applies the given amount of damage to the enemy.
 void Enemy::Damage(int damage)
@@ -225,7 +244,7 @@ void Enemy::UpdatePathfinding(Level &level, sf::Vector2f playerPosition)
     // function as there's no path to find.
     if (startNode == goalNode)
     {
-        m_targetPositions.clear();
+        targetPositions.clear();
         return;
     }
 
@@ -342,15 +361,15 @@ void Enemy::UpdatePathfinding(Level &level, sf::Vector2f playerPosition)
     }
 
     // Clear the vector of target positions.
-    m_targetPositions.clear();
+    targetPositions.clear();
 
     // Store the node locations as the enemies target locations.
     for (Tile* tile : pathList)
     {
-        m_targetPositions.push_back(level.GetActualTileLocation(tile->columnIndex, tile->rowIndex));
+        targetPositions.push_back(level.GetActualTileLocation(tile->columnIndex, tile->rowIndex));
     }
 
-    // Reverse the target position as we read them from goal to origin and we need them the other way around.
-    std::reverse(m_targetPositions.begin(), m_targetPositions.end());
+    // Reverse the target position as we read them from goal to origin, we need them the other way around.
+    std::reverse(targetPositions.begin(), targetPositions.end());
 }
 

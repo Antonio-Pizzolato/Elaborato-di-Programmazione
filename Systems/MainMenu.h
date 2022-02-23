@@ -15,7 +15,6 @@ public:
     MainMenu(sf::RenderWindow &window, sf::Font *font);
     ~MainMenu();
 
-
     void Update(const sf::Vector2i& mousePosWindow, GAME_STATE *gameState, bool *isRunning);
     void Draw(sf::RenderWindow &window);
 

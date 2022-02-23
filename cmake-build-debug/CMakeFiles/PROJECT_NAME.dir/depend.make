@@ -704,123 +704,6 @@ CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.obj: \
  ../Map/Torch.h \
  ../TextureManager.h \
  ../Util.h
-CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj: \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/AlResource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/InputSoundFile.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Listener.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Music.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/OutputSoundFile.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Sound.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundBuffer.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundBufferRecorder.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileFactory.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileFactory.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileReader.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileWriter.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundRecorder.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundSource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Config.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/BlendMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/CircleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Color.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/ConvexShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Drawable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Font.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glyph.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Image.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/PrimitiveType.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RectangleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderStates.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTarget.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTexture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderWindow.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shader.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Sprite.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Text.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Texture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transform.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transformable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Vertex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexArray.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/View.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Ftp.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Http.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/IpAddress.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Packet.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Socket.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/SocketHandle.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/SocketSelector.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/TcpListener.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/TcpSocket.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/UdpSocket.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Clock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Err.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/FileInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/InputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Lock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/MemoryInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Mutex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/NonCopyable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Sleep.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocal.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Time.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Clipboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Context.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/ContextSettings.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Cursor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Event.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/GlResource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Joystick.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Keyboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Mouse.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Sensor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Touch.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/VideoMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowHandle.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowStyle.hpp \
- ../Components/AnimationComponent.h \
- ../Components/AttributeComponent.h \
- ../Components/EnemyAttributeComponent.h \
- ../Entities/Enemy.h \
- ../Entities/Entity.h \
- ../Entities/Humanoid.cpp \
- ../Entities/Humanoid.h \
- ../Map/Items.h \
- ../Map/Level.h \
- ../Map/Object.h \
- ../Map/Torch.h \
- ../TextureManager.h \
- ../Util.h
 CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj: \
  C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio.hpp \
  C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/AlResource.hpp \
@@ -936,123 +819,6 @@ CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.obj: \
  ../Map/Object.h \
  ../Map/Torch.h \
  ../Projectile/Projectile.h \
- ../TextureManager.h \
- ../Util.h
-CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj: \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/AlResource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/InputSoundFile.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Listener.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Music.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/OutputSoundFile.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/Sound.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundBuffer.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundBufferRecorder.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileFactory.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileFactory.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileReader.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundFileWriter.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundRecorder.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundSource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Audio/SoundStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Config.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/BlendMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/CircleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Color.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/ConvexShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Drawable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Font.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glyph.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Image.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/PrimitiveType.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RectangleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderStates.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTarget.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTexture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderWindow.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shader.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Sprite.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Text.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Texture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transform.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transformable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Vertex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexArray.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/View.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Ftp.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Http.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/IpAddress.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Packet.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/Socket.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/SocketHandle.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/SocketSelector.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/TcpListener.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/TcpSocket.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Network/UdpSocket.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Clock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Err.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/FileInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/InputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Lock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/MemoryInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Mutex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/NonCopyable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Sleep.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocal.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Time.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Clipboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Context.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/ContextSettings.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Cursor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Event.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/GlResource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Joystick.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Keyboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Mouse.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Sensor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Touch.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/VideoMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowHandle.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowStyle.hpp \
- ../Components/AnimationComponent.h \
- ../Components/AttributeComponent.h \
- ../Components/EnemyAttributeComponent.h \
- ../Entities/Enemy.h \
- ../Entities/Entity.h \
- ../Entities/Slime.cpp \
- ../Entities/Slime.h \
- ../Map/Items.h \
- ../Map/Level.h \
- ../Map/Object.h \
- ../Map/Torch.h \
  ../TextureManager.h \
  ../Util.h
 CMakeFiles/PROJECT_NAME.dir/Entities/Warrior.cpp.obj: \
@@ -1712,9 +1478,7 @@ CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj: \
  ../Entities/Archer.h \
  ../Entities/Enemy.h \
  ../Entities/Entity.h \
- ../Entities/Humanoid.h \
  ../Entities/Player.h \
- ../Entities/Slime.h \
  ../Entities/Warrior.h \
  ../Entities/Wizard.h \
  ../GUI/GUI.h \
@@ -1723,11 +1487,9 @@ CMakeFiles/PROJECT_NAME.dir/Game.cpp.obj: \
  ../Game.cpp \
  ../Game.h \
  ../Input.h \
- ../Map/Gold.h \
  ../Map/Items.h \
  ../Map/Level.h \
  ../Map/Object.h \
- ../Map/Potion.h \
  ../Map/Torch.h \
  ../Observable.h \
  ../Observer.h \
@@ -1814,87 +1576,6 @@ CMakeFiles/PROJECT_NAME.dir/Input.cpp.obj: \
  C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowStyle.hpp \
  ../Input.cpp \
  ../Input.h \
- ../TextureManager.h \
- ../Util.h
-CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj: \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Config.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/BlendMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/CircleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Color.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/ConvexShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Drawable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Font.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glyph.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Image.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/PrimitiveType.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RectangleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderStates.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTarget.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTexture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderWindow.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shader.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Sprite.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Text.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Texture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transform.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transformable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Vertex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexArray.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/View.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Clock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Err.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/FileInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/InputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Lock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/MemoryInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Mutex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/NonCopyable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Sleep.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocal.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Time.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Clipboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Context.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/ContextSettings.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Cursor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Event.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/GlResource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Joystick.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Keyboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Mouse.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Sensor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Touch.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/VideoMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowHandle.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowStyle.hpp \
- ../Map/Gold.cpp \
- ../Map/Gold.h \
- ../Map/Items.h \
- ../Map/Object.h \
  ../TextureManager.h \
  ../Util.h
 CMakeFiles/PROJECT_NAME.dir/Map/Items.cpp.obj: \
@@ -2136,87 +1817,6 @@ CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.obj: \
  C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowStyle.hpp \
  ../Map/Object.cpp \
  ../Map/Object.h \
- ../TextureManager.h \
- ../Util.h
-CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj: \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Config.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/BlendMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/CircleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Color.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/ConvexShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Drawable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Font.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glsl.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Glyph.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Image.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/PrimitiveType.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Rect.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RectangleShape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderStates.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTarget.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderTexture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/RenderWindow.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shader.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Shape.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Sprite.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Text.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Texture.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transform.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Transformable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/Vertex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexArray.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Graphics/View.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Clock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Err.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/FileInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/InputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Lock.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/MemoryInputStream.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Mutex.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/NonCopyable.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Sleep.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/String.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Thread.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocal.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/ThreadLocalPtr.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Time.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Utf.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector2.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/System/Vector3.inl \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Clipboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Context.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/ContextSettings.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Cursor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Event.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Export.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/GlResource.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Joystick.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Keyboard.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Mouse.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Sensor.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Touch.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/VideoMode.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/Window.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowHandle.hpp \
- C:/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/include/SFML/Window/WindowStyle.hpp \
- ../Map/Items.h \
- ../Map/Object.h \
- ../Map/Potion.cpp \
- ../Map/Potion.h \
  ../TextureManager.h \
  ../Util.h
 CMakeFiles/PROJECT_NAME.dir/Map/Torch.cpp.obj: \
@@ -3124,9 +2724,7 @@ CMakeFiles/PROJECT_NAME.dir/main.cpp.obj: \
  ../Entities/Archer.h \
  ../Entities/Enemy.h \
  ../Entities/Entity.h \
- ../Entities/Humanoid.h \
  ../Entities/Player.h \
- ../Entities/Slime.h \
  ../Entities/Warrior.h \
  ../Entities/Wizard.h \
  ../GUI/GUI.h \
@@ -3134,11 +2732,9 @@ CMakeFiles/PROJECT_NAME.dir/main.cpp.obj: \
  ../GUI/PlayerGUI.h \
  ../Game.h \
  ../Input.h \
- ../Map/Gold.h \
  ../Map/Items.h \
  ../Map/Level.h \
  ../Map/Object.h \
- ../Map/Potion.h \
  ../Map/Torch.h \
  ../Observable.h \
  ../Observer.h \

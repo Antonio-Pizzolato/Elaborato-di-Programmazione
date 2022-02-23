@@ -20,18 +20,27 @@ protected:
     /**
 	 * The entities movement speed.
 	 */
-    float m_speed;
+    float speed;
+
+    /**
+    * The object's sprite.
+    */
+    sf::Sprite sprite;
+
+    /**
+     * The position of the object in the game window.
+     */
+    sf::Vector2f position;
 
     /**
 	 * A vector of all texture IDs.
 	 */
-    int m_textureIDs[static_cast<int>(ANIMATION_STATE::COUNT)];
+    int textureIDs[static_cast<int>(ANIMATION_STATE::COUNT)];
 
 
-    sf::Vector2f m_velocity;
+    sf::Vector2f velocity;
 
     bool CausesCollision(sf::Vector2f movement, Level& level);
-
 
 
 public:
@@ -71,13 +80,12 @@ public:
      */
     float timeDelta;
 
-    Entity(int level = 0);
+    explicit Entity(int level = 0);
     virtual ~Entity();
 
     //Component functions
     void createAnimationComponent(sf::Texture& texture_sheet);
     void createAttributeComponent(PLAYER_CLASS playerClass);
-
 
     virtual void Update(float dt, Level &level) = 0;
 
@@ -86,7 +94,7 @@ public:
      * @param window The render window to draw the object to.
      * @param tileDelta The time, in MS, since the last draw call.
      */
-    virtual void Draw(sf::RenderWindow &window, float timeDelta);
+    virtual void Draw(sf::RenderWindow &window, float timeDelta) = 0;
 
     /**
      * Sets the position of the object on screen. This is relative to the top-left of the game window.
@@ -112,27 +120,10 @@ public:
      */
     bool SetSprite(sf::Texture& texture, int frames = 1, int frameSpeed = 0);
 
-
-
-protected:
-
-    /**
-     * The object's sprite.
-     */
-    sf::Sprite sprite;
-
-    /**
-     * The position of the object in the game window.
-     */
-    sf::Vector2f position;
-
-private:
-
     /**
      * Advances the sprite by a frame.
      */
     void NextFrame();
-
 
 };
 

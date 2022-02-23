@@ -24,7 +24,7 @@ private:
         float timer;
         bool done;
         int width;
-        int height;
+
 
         sf::IntRect startRect;
         sf::IntRect currentRect;
@@ -36,7 +36,7 @@ private:
                   int start_frame_x, int start_frame_y, int frames_x, int frames_y, int width, int height)
                 : sprite(sprite), textureSheet(texture_sheet),
                   animationTimer(animation_timer), timer(0.f), done(false),
-                  width(width), height(height)
+                  width(width)
         {
             startRect = sf::IntRect(start_frame_x * width, start_frame_y * height, width, height);
             currentRect = startRect;
@@ -118,9 +118,6 @@ private:
 public:
     AnimationComponent(sf::Sprite& sprite, sf::Texture& texture_sheet);
     virtual ~AnimationComponent();
-
-    //Accessor
-    const bool& isDone(const std::string& key);
 
     //Functions
     void addAnimation(const std::string& key,

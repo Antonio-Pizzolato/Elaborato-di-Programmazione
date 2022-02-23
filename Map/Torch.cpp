@@ -4,7 +4,7 @@ Torch::Torch()
 {
     // Set sprite.
     int textureID = TextureManager::AddTexture("Resources/spr_torch.png");
-    SetSprite(TextureManager::GetTexture(textureID), false, 5, 12);
+    SetSprite(TextureManager::GetTexture(textureID), 5, 12);
 }
 
 // Update the brightness of the torch.

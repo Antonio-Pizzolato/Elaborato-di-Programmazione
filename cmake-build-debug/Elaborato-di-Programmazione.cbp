@@ -132,22 +132,10 @@
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Entity.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Humanoid.cpp">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Humanoid.h">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Player.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Player.h">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Slime.cpp">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Slime.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Entities/Warrior.cpp">
@@ -192,12 +180,6 @@
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Input.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Map/Gold.cpp">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Map/Gold.h">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Map/Items.cpp">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
@@ -214,12 +196,6 @@
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Map/Object.h">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Map/Potion.cpp">
-			<Option target="PROJECT_NAME"/>
-		</Unit>
-		<Unit filename="D:/C++/Elaborato-di-Programmazione/Map/Potion.h">
 			<Option target="PROJECT_NAME"/>
 		</Unit>
 		<Unit filename="D:/C++/Elaborato-di-Programmazione/Map/Torch.cpp">

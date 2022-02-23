@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Level.h"
 
 #include <utility>
@@ -10,10 +6,10 @@ Level::Level() = default;
 
 // Constructor.
 Level::Level(sf::RenderWindow& window) :
-        m_origin({ 0, 0 }),
-        m_floorNumber(1),
-        m_roomNumber(-1),
-        m_doorTileIndices({ 0, 0 })
+        origin({ 0, 0 }),
+        floorNumber(1),
+        roomNumber(-1),
+        doorTileIndices({ 0, 0 })
 {
     // Load all tiles.
     AddTile("Resources/tiles/spr_tile_floor.png", TILE::FLOOR);
@@ -44,18 +40,18 @@ Level::Level(sf::RenderWindow& window) :
     AddTile("Resources/tiles/spr_tile_door_unlocked.png", TILE::WALL_DOOR_UNLOCKED);
 
     // Calculate the top left of the grid.
-    m_origin.x = (static_cast<int>(window.getSize().x) - (GRID_WIDTH * TILE_SIZE));
-    m_origin.x /= 2;
+    origin.x = (static_cast<int>(window.getSize().x) - (GRID_WIDTH * TILE_SIZE));
+    origin.x /= 2;
 
-    m_origin.y = (static_cast<int>(window.getSize().y) - (GRID_HEIGHT * TILE_SIZE));
-    m_origin.y /= 2;
+    origin.y = (static_cast<int>(window.getSize().y) - (GRID_HEIGHT * TILE_SIZE));
+    origin.y /= 2;
 
     // Store the column and row information for each node.
     for (int i = 0; i < GRID_WIDTH; i++)
     {
         for (int j = 0; j < GRID_HEIGHT; j++)
         {
-            auto cell = &m_grid[i][j];
+            auto cell = &grid[i][j];
             cell->columnIndex = i;
             cell->rowIndex = j;
         }
@@ -65,10 +61,10 @@ Level::Level(sf::RenderWindow& window) :
 }
 
 // Create and adds a tile sprite to the list of those available.
-int Level::AddTile(std::string fileName, TILE tileType)
+int Level::AddTile(const std::string& fileName, TILE tileType)
 {
     // Add the texture to the texture manager.
-    int textureID = TextureManager::AddTexture(std::move(fileName));
+    int textureID = TextureManager::AddTexture(fileName);
 
     if (textureID < 0)
     {
@@ -76,7 +72,7 @@ int Level::AddTile(std::string fileName, TILE tileType)
     }
     else
     {
-        m_textureIDs[static_cast<int>(tileType)] = textureID;
+        textureIDs[static_cast<int>(tileType)] = textureID;
     }
 
     // Return the ID of the tile.
@@ -90,7 +86,7 @@ bool Level::IsSolid(int i, int j)
     // Check that the tile is valid
     if (TileIsValid(i, j))
     {
-        int tileIndex = static_cast<int>(m_grid[i][j].type);
+        int tileIndex = static_cast<int>(grid[i][j].type);
         return (((tileIndex != static_cast<int>(TILE::FLOOR)) && (tileIndex != static_cast<int>(TILE::FLOOR_ALT))) && (tileIndex != static_cast<int>(TILE::WALL_DOOR_UNLOCKED)));
     }
     else
@@ -101,7 +97,7 @@ bool Level::IsSolid(int i, int j)
 // Returns the position of the level relative to the application window.
 sf::Vector2f Level::GetPosition() const
 {
-    return {static_cast<float>(m_origin.x), static_cast<float>(m_origin.y)};
+    return {static_cast<float>(origin.x), static_cast<float>(origin.y)};
 }
 
 // Returns the id of the given tile in the 2D level array.
@@ -114,7 +110,7 @@ TILE Level::GetTileType(int columnIndex, int rowIndex) const
     }
 
     // Fetch the id.
-    return m_grid[columnIndex][rowIndex].type;
+    return grid[columnIndex][rowIndex].type;
 }
 
 // Sets the id of the given tile in the grid.
@@ -133,26 +129,26 @@ void Level::SetTile(int columnIndex, int rowIndex, TILE tileType)
     }
 
     // change that tiles sprite to the new index
-    m_grid[columnIndex][rowIndex].type = tileType;
-    m_grid[columnIndex][rowIndex].sprite.setTexture(TextureManager::GetTexture(m_textureIDs[static_cast<int>(tileType)]));
+    grid[columnIndex][rowIndex].type = tileType;
+    grid[columnIndex][rowIndex].sprite.setTexture(TextureManager::GetTexture(textureIDs[static_cast<int>(tileType)]));
 }
 
 // Gets the current floor number.
 int Level::GetFloorNumber() const
 {
-    return m_floorNumber;
+    return floorNumber;
 }
 
 // Gets the current room number.
 int Level::GetRoomNumber() const
 {
-    return m_roomNumber;
+    return roomNumber;
 }
 
 // Get the reachable tiles on the level.
 std::vector<sf::Vector2f> Level::GetReachableTiles() const
 {
-    return m_reachableTiles;
+    return reachableTiles;
 }
 
 
@@ -168,7 +164,7 @@ bool Level::TileIsValid(int column, int row)
 }
 
 // Gets the size of the level in terms of tiles.
-sf::Vector2i Level::GetSize() const
+sf::Vector2i Level::GetSize()
 {
     return {GRID_WIDTH, GRID_HEIGHT};
 }
@@ -177,8 +173,8 @@ sf::Vector2i Level::GetSize() const
 Tile* Level::GetTile(sf::Vector2f position)
 {
     // Convert the position to relative to the level grid.
-    position.x -= m_origin.x;
-    position.y -= m_origin.y;
+    position.x -= origin.x;
+    position.y -= origin.y;
 
     // Convert to a tile position.
     int tileColumn, tileRow;
@@ -186,7 +182,7 @@ Tile* Level::GetTile(sf::Vector2f position)
     tileColumn = static_cast<int>(position.x) / TILE_SIZE;
     tileRow = static_cast<int>(position.y) / TILE_SIZE;
 
-    return &m_grid[tileColumn][tileRow];
+    return &grid[tileColumn][tileRow];
 }
 
 // Returns a pointer to the tile at the given index.
@@ -194,7 +190,7 @@ Tile* Level::GetTile(int columnIndex, int rowIndex)
 {
     if (TileIsValid(columnIndex, rowIndex))
     {
-        return &m_grid[columnIndex][rowIndex];
+        return &grid[columnIndex][rowIndex];
     }
     else
     {
@@ -203,7 +199,7 @@ Tile* Level::GetTile(int columnIndex, int rowIndex)
 }
 
 // Loads a level from a .txt file.
-bool Level::LoadLevelFromFile(std::string fileName){
+bool Level::LoadLevelFromFile(const std::string& fileName){
     // Create all the fields we need.
     std::ifstream file(fileName);
 
@@ -215,14 +211,14 @@ bool Level::LoadLevelFromFile(std::string fileName){
             for (int i = 0; i < GRID_WIDTH; ++i)
             {
                 // Get the cell that we're working on.
-                auto& cell = m_grid[i][j];
+                auto& cell = grid[i][j];
 
                 // Read the character. Out of 4 characters we only want 2nd and 3rd.
                 std::string input;
 
                 file.get();
-                input += file.get();
-                input += file.get();
+                input += std::to_string(file.get());
+                input += std::to_string(file.get());
                 file.get();
 
                 // Convert string to int.
@@ -232,14 +228,14 @@ bool Level::LoadLevelFromFile(std::string fileName){
 
                 // Set type, sprite and position.
                 cell.type = static_cast<TILE>(tileID);
-                cell.sprite.setTexture(TextureManager::GetTexture(m_textureIDs[tileID]));
-                cell.sprite.setPosition(m_origin.x + (TILE_SIZE * i), m_origin.y + (TILE_SIZE * j));
+                cell.sprite.setTexture(TextureManager::GetTexture(textureIDs[tileID]));
+                cell.sprite.setPosition(origin.x + (TILE_SIZE * i), origin.y + (TILE_SIZE * j));
 
                 // Check for entry/exit nodes.
                 if (cell.type == TILE::WALL_DOOR_LOCKED)
                 {
                     // Save the location of the exit door.
-                    m_doorTileIndices = sf::Vector2i(i, 0);
+                    doorTileIndices = sf::Vector2i(i, 0);
                 }
             }
             file.get(); // Carriage return
@@ -257,14 +253,14 @@ bool Level::LoadLevelFromFile(std::string fileName){
         locations[4] = GetActualTileLocation(15, 3);
 
         // Spawn torches.
-        for (int i = 0; i < 5; ++i)
+        for (auto & location : locations)
         {
             std::shared_ptr<Torch> torch = std::make_shared<Torch>();
-            torch->SetPosition(sf::Vector2f(static_cast<float>(locations[i].x), static_cast<float>(locations[i].y)));
-            m_torches.push_back(torch);
+            torch->SetPosition(sf::Vector2f(static_cast<float>(location.x), static_cast<float>(location.y)));
+            torches.push_back(torch);
         }
 
-        m_reachableTiles = GetFloorLocations();
+        reachableTiles = GetFloorLocations();
     }
     else
     {
@@ -278,7 +274,7 @@ bool Level::LoadLevelFromFile(std::string fileName){
 bool Level::IsWall(int i, int j)
 {
     if (TileIsValid(i, j))
-        return m_grid[i][j].type <= TILE::WALL_INTERSECTION;
+        return grid[i][j].type <= TILE::WALL_INTERSECTION;
     else
         return false;
 }
@@ -286,13 +282,13 @@ bool Level::IsWall(int i, int j)
 // Unlocks the door in the level.
 void Level::UnlockDoor()
 {
-    SetTile(m_doorTileIndices.x, m_doorTileIndices.y, TILE::WALL_DOOR_UNLOCKED);
+    SetTile(doorTileIndices.x, doorTileIndices.y, TILE::WALL_DOOR_UNLOCKED);
 }
 
 // Return true if the given tile is a floor tile.
 bool Level::IsFloor(int columnIndex, int rowIndex)
 {
-    Tile* tile = &m_grid[columnIndex][rowIndex];
+    Tile* tile = &grid[columnIndex][rowIndex];
 
     return ((tile->type == TILE::FLOOR) || (tile->type == TILE::FLOOR_ALT));
 }
@@ -304,7 +300,7 @@ bool Level::IsFloor(const Tile& tile)
 }
 
 // Gets the size of the tiles in the level.
-int Level::GetTileSize() const
+int Level::GetTileSize()
 {
     return TILE_SIZE;
 }
@@ -312,14 +308,14 @@ int Level::GetTileSize() const
 // Gets a vector of all torches in the level.
 std::vector<std::shared_ptr<Torch>>* Level::GetTorches()
 {
-    return &m_torches;
+    return &torches;
 }
 
 // Draws the level grid to the given render window.
 void Level::Draw(sf::RenderWindow &window, float dt)
 {
     // Draw the level tiles.
-    for (auto & i : m_grid)
+    for (auto & i : grid)
     {
         for (auto & j : i)
         {
@@ -328,18 +324,18 @@ void Level::Draw(sf::RenderWindow &window, float dt)
     }
 
     // Draw all torches.
-    for (auto& torch : m_torches)
+    for (auto& torch : torches)
     {
         torch->Draw(window, dt);
     }
 }
 
 // Get an absolute location for a specified tile.
-const sf::Vector2f Level::GetActualTileLocation(int columnIndex, int rowIndex) const
+sf::Vector2f Level::GetActualTileLocation(int columnIndex, int rowIndex) const
 {
     sf::Vector2f location;
-    location.x = m_origin.x + (TILE_SIZE * columnIndex) + (TILE_SIZE / 2);
-    location.y = m_origin.y + (TILE_SIZE * rowIndex) + (TILE_SIZE / 2);
+    location.x = origin.x + (TILE_SIZE * columnIndex) + (TILE_SIZE / 2);
+    location.y = origin.y + (TILE_SIZE * rowIndex) + (TILE_SIZE / 2);
     return location;
 }
 
@@ -367,12 +363,12 @@ std::vector<sf::Vector2f> Level::GetFloorLocations()
 sf::Vector2f Level::GetRandomSpawnLocation()
 {
     // Select a random floor tile.
-    if (m_reachableTiles.size() == 0)
+    if (reachableTiles.empty())
     {
-        m_reachableTiles = GetFloorLocations();
+        reachableTiles = GetFloorLocations();
     }
-    unsigned long index = std::rand() % m_reachableTiles.size();
-    sf::Vector2f tileLocation(m_reachableTiles[index]);
+    unsigned long index = std::rand() % reachableTiles.size();
+    sf::Vector2f tileLocation(reachableTiles[index]);
 
     // Create a random offset.
     tileLocation.x += std::rand() % 15 - 10;
@@ -383,7 +379,7 @@ sf::Vector2f Level::GetRandomSpawnLocation()
 // Sets the overlay color of the level tiles.
 void Level::SetColor(sf::Color tileColor)
 {
-    for (auto & i : m_grid)
+    for (auto & i : grid)
     {
         for (auto & j : i)
         {
@@ -395,14 +391,14 @@ void Level::SetColor(sf::Color tileColor)
 // Resets the A* data of all tiles.
 void Level::ResetNodes()
 {
-    for(int i = 0; i < GRID_WIDTH; ++i)
+    for(auto & i : grid)
     {
-        for (int j = 0; j < GRID_WIDTH; ++j)
+        for (auto & j : i)
         {
-            m_grid[i][j].parentNode = nullptr;
-            m_grid[i][j].G = 0;
-            m_grid[i][j].H = 0;
-            m_grid[i][j].F = 0;
+            j.parentNode = nullptr;
+            j.G = 0;
+            j.H = 0;
+            j.F = 0;
         }
     }
 }
@@ -410,8 +406,8 @@ void Level::ResetNodes()
 // Generates a random level.
 void Level::GenerateLevel()
 {
-    m_torches.clear();
-    m_reachableTiles.clear();
+    torches.clear();
+    reachableTiles.clear();
 
     // Create the initial grid pattern.
     for (int i = 0; i < GRID_WIDTH; ++i)
@@ -421,16 +417,16 @@ void Level::GenerateLevel()
             if ((i % 2 != 0) && (j % 2 != 0))
             {
                 // Odd tiles, nothing.
-                m_grid[i][j].type = TILE::EMPTY;
+                grid[i][j].type = TILE::EMPTY;
             }
             else
             {
-                m_grid[i][j].type = TILE::WALL_TOP;
-                m_grid[i][j].sprite.setTexture(TextureManager::GetTexture(m_textureIDs[static_cast<int>(TILE::WALL_TOP)]));
+                grid[i][j].type = TILE::WALL_TOP;
+                grid[i][j].sprite.setTexture(TextureManager::GetTexture(textureIDs[static_cast<int>(TILE::WALL_TOP)]));
             }
 
             // Set the position.
-            m_grid[i][j].sprite.setPosition(m_origin.x + (TILE_SIZE * i), m_origin.y + (TILE_SIZE * j));
+            grid[i][j].sprite.setPosition(origin.x + (TILE_SIZE * i), origin.y + (TILE_SIZE * j));
         }
     }
 
@@ -444,12 +440,12 @@ void Level::GenerateLevel()
     CalculateTextures();
 
     // Increment our room/floor count and generate new effect it necessary.
-    m_roomNumber++;
-    if (m_roomNumber == 5)
+    roomNumber++;
+    if (roomNumber == 5)
     {
         // Move to next floor.
-        m_roomNumber = 0;
-        m_floorNumber++;
+        roomNumber = 0;
+        floorNumber++;
 
         // Generate a random color and apply it to the level tiles.
         SetRandomColor();
@@ -466,39 +462,39 @@ void Level::GenerateLevel()
 void Level::CreatePath(int columnIndex, int rowIndex)
 {
     // Store the current tile.
-    Tile* currentTile = &m_grid[columnIndex][rowIndex];
+    Tile* currentTile = &grid[columnIndex][rowIndex];
 
     // Create a list of possible directions and sort randomly.
     sf::Vector2i directions[] = {{ 0, -2 }, { 2, 0 }, { 0, 2 }, { -2, 0 }};
     std::random_shuffle(std::begin(directions), std::end(directions));
 
     // For each direction.
-    for (int i = 0; i < 4; i++)
+    for (auto & direction : directions)
     {
         // Get the new tile position.
-        int dx = currentTile->columnIndex + directions[i].x;
-        int dy = currentTile->rowIndex + directions[i].y;
+        int dx = currentTile->columnIndex + direction.x;
+        int dy = currentTile->rowIndex + direction.y;
 
         // If the tile is valid.
         if (TileIsValid(dx, dy))
         {
             // Store the tile.
-            Tile* tile = &m_grid[dx][dy];
+            Tile* tile = &grid[dx][dy];
 
             // If the tile has not yet been visited.
             if (tile->type == TILE::EMPTY)
             {
                 // Mark the tile as floor.
                 tile->type = TILE::FLOOR;
-                tile->sprite.setTexture(TextureManager::GetTexture(m_textureIDs[static_cast<int>(TILE::FLOOR)]));
+                tile->sprite.setTexture(TextureManager::GetTexture(textureIDs[static_cast<int>(TILE::FLOOR)]));
 
                 // Knock that wall down.
-                int ddx = currentTile->columnIndex + (directions[i].x / 2);
-                int ddy = currentTile->rowIndex + (directions[i].y / 2);
+                int ddx = currentTile->columnIndex + (direction.x / 2);
+                int ddy = currentTile->rowIndex + (direction.y / 2);
 
-                Tile* wall = &m_grid[ddx][ddy];
+                Tile* wall = &grid[ddx][ddy];
                 wall->type = TILE::FLOOR;
-                wall->sprite.setTexture(TextureManager::GetTexture(m_textureIDs[static_cast<int>(TILE::FLOOR)]));
+                wall->sprite.setTexture(TextureManager::GetTexture(textureIDs[static_cast<int>(TILE::FLOOR)]));
 
                 // Recursively call the function with the new tile.
                 CreatePath(dx, dy);
@@ -532,8 +528,8 @@ void Level::CreateRooms(int roomCount)
                     && (newI != 0) && (newI != (GRID_WIDTH - 1))
                     && (newJ != 0) && (newJ != (GRID_HEIGHT - 1)))
                 {
-                    m_grid[newI][newJ].type = TILE::FLOOR;
-                    m_grid[newI][newJ].sprite.setTexture(TextureManager::GetTexture(m_textureIDs[static_cast<int>(TILE::FLOOR)]));
+                    grid[newI][newJ].type = TILE::FLOOR;
+                    grid[newI][newJ].sprite.setTexture(TextureManager::GetTexture(textureIDs[static_cast<int>(TILE::FLOOR)]));
                 }
             }
         }
@@ -554,7 +550,7 @@ void Level::CalculateTextures()
                 int value = 0;
 
                 // Store the current type as default.
-                TILE type = m_grid[i][j].type;
+                TILE type = grid[i][j].type;
 
                 // Top.
                 if (IsWall(i, j - 1))
@@ -580,8 +576,8 @@ void Level::CalculateTextures()
                 }
 
                 // Set the new type.
-                m_grid[i][j].type = static_cast<TILE>(value);
-                m_grid[i][j].sprite.setTexture(TextureManager::GetTexture(m_textureIDs[value]));
+                grid[i][j].type = static_cast<TILE>(value);
+                grid[i][j].sprite.setTexture(TextureManager::GetTexture(textureIDs[value]));
             }
         }
     }
@@ -606,7 +602,7 @@ void Level::GenerateEntryAndExit()
     while (startI == -1)
     {
         int index = std::rand() % GRID_WIDTH;
-        if ((m_grid[index][GRID_HEIGHT - 1].type == TILE::WALL_TOP) && (index % 2 == 0))
+        if ((grid[index][GRID_HEIGHT - 1].type == TILE::WALL_TOP) && (index % 2 == 0))
         {
             startI = index;
         }
@@ -615,7 +611,7 @@ void Level::GenerateEntryAndExit()
     while (endI == -1)
     {
         int index = std::rand() % GRID_HEIGHT + 1;
-        if ((m_grid[index][0].type == TILE::WALL_TOP) && (index % 2 == 0))
+        if ((grid[index][0].type == TILE::WALL_TOP) && (index % 2 == 0))
         {
             endI = index;
         }
@@ -626,16 +622,16 @@ void Level::GenerateEntryAndExit()
     SetTile(endI, 0, TILE::WALL_DOOR_LOCKED);
 
     // Save the location of the exit door.
-    m_doorTileIndices = sf::Vector2i(endI, 0);
+    doorTileIndices = sf::Vector2i(endI, 0);
 
     // Calculate the spawn location.
-    m_spawnLocation = GetActualTileLocation(startI, GRID_HEIGHT - 2);
+    spawnLocation = GetActualTileLocation(startI, GRID_HEIGHT - 2);
 }
 
 // Returns the spawn location for the current level.
 sf::Vector2f Level::SpawnLocation()
 {
-    return m_spawnLocation;
+    return spawnLocation;
 }
 
 
@@ -665,6 +661,6 @@ void Level::GenerateTorches()
 
         std::shared_ptr<Torch> torch = std::make_shared<Torch>();
         torch->SetPosition(position);
-        m_torches.push_back(torch);
+        torches.push_back(torch);
     }
 }

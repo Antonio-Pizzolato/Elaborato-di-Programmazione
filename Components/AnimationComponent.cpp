@@ -12,11 +12,6 @@ AnimationComponent::~AnimationComponent() {
     }
 }
 
-//Accessor
-const bool &AnimationComponent::isDone(const std::string& key) {
-    return animations[key]->isDone();
-}
-
 //Functions
 void AnimationComponent::addAnimation(
         const std::string& key,

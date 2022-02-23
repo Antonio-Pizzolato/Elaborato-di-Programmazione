@@ -24,12 +24,11 @@ public:
     //Stats
     int hp;
     int hpMax;
-    int damageMin;
     int damageMax;
     int defence;
 
     //Cons / Des
-    AttributeComponent(PLAYER_CLASS playerClass);
+    explicit AttributeComponent(PLAYER_CLASS playerClass);
     virtual ~AttributeComponent();
 
     //Functions

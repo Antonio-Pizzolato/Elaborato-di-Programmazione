@@ -18,7 +18,7 @@ using namespace std;
 class Achievements : public Observer{
 public:
     //Constructor & Destructor
-    Achievements(Observable* conditionAchievement);
+    explicit Achievements(Observable* conditionAchievement);
     ~Achievements() override;
     //Update Treasure
     void update(float _killNumber, float _gold) override;

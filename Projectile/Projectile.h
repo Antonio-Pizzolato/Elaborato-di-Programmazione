@@ -9,7 +9,7 @@ public:
     /**
      * The velocity of the projectile.
      */
-    sf::Vector2f m_velocity;
+    sf::Vector2f velocity;
 
 
     /**

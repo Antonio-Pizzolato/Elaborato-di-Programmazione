@@ -320,30 +320,6 @@ Entities/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Entity.cpp.s
 .PHONY : Entities/Entity.cpp.s
 
-Entities/Humanoid.obj: Entities/Humanoid.cpp.obj
-.PHONY : Entities/Humanoid.obj
-
-# target to build an object file
-Entities/Humanoid.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.obj
-.PHONY : Entities/Humanoid.cpp.obj
-
-Entities/Humanoid.i: Entities/Humanoid.cpp.i
-.PHONY : Entities/Humanoid.i
-
-# target to preprocess a source file
-Entities/Humanoid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.i
-.PHONY : Entities/Humanoid.cpp.i
-
-Entities/Humanoid.s: Entities/Humanoid.cpp.s
-.PHONY : Entities/Humanoid.s
-
-# target to generate assembly for a file
-Entities/Humanoid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Humanoid.cpp.s
-.PHONY : Entities/Humanoid.cpp.s
-
 Entities/Player.obj: Entities/Player.cpp.obj
 .PHONY : Entities/Player.obj
 
@@ -367,30 +343,6 @@ Entities/Player.s: Entities/Player.cpp.s
 Entities/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Player.cpp.s
 .PHONY : Entities/Player.cpp.s
-
-Entities/Slime.obj: Entities/Slime.cpp.obj
-.PHONY : Entities/Slime.obj
-
-# target to build an object file
-Entities/Slime.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.obj
-.PHONY : Entities/Slime.cpp.obj
-
-Entities/Slime.i: Entities/Slime.cpp.i
-.PHONY : Entities/Slime.i
-
-# target to preprocess a source file
-Entities/Slime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.i
-.PHONY : Entities/Slime.cpp.i
-
-Entities/Slime.s: Entities/Slime.cpp.s
-.PHONY : Entities/Slime.s
-
-# target to generate assembly for a file
-Entities/Slime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Entities/Slime.cpp.s
-.PHONY : Entities/Slime.cpp.s
 
 Entities/Warrior.obj: Entities/Warrior.cpp.obj
 .PHONY : Entities/Warrior.obj
@@ -560,30 +512,6 @@ Input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Input.cpp.s
 .PHONY : Input.cpp.s
 
-Map/Gold.obj: Map/Gold.cpp.obj
-.PHONY : Map/Gold.obj
-
-# target to build an object file
-Map/Gold.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.obj
-.PHONY : Map/Gold.cpp.obj
-
-Map/Gold.i: Map/Gold.cpp.i
-.PHONY : Map/Gold.i
-
-# target to preprocess a source file
-Map/Gold.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.i
-.PHONY : Map/Gold.cpp.i
-
-Map/Gold.s: Map/Gold.cpp.s
-.PHONY : Map/Gold.s
-
-# target to generate assembly for a file
-Map/Gold.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Gold.cpp.s
-.PHONY : Map/Gold.cpp.s
-
 Map/Items.obj: Map/Items.cpp.obj
 .PHONY : Map/Items.obj
 
@@ -655,30 +583,6 @@ Map/Object.s: Map/Object.cpp.s
 Map/Object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Object.cpp.s
 .PHONY : Map/Object.cpp.s
-
-Map/Potion.obj: Map/Potion.cpp.obj
-.PHONY : Map/Potion.obj
-
-# target to build an object file
-Map/Potion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.obj
-.PHONY : Map/Potion.cpp.obj
-
-Map/Potion.i: Map/Potion.cpp.i
-.PHONY : Map/Potion.i
-
-# target to preprocess a source file
-Map/Potion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.i
-.PHONY : Map/Potion.cpp.i
-
-Map/Potion.s: Map/Potion.cpp.s
-.PHONY : Map/Potion.s
-
-# target to generate assembly for a file
-Map/Potion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PROJECT_NAME.dir\build.make CMakeFiles/PROJECT_NAME.dir/Map/Potion.cpp.s
-.PHONY : Map/Potion.cpp.s
 
 Map/Torch.obj: Map/Torch.cpp.obj
 .PHONY : Map/Torch.obj
@@ -929,15 +833,9 @@ help:
 	@echo ... Entities/Entity.obj
 	@echo ... Entities/Entity.i
 	@echo ... Entities/Entity.s
-	@echo ... Entities/Humanoid.obj
-	@echo ... Entities/Humanoid.i
-	@echo ... Entities/Humanoid.s
 	@echo ... Entities/Player.obj
 	@echo ... Entities/Player.i
 	@echo ... Entities/Player.s
-	@echo ... Entities/Slime.obj
-	@echo ... Entities/Slime.i
-	@echo ... Entities/Slime.s
 	@echo ... Entities/Warrior.obj
 	@echo ... Entities/Warrior.i
 	@echo ... Entities/Warrior.s
@@ -959,9 +857,6 @@ help:
 	@echo ... Input.obj
 	@echo ... Input.i
 	@echo ... Input.s
-	@echo ... Map/Gold.obj
-	@echo ... Map/Gold.i
-	@echo ... Map/Gold.s
 	@echo ... Map/Items.obj
 	@echo ... Map/Items.i
 	@echo ... Map/Items.s
@@ -971,9 +866,6 @@ help:
 	@echo ... Map/Object.obj
 	@echo ... Map/Object.i
 	@echo ... Map/Object.s
-	@echo ... Map/Potion.obj
-	@echo ... Map/Potion.i
-	@echo ... Map/Potion.s
 	@echo ... Map/Torch.obj
 	@echo ... Map/Torch.i
 	@echo ... Map/Torch.s

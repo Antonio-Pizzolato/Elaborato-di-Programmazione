@@ -1,7 +1,7 @@
 #include "Achievements.h"
 
 Achievements::Achievements(Observable* conditionAchievement) : conditionAchievement(conditionAchievement),
-                                                               killNumber(0), gold(0), lifetime(400), kill(false), golda(false), CanDraw(false)
+                                                               killNumber(0), gold(0), lifetime(600), kill(false), golda(false), CanDraw(false)
 {
     conditionAchievement->addObserver(this);
     sprite.setPosition(800,0);
@@ -17,7 +17,7 @@ void Achievements::update(float _killNumber, float _gold) {
 
     }
 
-    if (gold >= 15) {
+    if (gold >= 10) {
 
         unlockAchievement(Event::Gold);
 
@@ -46,7 +46,7 @@ void Achievements::update(float dt)
     if (isExpired())
     {
         CanDraw = false;
-        lifetime = 400.f;
+        lifetime = 600.f;
     }
 }
 

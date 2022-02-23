@@ -3,19 +3,19 @@
 
 //Constructors/Destructors
 Player::Player(float x, float y, sf::Texture& texture_sheet, PLAYER_CLASS type)
-        : m_class(type), initAttack(false), m_isAttacking(false), m_isDash(false),
-          m_attackDelta(0.f), m_damageDelta(0.f),
-          damageTimerMax(500), m_canTakeDamage(true),
+        : classType(type), initAttack(false), isAttacking(false), isDash(false),
+          attackDelta(0.f), damageDelta(0.f),
+          damageTimerMax(500), canTakeDamage(true),
           killNumber(0)
 {
 
-    m_speed = 200;
+    speed = 200;
 
     // Create the player's aim sprite.
     int textureID = TextureManager::AddTexture("Resources/ui/53263.png");
-    m_aimSprite.setTexture(TextureManager::GetTexture(textureID));
-    m_aimSprite.setOrigin(sf::Vector2f(16.5f, 16.5f));
-    m_aimSprite.setScale(0.15, 0.15);
+    aimSprite.setTexture(TextureManager::GetTexture(textureID));
+    aimSprite.setOrigin(sf::Vector2f(16.5f, 16.5f));
+    aimSprite.setScale(0.15, 0.15);
 }
 
 Player::~Player() = default;
@@ -49,7 +49,7 @@ int Player::getDamage() const
 // Checks if the player can take damage.
 bool Player::CanTakeDamage() const
 {
-    return m_canTakeDamage;
+    return canTakeDamage;
 }
 
 // Apply the given amount of damage to the player.
@@ -60,22 +60,22 @@ void Player::Damage(int damage)
         applied_damage = 0;
     loseHp(applied_damage);
 
-    m_canTakeDamage = false;
+    canTakeDamage = false;
 }
 
 // Returns the player's class.
 PLAYER_CLASS Player::GetClass() const
 {
-    return m_class;
+    return classType;
 }
 
 // Checks if the player is attacking.
 bool Player::IsAttacking()
 {
-    if (m_isAttacking)
+    if (isAttacking)
     {
-        m_isAttacking = false;
-        m_attackDelta = 0.f;
+        isAttacking = false;
+        attackDelta = 0.f;
         return true;
     }
     else
@@ -123,7 +123,7 @@ void Player::Update(float timeDelta, Level &level) {
     if (Input::IsKeyPressed(Input::KEY::KEY_LEFT))
     {
         // Set movement speed.
-        movementSpeed.x = -m_speed * timeDelta;
+        movementSpeed.x = -speed * timeDelta;
 
         // Chose animation state.
         animState = ANIMATION_STATE::WALK_LEFT;
@@ -132,7 +132,7 @@ void Player::Update(float timeDelta, Level &level) {
     else if (Input::IsKeyPressed(Input::KEY::KEY_RIGHT))
     {
         // Set movement speed.
-        movementSpeed.x = m_speed * timeDelta;
+        movementSpeed.x = speed * timeDelta;
 
         // Chose animation state.
         animState = ANIMATION_STATE::WALK_RIGHT;
@@ -141,7 +141,7 @@ void Player::Update(float timeDelta, Level &level) {
     if (Input::IsKeyPressed(Input::KEY::KEY_UP))
     {
         // Set movement speed.
-        movementSpeed.y = -m_speed * timeDelta;
+        movementSpeed.y = -speed * timeDelta;
 
         // Chose animation state.
         animState = ANIMATION_STATE::WALK_UP;
@@ -151,7 +151,7 @@ void Player::Update(float timeDelta, Level &level) {
     else if (Input::IsKeyPressed(Input::KEY::KEY_DOWN))
     {
         // Set movement speed.
-        movementSpeed.y = m_speed * timeDelta;
+        movementSpeed.y = speed * timeDelta;
 
         // Chose animation state.
         animState = ANIMATION_STATE::WALK_DOWN;
@@ -182,15 +182,15 @@ void Player::Update(float timeDelta, Level &level) {
 
     // Calculate aim based on mouse.
     sf::Vector2i mousePos = sf::Mouse::getPosition();
-    m_aimSprite.setPosition((float)mousePos.x, (float)mousePos.y);
+    aimSprite.setPosition((float)mousePos.x, (float)mousePos.y);
 
     // Check if shooting.
-    if ((m_attackDelta += timeDelta) > 0.25f)
+    if ((attackDelta += timeDelta) > 0.25f)
     {
         if (Input::IsKeyPressed(Input::KEY::KEY_ATTACK))
         {
             // Mark player as attacking.
-            m_isAttacking = true;
+            isAttacking = true;
             initAttack = true;
         }
     }
@@ -198,8 +198,8 @@ void Player::Update(float timeDelta, Level &level) {
     if (Input::IsKeyPressed(Input::KEY::KEY_DASH))
     {
         // Mark player as attacking.
-        m_isDash = true;
-        m_canTakeDamage = false;
+        isDash = true;
+        canTakeDamage = false;
     }
 
 
@@ -207,12 +207,12 @@ void Player::Update(float timeDelta, Level &level) {
     updateAnimation(timeDelta, animState);
 
     // Determine if the player can take damage.
-    if (!m_canTakeDamage)
+    if (!canTakeDamage)
     {
-        if ((m_damageDelta += timeDelta) > 3.f)
+        if ((damageDelta += timeDelta) > 3.f)
         {
-            m_canTakeDamage = true;
-            m_damageDelta = 0.f;
+            canTakeDamage = true;
+            damageDelta = 0.f;
         }
     }
 
@@ -221,14 +221,12 @@ void Player::Update(float timeDelta, Level &level) {
 // Returns a reference to the player's aim sprite.
 sf::Sprite& Player::GetAimSprite()
 {
-    return m_aimSprite;
+    return aimSprite;
 }
 
-void Player::render(sf::RenderWindow &window) {
-
+void Player::Draw(sf::RenderWindow &window, float _timeDelta) {
 
     window.draw(sprite);
-
 
 }
 

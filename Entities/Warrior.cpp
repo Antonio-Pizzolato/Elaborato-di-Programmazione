@@ -17,7 +17,7 @@ Warrior::Warrior(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_cl
     animationComponent->addAnimation("DASH", 10.f, 0, 2, 6, 2, 100, 74);
 
 
-    sprite.setOrigin(sf::Vector2f(50,37));
+    sprite.setOrigin(sf::Vector2f(50,50));
 
 
 }
@@ -35,10 +35,10 @@ void Warrior::updateAttack(const float &dt)
 
         }
     }
-    if(m_isDash){
+    if(isDash){
         if (animationComponent->play("DASH", dt, true)) {
 
-            m_isDash = false;
+            isDash = false;
 
 
         }
@@ -60,8 +60,8 @@ void Warrior::updateAnimation(const float &dt, ANIMATION_STATE animState)
             sprite.setScale(-1.f, 1.f);
         }
 
-        animationComponent->play("WALK_LEFT", dt, m_speed,
-                                 m_speed);
+        animationComponent->play("WALK_LEFT", dt, speed,
+                                 speed);
     } else if (animState == ANIMATION_STATE::WALK_RIGHT) {
 
         if (sprite.getScale().x < 0.f) {
@@ -69,14 +69,14 @@ void Warrior::updateAnimation(const float &dt, ANIMATION_STATE animState)
             sprite.setScale(1.f, 1.f);
         }
 
-        animationComponent->play("WALK_RIGHT", dt, m_speed,
-                                 m_speed);
+        animationComponent->play("WALK_RIGHT", dt, speed,
+                                 speed);
     } else if (animState == ANIMATION_STATE::WALK_UP) {
-        animationComponent->play("WALK_UP", dt, m_speed,
-                                 m_speed);
+        animationComponent->play("WALK_UP", dt, speed,
+                                 speed);
     } else if (animState == ANIMATION_STATE::WALK_DOWN) {
-        animationComponent->play("WALK_DOWN", dt, m_speed,
-                                 m_speed);
+        animationComponent->play("WALK_DOWN", dt, speed,
+                                 speed);
     }
 }
 

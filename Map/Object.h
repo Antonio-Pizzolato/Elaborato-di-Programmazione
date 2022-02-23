@@ -17,7 +17,7 @@ public:
      * This is a pure virtual function, and must be implemented by extending classes.
      * @param timeDelta The time elapsed since the last tick in MS.
      */
-    virtual void Update(float timeDelta) {};
+    virtual void Update(float _timeDelta) = 0;
 
     /**
      * Draws the object to the screen at its current position.
@@ -48,7 +48,7 @@ public:
      * @param frameSpeed The speed that the animation plays at. Defaults to 1.
      * @return true if the operation succeeded.
      */
-    bool SetSprite(sf::Texture& texture, bool isSmooth, int frames = 1, int frameSpeed = 0);
+    bool SetSprite(sf::Texture& texture, int frames = 1, int frameSpeed = 0);
 
     /**
      * Returns a reference the object's sprite.
@@ -61,7 +61,7 @@ public:
      * Gets the current animation state of the object.
      * @return The current animation state of the object.
      */
-    bool IsAnimated();
+    bool IsAnimated() const;
 
     /**
     * Sets the animation state of the object.
@@ -78,12 +78,12 @@ protected:
     /**
      * The object's sprite.
      */
-    sf::Sprite m_sprite;
+    sf::Sprite sprite;
 
     /**
      * The position of the object in the game window.
      */
-    sf::Vector2f m_position;
+    sf::Vector2f position;
 
 private:
 
@@ -97,37 +97,37 @@ private:
      * The animation speed of the image if applicable.
      * Value is frames per second.
      */
-    int m_animationSpeed;
+    int animationSpeed;
 
     /**
      * Used to determine if the given sprite is animated.
      */
-    bool m_isAnimated;
+    bool isAnimated;
 
     /**
      * The total number of frames the sprite has.
      */
-    int m_frameCount;
+    int frameCount;
 
     /**
      * The current frame of the sprite.
      */
-    int m_currentFrame;
+    int currentFrame;
 
     /**
      * The width of each frame of the animated sprite if applicable.
      */
-    int m_frameWidth;
+    int frameWidth;
 
     /**
      * The height of each frame of the animated sprite if applicable.
      */
-    int m_frameHeight;
+    int frameHeight;
 
     /**
      * An aggregate of the time passed between draw calls.
      */
-    float m_timeDelta;
+    float timeDelta;
 };
 
 

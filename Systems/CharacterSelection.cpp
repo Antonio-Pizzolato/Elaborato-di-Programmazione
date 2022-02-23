@@ -1,10 +1,4 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
-
 #include "CharacterSelection.h"
-
 
 CharacterSelection::CharacterSelection(sf::RenderWindow &window, sf::Font *font) {
 
@@ -70,7 +64,6 @@ void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *
 
         *player = new Warrior(500, 500, texture, PLAYER_CLASS::WARRIOR);
 
-        //playerGui = new PlayerGUI(m_player, m_window, font);
     }
 
     //Setting
@@ -80,7 +73,6 @@ void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *
 
         *player = new Wizard(500, 500, texture, PLAYER_CLASS::WIZARD);
 
-        //playerGui = new PlayerGUI(m_player, m_window, font);
     }
 
     //Quit the game
@@ -90,7 +82,6 @@ void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *
 
         *player = new Archer(500, 500, texture, PLAYER_CLASS::ARCHER);
 
-        //playerGui = new PlayerGUI(m_player, m_window, font);
     }
 
     //Quit the game
@@ -99,9 +90,9 @@ void CharacterSelection::Update(const sf::Vector2i& mousePosWindow, GAME_STATE *
     }
 }
 
-void CharacterSelection::Draw(sf::RenderWindow &window) {
+void CharacterSelection::Draw(sf::RenderWindow &window)
+{
     window.draw(background);
-
     window.draw(btnBackground);
 
     for(auto &it : buttons){

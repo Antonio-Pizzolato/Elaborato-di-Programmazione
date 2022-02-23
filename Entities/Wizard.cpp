@@ -46,8 +46,8 @@ void Wizard::updateAnimation(const float &dt, ANIMATION_STATE animState) {
             sprite.setScale(-1.2, 1.2);
         }
 
-        animationComponent->play("WALK_LEFT", dt, m_speed,
-                                       m_speed);
+        animationComponent->play("WALK_LEFT", dt, speed,
+                                       speed);
     } else if (animState == ANIMATION_STATE::WALK_RIGHT) {
 
         if (sprite.getScale().x < 0.f) {
@@ -55,14 +55,14 @@ void Wizard::updateAnimation(const float &dt, ANIMATION_STATE animState) {
             sprite.setScale(1.2, 1.2);
         }
 
-        animationComponent->play("WALK_RIGHT", dt, m_speed,
-                                       m_speed);
+        animationComponent->play("WALK_RIGHT", dt, speed,
+                                       speed);
     } else if (animState == ANIMATION_STATE::WALK_UP) {
-        animationComponent->play("WALK_UP", dt, m_speed,
-                                       m_speed);
+        animationComponent->play("WALK_UP", dt, speed,
+                                       speed);
     } else if (animState == ANIMATION_STATE::WALK_DOWN) {
-        animationComponent->play("WALK_DOWN", dt, m_speed,
-                                       m_speed);
+        animationComponent->play("WALK_DOWN", dt, speed,
+                                       speed);
     }
 }
 

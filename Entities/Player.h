@@ -10,30 +10,30 @@ class Player :
         public Entity {
 protected:
     //Variables
-    PLAYER_CLASS m_class;
+    PLAYER_CLASS classType;
 
     bool initAttack;
-    bool m_isAttacking;
-    bool m_isDash;
+    bool isAttacking;
+    bool isDash;
 
     sf::Clock damageTimer;
     sf::Int32 damageTimerMax;
-    float m_damageDelta;
+    float damageDelta;
 
     /**
      * The sprite for the player's aim cross hair.
      */
-    sf::Sprite m_aimSprite;
+    sf::Sprite aimSprite;
 
     /**
      * The time since the player's last attack.
      */
-    float m_attackDelta;
+    float attackDelta;
 
     /**
      * Can the player take damage.
      */
-    bool m_canTakeDamage;
+    bool canTakeDamage;
 
 
 public:
@@ -76,9 +76,9 @@ public:
 
     virtual void updateAttack(const float& dt) = 0;
     virtual void updateAnimation(const float& dt, ANIMATION_STATE animState) = 0;
-    void Update(float timeDelta, Level& level) override;
-    virtual void render(sf::RenderWindow &window);
 
+    void Update(float timeDelta, Level& level) override;
+    void Draw(sf::RenderWindow &window, float _timeDelta) override;
 
     int killNumber;
 };

@@ -15,12 +15,9 @@ public:
 
     ~Archer() override;
 
-
     void updateAttack(const float& dt) override;
 
     void updateAnimation(const float &dt, ANIMATION_STATE animState) override;
-
-
 
 };
 

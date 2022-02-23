@@ -10,8 +10,6 @@
 #include "Systems/Shop.h"
 #include "Entities/Enemy.h"
 #include "Map/Items.h"
-#include "Map/Gold.h"
-#include "Map/Potion.h"
 #include "GUI/PlayerGUI.h"
 #include "Achievements.h"
 
@@ -24,7 +22,7 @@ private:
     ConditionAchievement conditionAchievement;
     Achievements *achievements;
 
-    sf::RenderWindow& m_window;
+    sf::RenderWindow& windows;
 
     sf::Vector2i mousePosWindow;
 
@@ -35,8 +33,8 @@ private:
     sf::Font font;
     sf::Vector2f screenCenter;
     std::ostringstream stringStream;
-    std::string m_string;
-    sf::Text m_text;
+    std::string phrase;
+    sf::Text word;
 
     std::map<std::string, sf::Texture> textures;
     Player* player;
@@ -75,7 +73,7 @@ public:
     int goldTotal;
 
     //Constructors/Destructors
-    Game(sf::RenderWindow* window);
+    explicit Game(sf::RenderWindow* window);
     virtual ~Game();
 
     bool getKeyTime();

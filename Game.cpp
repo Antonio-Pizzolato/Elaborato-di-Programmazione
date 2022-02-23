@@ -2,7 +2,7 @@
 
 //Constructors/Destructors
 Game::Game(sf::RenderWindow* window) :
-        m_window(*window),
+        windows(*window),
         gameState(GAME_STATE::MAIN_MENU),
         playerClass(PLAYER_CLASS::WARRIOR),
         screenCenter({ 0, 0 }),
@@ -14,16 +14,16 @@ Game::Game(sf::RenderWindow* window) :
         projectileTextureID(0){
 
     // Enable VSync.
-    m_window.setVerticalSyncEnabled(true);
+    windows.setVerticalSyncEnabled(true);
     keyTimer.restart();
 
     // Calculate and store the center of the screen.
-    screenCenter = { static_cast<float>(m_window.getSize().x) / 2.f, static_cast<float>(m_window.getSize().y) / 2.f };
+    screenCenter = {static_cast<float>(windows.getSize().x) / 2.f, static_cast<float>(windows.getSize().y) / 2.f };
 
-    mainMenu = std::make_unique<MainMenu>(m_window, &font);
-    characterSelection = std::make_unique<CharacterSelection>(m_window, &font);
-    pauseMenu = std::make_unique<PauseMenu>(m_window, font);
-    shop = std::make_unique<Shop>(m_window);
+    mainMenu = std::make_unique<MainMenu>(windows, &font);
+    characterSelection = std::make_unique<CharacterSelection>(windows, &font);
+    pauseMenu = std::make_unique<PauseMenu>(windows, font);
+    shop = std::make_unique<Shop>(windows);
 
     level = Level(*window);
 
@@ -60,7 +60,7 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
 
             player = new Wizard(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::WIZARD);
 
-            playerGui = new PlayerGUI(player, m_window, font);
+            playerGui = new PlayerGUI(player, windows, font);
 
             break;
         case PLAYER_CLASS::ARCHER:
@@ -68,14 +68,14 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
 
             player = new Archer(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::ARCHER);
 
-            playerGui = new PlayerGUI(player, m_window, font);
+            playerGui = new PlayerGUI(player, windows, font);
             break;
         case PLAYER_CLASS::WARRIOR:
             textures["PLAYER_SHEET"].loadFromFile("Resources/Images/Sprites/Player/texture_sheet.png");
 
             player = new Warrior(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::WARRIOR);
 
-            playerGui = new PlayerGUI(player, m_window, font);
+            playerGui = new PlayerGUI(player, windows, font);
             break;
 
 
@@ -178,18 +178,7 @@ void Game::SpawnItem(ITEM itemType, sf::Vector2f position) {
 
     std::unique_ptr<Items> item;
     // Check which type of object is being spawned.
-    switch (itemType)
-    {
-        case ITEM::POTION:
-            item = std::make_unique<Potion>();
-            break;
-        case ITEM::GOLD:
-            item = std::make_unique<Gold>();
-            break;
-        default:
-            item = std::make_unique<Gold>();
-            break;
-    }
+    item = std::make_unique<Items>(itemType);
 
     // Set the item position.
     item->SetPosition(spawnLocation);
@@ -206,11 +195,11 @@ void Game::Run() {
     {
         // Check if the game was closed.
         sf::Event event{};
-        if (m_window.pollEvent(event))
+        if (windows.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
             {
-                m_window.close();
+                windows.close();
                 return;
             }
             else if((Input::IsKeyPressed(Input::KEY::KEY_P)) && getKeyTime()){
@@ -244,7 +233,7 @@ void Game::Run() {
     }
 
     // Shut the game down.
-    m_window.close();
+    windows.close();
 }
 
 void Game::Update(float timeDelta)
@@ -253,13 +242,13 @@ void Game::Update(float timeDelta)
     switch (gameState)
     {
         case GAME_STATE::MAIN_MENU: {
-            mousePosWindow = sf::Mouse::getPosition(m_window);
+            mousePosWindow = sf::Mouse::getPosition(windows);
             mainMenu->Update(mousePosWindow, &gameState, &isRunning);
             break;
         }
 
         case GAME_STATE::CHARACTER_SELECT:
-            mousePosWindow = sf::Mouse::getPosition(m_window);
+            mousePosWindow = sf::Mouse::getPosition(windows);
             characterSelection->Update(mousePosWindow, &gameState, &player);
             player->SetPosition(level.SpawnLocation());
             switch (player->GetClass()) {
@@ -275,7 +264,7 @@ void Game::Update(float timeDelta)
                     break;
             }
 
-            playerGui = new PlayerGUI(player, m_window, font);
+            playerGui = new PlayerGUI(player, windows, font);
             break;
 
         case GAME_STATE::PLAYING:
@@ -344,7 +333,7 @@ void Game::Update(float timeDelta)
 
                                     player->gainExp(20, player->GetClass());
                                     player->killNumber += 1;
-
+                                    conditionAchievement.setConditions(player->killNumber, goldTotal);
 
                                     // Delete enemy.
                                     enemyIterator = enemies.erase(enemyIterator);
@@ -370,9 +359,6 @@ void Game::Update(float timeDelta)
                                 target);
                         projectile.push_back(std::move(proj));
 
-
-                        // Reduce player mana.
-                        //player->SetMana(player.GetMana() - 2);
                     }
                 }
 
@@ -393,7 +379,6 @@ void Game::Update(float timeDelta)
                 //Update achievement
                 achievements->update(timeDelta);
 
-                conditionAchievement.setConditions(player->killNumber, goldTotal);
 
                 Tile *playerCurrentTile = level.GetTile(player->GetPosition());
                 if (playerPreviousTile != playerCurrentTile) {
@@ -415,14 +400,14 @@ void Game::Update(float timeDelta)
             break;
 
         case GAME_STATE::SHOP:{
-            mousePosWindow = sf::Mouse::getPosition(m_window);
+            mousePosWindow = sf::Mouse::getPosition(windows);
             shop->Update(mousePosWindow);
         }
             break;
 
         case GAME_STATE::PAUSED:
-            mousePosWindow = sf::Mouse::getPosition(m_window);
-            pauseMenu->update(m_window, mousePosWindow, &gameState);
+            mousePosWindow = sf::Mouse::getPosition(windows);
+            pauseMenu->update(windows, mousePosWindow, &gameState);
             break;
 
         case GAME_STATE::GAME_OVER:
@@ -437,70 +422,69 @@ void Game::Update(float timeDelta)
 void Game::DrawString(const string &text, sf::Vector2f position, unsigned int size) {
     // Clear the old data.
     stringStream.str(std::string());
-    m_string.clear();
+    phrase.clear();
 
     stringStream << text;
-    m_string = stringStream.str();
+    phrase = stringStream.str();
 
-    m_text.setString(m_string);
-    m_text.setFont(font);
-    m_text.setCharacterSize(size);
-    m_text.setPosition(position.x - (m_text.getLocalBounds().width / 2.f), position.y - (m_text.getLocalBounds().height / 2.f));
+    word.setString(phrase);
+    word.setFont(font);
+    word.setCharacterSize(size);
+    word.setPosition(position.x - (word.getLocalBounds().width / 2.f), position.y - (word.getLocalBounds().height / 2.f));
 
-    m_window.draw(m_text);
+    windows.draw(word);
 }
 
 // Draw the current game scene.
 void Game::Draw(float timeDelta)
 {
     // Clear the screen.
-    m_window.clear(sf::Color(3, 3, 3, 225));		// Gray
+    windows.clear(sf::Color(3, 3, 3, 225));		// Gray
 
     // Check what state the game is in.
     switch (gameState)
     {
         case GAME_STATE::MAIN_MENU:
-            mainMenu->Draw(m_window);
+            mainMenu->Draw(windows);
             break;
 
         case GAME_STATE::CHARACTER_SELECT:
-            characterSelection->Draw(m_window);
+            characterSelection->Draw(windows);
             break;
 
         case GAME_STATE::PLAYING:
         {
             // Set the main game view.
-            //m_window.setView(m_views[static_cast<int>(VIEW::MAIN)]);
 
             // Draw the level.
-            level.Draw(m_window, timeDelta);
+            level.Draw(windows, timeDelta);
 
             // Draw all objects.
             for (const auto& item : items)
             {
-                item->Draw(m_window, timeDelta);
+                item->Draw(windows, timeDelta);
             }
 
             // Draw all enemies.
             for (const auto& enemy : enemies)
             {
-                enemy->Draw(m_window, timeDelta);
+                enemy->Draw(windows, timeDelta);
             }
 
             // Draw all projectiles
             for (const auto &proj : projectile) {
-                m_window.draw(proj->GetSprite());
+                windows.draw(proj->GetSprite());
             }
 
             // Hide the mouse cursor.
-            m_window.setMouseCursorVisible(false);
+            windows.setMouseCursorVisible(false);
 
             // Draw player aim.
-            m_window.draw(player->GetAimSprite());
+            windows.draw(player->GetAimSprite());
 
             // Draw the player.
-            playerGui->render(m_window);
-            player->Draw(m_window, timeDelta);
+            playerGui->render(windows);
+            player->Draw(windows, timeDelta);
 
             // Draw gold total.
             std::string goldString;
@@ -543,22 +527,22 @@ void Game::Draw(float timeDelta)
             intel = "intelligence = " + std::to_string(player->getAttributeComponent()->intelligence);
             DrawString(intel, sf::Vector2f(screenCenter.x + 793.f, 240.f), 40);
 
-            achievements->render(m_window);
+            achievements->render(windows);
 
         }
             break;
 
 
         case GAME_STATE::PAUSED:
-            pauseMenu->render(m_window);
+            pauseMenu->render(windows);
             // Hide the mouse cursor.
-            m_window.setMouseCursorVisible(true);
+            windows.setMouseCursorVisible(true);
             break;
 
         case GAME_STATE::SHOP:{
-            shop->Draw(m_window);
+            shop->Draw(windows);
             // Hide the mouse cursor.
-            m_window.setMouseCursorVisible(true);
+            windows.setMouseCursorVisible(true);
         }
             break;
 
@@ -567,7 +551,7 @@ void Game::Draw(float timeDelta)
 
     }
     // Present the back-buffer to the screen.
-    m_window.display();
+    windows.display();
 }
 
 void Game::GenerateLevel() {
@@ -648,11 +632,6 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
                     enemyIterator = enemies.erase(enemyIterator);
                     enemyWasDeleted = true;
 
-                    // If we have an active goal decrement killGoal.
-                    /*if (m_activeGoal)
-                    {
-                        --m_killGoal;
-                    }*/
 
                     // Since the enemy is dead we no longer need to check projectiles.
                     projectilesIterator = projectile.end();
@@ -721,23 +700,19 @@ void Game::UpdateItems(sf::Vector2f playerPosition) {
             switch (item.GetType()) {
                 case ITEM::GOLD: {
                     // Get the amount of gold.
-                    int goldValue = dynamic_cast<Gold &>(item).GetGoldValue();
+                    int goldValue = dynamic_cast<Items &>(item).GetValue();
 
                     // Add to the gold total.
                     goldTotal += goldValue;
 
-                    // Check if we have an active level goal.
-                    /*if (m_activeGoal)
-                    {
-                        m_goldGoal -= goldValue;
-                    }*/
+                    conditionAchievement.setConditions(player->killNumber, goldTotal);
                 }
                     break;
 
                 case ITEM::POTION:
                 {
                     // Cast to heart and get health.
-                    auto potion = dynamic_cast<Potion &>(item).GetHpValue();
+                    auto potion = dynamic_cast<Items &>(item).GetValue();
                     player->gainHp(potion);
                 }
                     break;

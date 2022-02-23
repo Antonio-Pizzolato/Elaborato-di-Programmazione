@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_GUI_H
 #define MAIN_CPP_GUI_H
 
@@ -24,10 +20,6 @@
 enum button_states{BTN_IDLE = 0, BTN_HOVER, BTN_ACTIVE};
 
 namespace GUI{
-
-    const float p2pX(const float perc, const sf::VideoMode& vm);
-    const float p2pY(const float perc, const sf::VideoMode& vm);
-    const unsigned calcCharSize(const sf::VideoMode& vm, const unsigned modifier = 60);
 
     float p2pX( float perc, sf::RenderWindow &window);
     float p2pY( float perc, sf::RenderWindow &window);
@@ -65,73 +57,17 @@ namespace GUI{
         ~Button();
 
         //Accessors
-        const bool isPressed() const;
-        const std::string getText() const;
+        bool isPressed() const;
+        std::string getText() const;
         const short unsigned& getId() const;
 
         //Modifiers
-        void setText(const std::string text);
-        void setId(const short unsigned id);
+        void setText(const std::string& text);
+        void setId(short unsigned id);
 
         //Functions
         void updatePosition(sf::Vector2f position);
         void update(const sf::Vector2i& mousePosWindow);
-        void render(sf::RenderWindow &window);
-    };
-
-    class DropDownList{
-    private:
-        float keyTime;
-        float keyTimeMax;
-        sf::Font& font;
-        GUI::Button* activeElement;
-        std::vector<GUI::Button*> list;
-        bool showList;
-
-
-    public:
-        DropDownList(float x, float y, float width, float height,
-                     sf::Font& font, std::string list[],
-                     unsigned nrOfElements, unsigned default_index = 0);
-        ~DropDownList();
-
-        //Accessors
-        const unsigned short& getActiveElementId() const;
-
-        //Functions
-        const bool getKeyTime();
-        void updateKeyTime(const float& dt);
-        void update(const sf::Vector2i &mousePosWindow, const float& dt);
-        void render(sf::RenderWindow &window);
-    };
-
-    class TextureSelector{
-    private:
-        float keyTime;
-        const float keyTimeMax;
-        float gridSize;
-        bool active;
-        bool hidden;
-        GUI::Button* hide_btn;
-
-        sf::RectangleShape bounds;
-        sf::Sprite sheet;
-        sf::RectangleShape selector;
-        sf::Vector2u mousePosGrid;
-        sf::IntRect textureRect;
-
-    public:
-        TextureSelector(float x, float y, float width, float height, float gridSize, const sf::Texture* texture_sheet, sf::Font& font, std::string text);
-        ~TextureSelector();
-
-        //Accessors
-        const bool& getActive() const;
-        const sf::IntRect& getTextureRect() const;
-
-        //Functions
-        const bool getKeyTime();
-        void updateKeyTime(const float& dt);
-        void update(const sf::Vector2i& mousePosWindow, const float& dt);
         void render(sf::RenderWindow &window);
     };
 
@@ -150,12 +86,8 @@ namespace GUI{
                     sf::RenderWindow &window, sf::Font* font = nullptr);
         ~ProgressBar();
 
-        //Accessors
-
-        //Modifiers
-
         //Functions
-        void update(const int current_value, const int max_value);
+        void update(int current_value, int max_value);
         void render(sf::RenderWindow &window);
     };
 

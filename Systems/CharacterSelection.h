@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #ifndef MAIN_CPP_CHARACTERSELECTION_H
 #define MAIN_CPP_CHARACTERSELECTION_H
 
