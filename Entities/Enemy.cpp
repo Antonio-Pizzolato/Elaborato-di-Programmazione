@@ -359,7 +359,6 @@ void Enemy::UpdatePathfinding(Level &level, sf::Vector2f playerPosition)
             }
         }
     }
-
     // Clear the vector of target positions.
     targetPositions.clear();
 
