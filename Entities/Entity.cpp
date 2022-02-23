@@ -70,7 +70,7 @@ bool Entity::CausesCollision(sf::Vector2f movement, Level& level)
 
 
 // Gives the object the given sprite.
-bool Entity::SetSprite(sf::Texture& texture, bool isSmooth, int frames, int frameSpeed)
+bool Entity::SetSprite(sf::Texture& texture, int frames, int frameSpeed)
 {
     // Create a sprite from the loaded texture.
     sprite.setTexture(texture);
@@ -122,9 +122,6 @@ sf::Vector2f Entity::GetPosition() const
 {
     return position;
 }
-
-
-
 
 
 // Draws the object to the given render window.

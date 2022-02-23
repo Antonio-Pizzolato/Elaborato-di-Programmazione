@@ -12,7 +12,6 @@ protected:
     //Variables
     PLAYER_CLASS m_class;
 
-
     bool initAttack;
     bool m_isAttacking;
     bool m_isDash;
@@ -31,25 +30,18 @@ protected:
      */
     float m_attackDelta;
 
-
     /**
      * Can the player take damage.
      */
     bool m_canTakeDamage;
 
 
-
 public:
     Player(float x, float y, sf::Texture& texture_sheet, PLAYER_CLASS m_class);
-    virtual ~Player();
+    ~Player() override;
 
     //Accessors
     AttributeComponent* getAttributeComponent();
-    //Weapon* getWeapon() const;
-
-
-    std::string toStringCharacterTab() const;
-
 
     bool getDamageTimer();
 
@@ -74,9 +66,6 @@ public:
     PLAYER_CLASS GetClass() const;
     bool IsAttacking();
 
-    //Modifier
-
-
     //Functions
     void loseHp(int hp);
     void gainHp(int hp);
@@ -86,7 +75,7 @@ public:
     virtual bool isDead() const;
 
     virtual void updateAttack(const float& dt) = 0;
-    virtual void updateAnimation(const float& dt, ANIMATION_STATE animState);
+    virtual void updateAnimation(const float& dt, ANIMATION_STATE animState) = 0;
     void Update(float timeDelta, Level& level) override;
     virtual void render(sf::RenderWindow &window);
 

@@ -6,18 +6,18 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
 
     if(enemy_class == ENEMY::SLIME)
     {
-        // Load textures.
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_up.png"*/"Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_down.png"*/"Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_right.png"*/"Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_walk_left.png"*/"Resources/enemies/slime/slimesprite1.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_up.png"*/"Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_down.png"*/"Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_right.png"*/"Resources/enemies/slime/slimesprite.png");
-        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture(/*"Resources/enemies/slime/spr_slime_idle_left.png"*/"Resources/enemies/slime/slimesprite1.png");
+        frameCount = 4;
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_RIGHT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_LEFT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite1.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_UP)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_DOWN)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_RIGHT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite.png");
+        m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/slime/slimesprite1.png");
 
         // Set initial sprite.
-        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), false, 4, 6);
+        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 6);
 
         // Set a random color for the slime sprite.
         sf::Uint8 r, g, b, a;
@@ -51,6 +51,8 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
                 break;
         }
 
+        frameCount = 8;
+
         // Load textures.
         m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_up.png");
         m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_walk_down.png");
@@ -62,12 +64,13 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
         m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/" + enemyName + "/spr_" + enemyName + "_idle_left.png");
 
         // Set initial sprite.
-        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), false, 8, 12);
+        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 12);
 
         createEnemyAttributeComponent(level, ENEMY::HUMANOID);
     }
     else if(enemy_class == ENEMY::RAT)
     {
+        frameCount = 4;
         // Load textures.
         m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_UP)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkup.png");
         m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_walkdown.png");
@@ -79,7 +82,7 @@ Enemy::Enemy(int level, ENEMY enemy_class) : enemyAttributeComponent(nullptr)
         m_textureIDs[static_cast<int>(ANIMATION_STATE::IDLE_LEFT)] = TextureManager::AddTexture("Resources/enemies/Rat/rat_idle.png");
 
         // Set initial sprite.
-        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), false, 4, 12);
+        SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(ANIMATION_STATE::WALK_DOWN)]), frameCount, 12);
 
         createEnemyAttributeComponent(level, ENEMY::RAT);
 
@@ -158,10 +161,12 @@ void Enemy::Update(float timeDelta, Level &level)
             if (m_velocity.x <= 0)
             {
                 animState = ANIMATION_STATE::WALK_LEFT;
+                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
             else
             {
                 animState = ANIMATION_STATE::WALK_RIGHT;
+                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
         }
         else
@@ -169,10 +174,12 @@ void Enemy::Update(float timeDelta, Level &level)
             if (m_velocity.y <= 0)
             {
                 animState = ANIMATION_STATE::WALK_UP;
+                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
             else
             {
                 animState = ANIMATION_STATE::WALK_DOWN;
+                SetSprite(TextureManager::GetTexture(m_textureIDs[static_cast<int>(animState)]), frameCount, 6);
             }
         }
     }

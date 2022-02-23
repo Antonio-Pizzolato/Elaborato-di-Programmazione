@@ -18,10 +18,7 @@ Player::Player(float x, float y, sf::Texture& texture_sheet, PLAYER_CLASS type)
     m_aimSprite.setScale(0.15, 0.15);
 }
 
-Player::~Player() {
-
-
-}
+Player::~Player() = default;
 
 
 //Accessors
@@ -30,26 +27,6 @@ AttributeComponent *Player::getAttributeComponent()
     return attributeComponent;
 }
 
-
-std::string Player::toStringCharacterTab() const
-{
-    std::stringstream ss;
-    const AttributeComponent* ac = attributeComponent;
-    //const Weapon* w = weapon;
-
-    ss << "Level: " << ac->level << "\n"
-       << "Exp: " << ac->exp << "\n"
-       << "Exp next: " << ac->expNext << "\n"
-
-        /*<< "Weapon Level: " << w->getLevel() << "\n"
-        << "Weapon Type: " << w->getType() << "\n"
-        << "Weapon Value: " << w->getValue() << "\n"
-        << "Weapon Range: " << w->getRange() << "\n"
-        << "Weapon Damage Min: " << w->getDamageMin() + attributeComponent->damageMin << " (" << attributeComponent->damageMin << ")" << "\n"
-        << "Weapon Damage Max: " << w->getDamageMax() + attributeComponent->damageMax << " (" << attributeComponent->damageMax << ")" << "\n"*/;
-
-    return ss.str();
-}
 
 
 bool Player::getDamageTimer()
@@ -65,10 +42,6 @@ bool Player::getDamageTimer()
 
 int Player::getDamage() const
 {
-    /*return rand() % (
-            (attributeComponent->damageMax + weapon->getDamageMax())
-            - (attributeComponent->damageMin + weapon->getDamageMin()) + 1)
-           + (attributeComponent->damageMin + weapon->getDamageMin());*/
 
     return attributeComponent->damageMax;
 }
@@ -112,9 +85,6 @@ bool Player::IsAttacking()
 }
 
 
-
-
-
 //Functions
 void Player::loseHp(int hp)
 {
@@ -141,36 +111,7 @@ bool Player::isDead() const {
 }
 
 
-void Player::updateAnimation(const float &dt, ANIMATION_STATE animState) {
 
-    if (animState == ANIMATION_STATE::IDLE_UP) {
-        animationComponent->play("IDLE", dt);
-    }
-    else if (animState == ANIMATION_STATE::WALK_LEFT) {
-
-        /*if(sprite.getScale().x > 0.f){
-            sprite.setOrigin(100.f, 0.f);
-            sprite.setScale(-1.f, 1.f);
-        }*/
-
-        animationComponent->play("WALK_LEFT", dt, m_speed, m_speed);
-    }
-    else if(animState == ANIMATION_STATE::WALK_RIGHT){
-
-        /*if(sprite.getScale().x < 0.f){
-            sprite.setOrigin(0.f, 0.f);
-            sprite.setScale(1.f, 1.f);
-        }*/
-
-        animationComponent->play("WALK_RIGHT", dt, m_speed, m_speed);
-    }
-    else if(animState == ANIMATION_STATE::WALK_UP){
-        animationComponent->play("WALK_UP", dt, m_speed, m_speed);
-    }
-    else if(animState == ANIMATION_STATE::WALK_DOWN){
-        animationComponent->play("WALK_DOWN", dt, m_speed, m_speed);
-    }
-}
 void Player::Update(float timeDelta, Level &level) {
     // Calculate movement speed based on the timeDelta since the last update.
     sf::Vector2f movementSpeed(0.f, 0.f);

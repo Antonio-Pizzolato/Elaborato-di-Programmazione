@@ -1,16 +1,12 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Archer.h"
 
-void Archer::initVariables() {
 
-    //arrow_sheet.loadFromFile("Resources/Images/Sprites/Weapon/Projectile/Arrow.png");
-}
+Archer::Archer(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_class)
+        : Player(x, y, texture_sheet, m_class) {
 
-void Archer::initAnimations()
-{
+    createAnimationComponent(texture_sheet);
+    createAttributeComponent(m_class);
+
     animationComponent->addAnimation("IDLE", 10.f, 0, 0, 9, 0, (100), (100));
     animationComponent->addAnimation("WALK_DOWN", 10.f, 0, 1, 7, 1, 100, 100);
     animationComponent->addAnimation("WALK_LEFT", 10.f, 0, 1, 7, 1, 100, 100);
@@ -18,28 +14,12 @@ void Archer::initAnimations()
     animationComponent->addAnimation("WALK_UP", 10.f, 0, 1, 7, 1, 100, 100);
     animationComponent->addAnimation("ATTACK", 3.f, 0, 2, 5, 2, 100, 100);
 
-}
-
-
-Archer::Archer(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_class)
-        : Player(x, y, texture_sheet, m_class) {
-
-    initVariables();
-
-
-    createAnimationComponent(texture_sheet);
-    createAttributeComponent(m_class);
-
-    initAnimations();
-
     sprite.setOrigin(sf::Vector2f(50,50));
 
 }
 
 
-Archer::~Archer() {
-
-}
+Archer::~Archer() = default;
 
 
 void Archer::updateAttack(const float &dt)

@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Warrior.h"
 
 Warrior::Warrior(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_class)
@@ -27,9 +23,7 @@ Warrior::Warrior(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_cl
 }
 
 
-Warrior::~Warrior() {
-
-}
+Warrior::~Warrior() = default;
 
 void Warrior::updateAttack(const float &dt)
 {

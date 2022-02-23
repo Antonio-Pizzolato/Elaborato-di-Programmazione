@@ -59,10 +59,6 @@ private:
 
     EnemyAttributeComponent* enemyAttributeComponent;
 
-    /**
-     * The current target of the enemy.
-     */
-    sf::Vector2f m_currentTarget;
 
 };
 

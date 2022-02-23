@@ -32,10 +32,8 @@ Game::Game(sf::RenderWindow* window) :
     achievements = new Achievements(&conditionAchievement);
     InitializePlayer(playerClass);
 
-
-
-
 }
+
 Game::~Game() {
 
     delete player;
@@ -82,8 +80,6 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
 
 
     }
-
-
 
 
 }

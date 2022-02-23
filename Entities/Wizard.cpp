@@ -1,15 +1,13 @@
-//
-// Created by Antonio on 18/02/2022.
-//
-
 #include "Wizard.h"
 
 
-void Wizard::initVariables() {
+Wizard::Wizard(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_class)
+        : Player(x, y, texture_sheet, m_class) {
 
-}
 
-void Wizard::initAnimations() {
+    createAnimationComponent(texture_sheet);
+    createAttributeComponent(m_class);
+
     animationComponent->addAnimation("IDLE", 10.f, 0, 0, 5, 0, (96), (96));
     animationComponent->addAnimation("WALK_DOWN", 10.f, 0, 1, 7, 1, 96, 96);
     animationComponent->addAnimation("WALK_LEFT", 10.f, 0, 1, 7, 1, 96, 96);
@@ -17,27 +15,10 @@ void Wizard::initAnimations() {
     animationComponent->addAnimation("WALK_UP", 10.f, 0, 1, 7, 1, 96, 96);
     animationComponent->addAnimation("ATTACK", 3.f, 0, 2, 7, 2, 96, 96);
 
-}
-
-Wizard::Wizard(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS m_class)
-        : Player(x, y, texture_sheet, m_class) {
-
-
-    initVariables();
-
-
-
-    createAnimationComponent(texture_sheet);
-    createAttributeComponent(m_class);
-
-    initAnimations();
-
     sprite.setOrigin(sf::Vector2f(40,50));
 }
 
-Wizard::~Wizard() {
-
-}
+Wizard::~Wizard() = default;
 
 void Wizard::updateAttack(const float &dt){
     if (initAttack) {

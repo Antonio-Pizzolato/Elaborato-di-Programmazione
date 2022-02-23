@@ -12,7 +12,6 @@ class Entity {
 
 private:
 
-
 protected:
 
     AnimationComponent* animationComponent;
@@ -28,11 +27,50 @@ protected:
 	 */
     int m_textureIDs[static_cast<int>(ANIMATION_STATE::COUNT)];
 
+
     sf::Vector2f m_velocity;
 
     bool CausesCollision(sf::Vector2f movement, Level& level);
 
+
+
 public:
+    /**
+     * The animation speed of the image if applicable.
+     * Value is frames per second.
+     */
+    int animationSpeed;
+
+    /**
+     * Used to determine if the given sprite is animated.
+     */
+    bool isAnimated;
+
+    /**
+     * The total number of frames the sprite has.
+     */
+    int frameCount;
+
+    /**
+     * The current frame of the sprite.
+     */
+    int currentFrame;
+
+    /**
+     * The width of each frame of the animated sprite if applicable.
+     */
+    int frameWidth;
+
+    /**
+     * The height of each frame of the animated sprite if applicable.
+     */
+    int frameHeight;
+
+    /**
+     * An aggregate of the time passed between draw calls.
+     */
+    float timeDelta;
+
     Entity(int level = 0);
     virtual ~Entity();
 
@@ -72,7 +110,7 @@ public:
      * @param frameSpeed The speed that the animation plays at. Defaults to 1.
      * @return true if the operation succeeded.
      */
-    bool SetSprite(sf::Texture& texture, bool isSmooth, int frames = 1, int frameSpeed = 0);
+    bool SetSprite(sf::Texture& texture, int frames = 1, int frameSpeed = 0);
 
 
 
@@ -95,42 +133,7 @@ private:
      */
     void NextFrame();
 
-private:
-    /**
-     * The animation speed of the image if applicable.
-     * Value is frames per second.
-     */
-    int animationSpeed;
 
-    /**
-     * Used to determine if the given sprite is animated.
-     */
-    bool isAnimated;
-
-    /**
-     * The total number of frames the sprite has.
-     */
-    int frameCount;
-
-    /**
-     * The current frame of the sprite.
-     */
-    int currentFrame;
-
-    /**
-     * The width of each frame of the animated sprite if applicable.
-     */
-    int frameWidth;
-
-    /**
-     * The height of each frame of the animated sprite if applicable.
-     */
-    int frameHeight;
-
-    /**
-     * An aggregate of the time passed between draw calls.
-     */
-    float timeDelta;
 };
 
 
