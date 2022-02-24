@@ -1,8 +1,7 @@
 #ifndef MAIN_CPP_INPUT_H
 #define MAIN_CPP_INPUT_H
 
-class Input
-{
+class Input {
 public:
 
     /**

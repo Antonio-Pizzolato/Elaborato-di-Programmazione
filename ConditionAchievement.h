@@ -4,7 +4,7 @@
 
 #include "Observable.h"
 
-class ConditionAchievement : public Observable{
+class ConditionAchievement : public Observable {
 
 private:
 
@@ -13,9 +13,11 @@ private:
 
 public:
     ConditionAchievement();
+
     void notify() override;
 
     void conditionsChanged();
+
     void setConditions(float _killNumber, float _gold);
 
 };

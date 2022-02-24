@@ -6,14 +6,14 @@
 #include "ConditionAchievement.h"
 
 
-ConditionAchievement::ConditionAchievement(): killNumber(0), gold(0) {
+ConditionAchievement::ConditionAchievement() : killNumber(0), gold(0) {
 
 }
 
 
 void ConditionAchievement::notify() {
 
-    for (auto const& i : observerList) {
+    for (auto const &i: observerList) {
         i->update(killNumber, gold);
     }
 

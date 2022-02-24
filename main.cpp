@@ -1,7 +1,6 @@
 #include"Game.h"
 
-int main()
-{
+int main() {
     // Create the main game object.
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Dungeon");
     Game game(&window);

@@ -3,22 +3,13 @@
 
 #include "Player.h"
 
-
-class Wizard :
-        public Player {
-private:
-
+class Wizard : public Player {
 public:
-    Wizard(float x, float y, sf::Texture &texture_sheet, PLAYER_CLASS _class);
-
+    Wizard(sf::Texture &texture_sheet, PLAYER_CLASS _class);
     ~Wizard() override;
 
-
-    void updateAttack(const float& dt) override;
+    void updateAttack(const float &dt) override;
     void updateAnimation(const float &dt, ANIMATION_STATE animState) override;
-
 };
-
-
 
 #endif //MAIN_CPP_WIZARD_H

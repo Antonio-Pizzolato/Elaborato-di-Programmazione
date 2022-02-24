@@ -8,7 +8,6 @@ enum class GAME_STATE {
     PLAYING,
     GAME_OVER,
     PAUSED,
-    SHOP
 };
 
 // Spawn_able items.
@@ -87,7 +86,7 @@ enum class POTION {
     COUNT
 };
 
-enum class Event{
+enum class Event {
     Kill,
     Gold
 };

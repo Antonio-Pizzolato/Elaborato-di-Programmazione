@@ -1,29 +1,28 @@
 #include "Game.h"
 
 //Constructors/Destructors
-Game::Game(sf::RenderWindow* window) :
+Game::Game(sf::RenderWindow *window) :
         windows(*window),
         gameState(GAME_STATE::MAIN_MENU),
         playerClass(PLAYER_CLASS::WARRIOR),
-        screenCenter({ 0, 0 }),
+        screenCenter({0, 0}),
         isRunning(true),
         end(false),
         levelWasGenerated(false),
         keyTimeMax(0.3),
         goldTotal(0),
-        projectileTextureID(0){
+        projectileTextureID(0) {
 
     // Enable VSync.
     windows.setVerticalSyncEnabled(true);
     keyTimer.restart();
 
     // Calculate and store the center of the screen.
-    screenCenter = {static_cast<float>(windows.getSize().x) / 2.f, static_cast<float>(windows.getSize().y) / 2.f };
+    screenCenter = {static_cast<float>(windows.getSize().x) / 2.f, static_cast<float>(windows.getSize().y) / 2.f};
 
     mainMenu = std::make_unique<MainMenu>(windows, &font);
     characterSelection = std::make_unique<CharacterSelection>(windows, &font);
     pauseMenu = std::make_unique<PauseMenu>(windows, font);
-    shop = std::make_unique<Shop>(windows);
 
     level = Level(*window);
 
@@ -40,10 +39,8 @@ Game::~Game() {
     enemies.clear();
 }
 
-bool Game::getKeyTime()
-{
-    if (keyTimer.getElapsedTime().asSeconds() >= keyTimeMax)
-    {
+bool Game::getKeyTime() {
+    if (keyTimer.getElapsedTime().asSeconds() >= keyTimeMax) {
         keyTimer.restart();
         return true;
     }
@@ -51,14 +48,12 @@ bool Game::getKeyTime()
     return false;
 }
 
-void Game::InitializePlayer(PLAYER_CLASS _playerClass)
-{
-    switch (_playerClass)
-    {
+void Game::InitializePlayer(PLAYER_CLASS _playerClass) {
+    switch (_playerClass) {
         case PLAYER_CLASS::WIZARD:
             textures["PLAYER_SHEET"].loadFromFile("Resources/Images/Sprites/Player/Wizard/Wizard.png");
 
-            player = new Wizard(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::WIZARD);
+            player = new Wizard(textures["PLAYER_SHEET"], PLAYER_CLASS::WIZARD);
 
             playerGui = new PlayerGUI(player, windows, font);
 
@@ -66,14 +61,14 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
         case PLAYER_CLASS::ARCHER:
             textures["PLAYER_SHEET"].loadFromFile("Resources/Images/Sprites/Player/Archer/Archer.png");
 
-            player = new Archer(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::ARCHER);
+            player = new Archer(textures["PLAYER_SHEET"], PLAYER_CLASS::ARCHER);
 
             playerGui = new PlayerGUI(player, windows, font);
             break;
         case PLAYER_CLASS::WARRIOR:
             textures["PLAYER_SHEET"].loadFromFile("Resources/Images/Sprites/Player/texture_sheet.png");
 
-            player = new Warrior(500, 500, textures["PLAYER_SHEET"], PLAYER_CLASS::WARRIOR);
+            player = new Warrior(textures["PLAYER_SHEET"], PLAYER_CLASS::WARRIOR);
 
             playerGui = new PlayerGUI(player, windows, font);
             break;
@@ -84,20 +79,21 @@ void Game::InitializePlayer(PLAYER_CLASS _playerClass)
 
 }
 
-void Game::Initialize()
-{
+void Game::Initialize() {
 
 
     switch (player->GetClass()) {
 
         case PLAYER_CLASS::WIZARD:
-            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
+            projectileTextureID = TextureManager::AddTexture(
+                    "Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
             break;
         case PLAYER_CLASS::ARCHER:
             projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow123.png");
             break;
         default:
-            projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
+            projectileTextureID = TextureManager::AddTexture(
+                    "Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
             break;
     }
 
@@ -105,8 +101,7 @@ void Game::Initialize()
 }
 
 // Calculates the distance between two given points.
-float Game::DistanceBetweenPoints(sf::Vector2f position1, sf::Vector2f position2)
-{
+float Game::DistanceBetweenPoints(sf::Vector2f position1, sf::Vector2f position2) {
     return (std::abs(static_cast<float>(sqrt(
             ((position1.x - position2.x) * (position1.x - position2.x)) +
             ((position1.y - position2.y) * (position1.y - position2.y))
@@ -114,8 +109,8 @@ float Game::DistanceBetweenPoints(sf::Vector2f position1, sf::Vector2f position2
 }
 
 void Game::PopulateLevel() {
-    for(int i = 0; i < MAX_ENEMY_SPAWN_COUNT; i++){
-        if(std::rand() % 2){
+    for (int i = 0; i < MAX_ENEMY_SPAWN_COUNT; i++) {
+        if (std::rand() % 2) {
             //Choose a random enemy type
             int enemyType = std::rand() % static_cast<int>(ENEMY::COUNT);
 
@@ -129,20 +124,17 @@ void Game::SpawnEnemy(ENEMY enemyType, sf::Vector2f position) {
     sf::Vector2f spawnLocation;
 
     // Choose a random, unused spawn location.
-    if ((position.x >= 0.f) || (position.y >= 0.f))
-    {
+    if ((position.x >= 0.f) || (position.y >= 0.f)) {
         spawnLocation = position;
-    }
-    else {
+    } else {
         spawnLocation = level.GetRandomSpawnLocation();
     }
     // Create the enemy.
-    int roomNumber = level.GetRoomNumber()+1;
+    int roomNumber = level.GetRoomNumber() + 1;
     int FloorNumber = level.GetFloorNumber();
-    int _level = roomNumber*FloorNumber;
+    int _level = roomNumber * FloorNumber;
     std::unique_ptr<Enemy> enemy;
-    switch (enemyType)
-    {
+    switch (enemyType) {
         case ENEMY::SLIME:
             enemy = std::make_unique<Enemy>(_level, ENEMY::SLIME);
             break;
@@ -166,11 +158,9 @@ void Game::SpawnEnemy(ENEMY enemyType, sf::Vector2f position) {
 void Game::SpawnItem(ITEM itemType, sf::Vector2f position) {
     // Choose a random, unused spawn location.
     sf::Vector2f spawnLocation;
-    if ((position.x >= 0.f) || (position.y >= 0.f))
-    {
+    if ((position.x >= 0.f) || (position.y >= 0.f)) {
         spawnLocation = position;
-    }
-    else {
+    } else {
         spawnLocation = level.GetRandomSpawnLocation();
     }
 
@@ -189,25 +179,16 @@ void Game::SpawnItem(ITEM itemType, sf::Vector2f position) {
 void Game::Run() {
 
     float currentTime = timeStepClock.restart().asSeconds();
-    while (isRunning)
-    {
+    while (isRunning) {
         // Check if the game was closed.
         sf::Event event{};
-        if (windows.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-            {
+        if (windows.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
                 windows.close();
                 return;
             }
-            else if((Input::IsKeyPressed(Input::KEY::KEY_P)) && getKeyTime()){
-                if(gameState == GAME_STATE::SHOP)
-                    gameState = GAME_STATE::PLAYING;
-                else
-                    gameState = GAME_STATE::SHOP;
-            }
-            else if((Input::IsKeyPressed(Input::KEY::KEY_ESC)) && getKeyTime()){
-                if(gameState == GAME_STATE::PAUSED)
+            else if ((Input::IsKeyPressed(Input::KEY::KEY_ESC)) && getKeyTime()) {
+                if (gameState == GAME_STATE::PAUSED)
                     gameState = GAME_STATE::PLAYING;
                 else
                     gameState = GAME_STATE::PAUSED;
@@ -217,15 +198,12 @@ void Game::Run() {
         float frameTime = std::max(0.f, newTime - currentTime);
         currentTime = newTime;
 
-        if (!levelWasGenerated)
-        {
+        if (!levelWasGenerated) {
             Update(frameTime);
 
             // Draw all items in the level.
             Draw(frameTime);
-        }
-        else
-        {
+        } else {
             levelWasGenerated = false;
         }
     }
@@ -234,11 +212,9 @@ void Game::Run() {
     windows.close();
 }
 
-void Game::Update(float timeDelta)
-{
+void Game::Update(float timeDelta) {
     // Check what state the game is in.
-    switch (gameState)
-    {
+    switch (gameState) {
         case GAME_STATE::MAIN_MENU: {
             mousePosWindow = sf::Mouse::getPosition(windows);
             mainMenu->Update(mousePosWindow, &gameState, &isRunning);
@@ -252,30 +228,31 @@ void Game::Update(float timeDelta)
             switch (player->GetClass()) {
 
                 case PLAYER_CLASS::WIZARD:
-                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
+                    projectileTextureID = TextureManager::AddTexture(
+                            "Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
                     break;
                 case PLAYER_CLASS::ARCHER:
-                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/Arrow123.png");
+                    projectileTextureID = TextureManager::AddTexture(
+                            "Resources/Images/Sprites/Weapon/Projectile/Arrow123.png");
                     break;
                 default:
-                    projectileTextureID = TextureManager::AddTexture("Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
+                    projectileTextureID = TextureManager::AddTexture(
+                            "Resources/Images/Sprites/Weapon/Projectile/spr_magic_ball.png");
                     break;
             }
 
             playerGui = new PlayerGUI(player, windows, font);
             break;
 
-        case GAME_STATE::PLAYING:
-        {
+        case GAME_STATE::PLAYING: {
             // First check if the player is at the exit. If so there's no need to update anything.
-            Tile& playerTile = *level.GetTile(player->GetPosition());
+            Tile &playerTile = *level.GetTile(player->GetPosition());
 
-            if(enemies.empty()){
+            if (enemies.empty()) {
                 level.UnlockDoor();
             }
 
-            if (playerTile.type == TILE::WALL_DOOR_UNLOCKED)
-            {
+            if (playerTile.type == TILE::WALL_DOOR_UNLOCKED) {
 
                 // Clear all current items.
                 items.clear();
@@ -285,8 +262,7 @@ void Game::Update(float timeDelta)
 
                 // Generate a new room.
                 GenerateLevel();
-            }
-            else {
+            } else {
                 // Update the player.
                 playerGui->update();
 
@@ -302,7 +278,7 @@ void Game::Update(float timeDelta)
                             // Get the enemy object from the iterator.
                             Enemy &enemy = **enemyIterator;
 
-                            if (DistanceBetweenPoints(enemy.GetPosition(), player->GetPosition()) < 80.f) {
+                            if (DistanceBetweenPoints(enemy.GetPosition(), player->GetPosition()) < ATTACK_DISTANCE) {
                                 // Damage the enemy.
                                 enemy.Damage(player->getDamage());
                                 if (enemy.IsDead()) {
@@ -311,8 +287,7 @@ void Game::Update(float timeDelta)
                                     sf::Vector2f position = enemy.GetPosition();
 
                                     // Spawn loot.
-                                    for (int i = 0; i < 2; i++)
-                                    {
+                                    for (int i = 0; i < 2; i++) {
                                         position.x += std::rand() % 31 - 15;
                                         position.y += std::rand() % 31 - 15;
 
@@ -320,8 +295,7 @@ void Game::Update(float timeDelta)
                                         SpawnItem(static_cast<ITEM>(potion), position);
 
                                     }
-                                    for (int i = 0; i < 3; i++)
-                                    {
+                                    for (int i = 0; i < 3; i++) {
                                         position.x += std::rand() % 31 - 25;
                                         position.y += std::rand() % 31 - 25;
 
@@ -329,7 +303,7 @@ void Game::Update(float timeDelta)
 
                                     }
 
-                                    player->gainExp(20, player->GetClass());
+                                    player->gainExp(enemy.enemyAttributeComponent->exp, player->GetClass());
                                     player->killNumber += 1;
                                     conditionAchievement.setConditions(player->killNumber, goldTotal);
 
@@ -346,21 +320,21 @@ void Game::Update(float timeDelta)
                             }
 
                         }
-                    }
-                    else if (player->GetClass() == PLAYER_CLASS::ARCHER ||
-                             player->GetClass() == PLAYER_CLASS::WIZARD)//mana cost
+                    } else if (player->GetClass() == PLAYER_CLASS::ARCHER ||
+                               player->GetClass() == PLAYER_CLASS::WIZARD)//mana cost
                     {
                         sf::Vector2f target(static_cast<float>(sf::Mouse::getPosition().x),
                                             static_cast<float>(sf::Mouse::getPosition().y));
                         std::unique_ptr<Projectile> proj = std::make_unique<Projectile>(
-                                TextureManager::GetTexture(projectileTextureID), player->GetPosition(), player->GetPosition(),
+                                TextureManager::GetTexture(projectileTextureID), player->GetPosition(),
+                                player->GetPosition(),
                                 target);
                         projectile.push_back(std::move(proj));
 
                     }
                 }
 
-                if(player->isDead()){
+                if (player->isDead()) {
                     gameState = GAME_STATE::PAUSED;   //death
                 }
 
@@ -375,7 +349,7 @@ void Game::Update(float timeDelta)
 
 
                 //Update achievement
-                achievements->update(timeDelta);
+                achievements->updateLifetime(timeDelta);
 
 
                 Tile *playerCurrentTile = level.GetTile(player->GetPosition());
@@ -385,7 +359,7 @@ void Game::Update(float timeDelta)
 
                     // Update path finding for all enemies if within range of the player.
                     for (const auto &enemy: enemies) {
-                        if (DistanceBetweenPoints(enemy->GetPosition(), player->GetPosition()) < 200.f) {
+                        if (DistanceBetweenPoints(enemy->GetPosition(), player->GetPosition()) < ENEMY_AGGRO) {
                             enemy->UpdatePathfinding(level, player->GetPosition());
                         }
                     }
@@ -394,12 +368,6 @@ void Game::Update(float timeDelta)
             }
 
 
-        }
-            break;
-
-        case GAME_STATE::SHOP:{
-            mousePosWindow = sf::Mouse::getPosition(windows);
-            shop->Update(mousePosWindow);
         }
             break;
 
@@ -428,20 +396,19 @@ void Game::DrawString(const string &text, sf::Vector2f position, unsigned int si
     word.setString(phrase);
     word.setFont(font);
     word.setCharacterSize(size);
-    word.setPosition(position.x - (word.getLocalBounds().width / 2.f), position.y - (word.getLocalBounds().height / 2.f));
+    word.setPosition(position.x - (word.getLocalBounds().width / 2.f),
+                     position.y - (word.getLocalBounds().height / 2.f));
 
     windows.draw(word);
 }
 
 // Draw the current game scene.
-void Game::Draw(float timeDelta)
-{
+void Game::Draw(float timeDelta) {
     // Clear the screen.
-    windows.clear(sf::Color(3, 3, 3, 225));		// Gray
+    windows.clear(sf::Color(3, 3, 3, 225));        // Gray
 
     // Check what state the game is in.
-    switch (gameState)
-    {
+    switch (gameState) {
         case GAME_STATE::MAIN_MENU:
             mainMenu->Draw(windows);
             break;
@@ -450,27 +417,24 @@ void Game::Draw(float timeDelta)
             characterSelection->Draw(windows);
             break;
 
-        case GAME_STATE::PLAYING:
-        {
+        case GAME_STATE::PLAYING: {
             // Set the main game view.
 
             // Draw the level.
             level.Draw(windows, timeDelta);
 
             // Draw all objects.
-            for (const auto& item : items)
-            {
+            for (const auto &item: items) {
                 item->Draw(windows, timeDelta);
             }
 
             // Draw all enemies.
-            for (const auto& enemy : enemies)
-            {
+            for (const auto &enemy: enemies) {
                 enemy->Draw(windows, timeDelta);
             }
 
             // Draw all projectiles
-            for (const auto &proj : projectile) {
+            for (const auto &proj: projectile) {
                 windows.draw(proj->GetSprite());
             }
 
@@ -537,13 +501,6 @@ void Game::Draw(float timeDelta)
             windows.setMouseCursorVisible(true);
             break;
 
-        case GAME_STATE::SHOP:{
-            shop->Draw(windows);
-            // Hide the mouse cursor.
-            windows.setMouseCursorVisible(true);
-        }
-            break;
-
         case GAME_STATE::GAME_OVER:
             break;
 
@@ -577,21 +534,19 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
         bool enemyWasDeleted = false;
 
         // Get the enemy object from the iterator.
-        Enemy& enemy = **enemyIterator;
+        Enemy &enemy = **enemyIterator;
 
         // Get the tile that the enemy is on.
-        Tile* enemyTile = level.GetTile(enemy.GetPosition());
+        Tile *enemyTile = level.GetTile(enemy.GetPosition());
 
         // Check for collisions with projectiles.
         auto projectilesIterator = projectile.begin();
-        while (projectilesIterator != projectile.end())
-        {
+        while (projectilesIterator != projectile.end()) {
             // Get the projectile object from the iterator.
-            Projectile& projectiles = **projectilesIterator;
+            Projectile &projectiles = **projectilesIterator;
 
             // If the enemy and projectile occupy the same tile they have collided.
-            if (enemyTile == level.GetTile(projectiles.GetPosition()))
-            {
+            if (enemyTile == level.GetTile(projectiles.GetPosition())) {
                 // Delete the projectile.
                 projectilesIterator = projectile.erase(projectilesIterator);
 
@@ -599,14 +554,12 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
                 enemy.Damage(player->getDamage());
 
                 // If the enemy is dead remove it.
-                if (enemy.IsDead())
-                {
+                if (enemy.IsDead()) {
                     // Get the enemy position.
                     sf::Vector2f position = enemy.GetPosition();
 
                     // Spawn loot.
-                    for (int i = 0; i < 2; i++)
-                    {
+                    for (int i = 0; i < 2; i++) {
                         position.x += std::rand() % 31 - 15;
                         position.y += std::rand() % 31 - 15;
 
@@ -614,8 +567,7 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
                         SpawnItem(static_cast<ITEM>(potion), position);
 
                     }
-                    for (int i = 0; i < 3; i++)
-                    {
+                    for (int i = 0; i < 3; i++) {
                         position.x += std::rand() % 31 - 25;
                         position.y += std::rand() % 31 - 25;
 
@@ -623,7 +575,7 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
 
                     }
 
-                    player->gainExp(20, player->GetClass());
+                    player->gainExp(enemy.enemyAttributeComponent->exp, player->GetClass());
                     player->killNumber += 1;
 
                     // Delete enemy.
@@ -634,26 +586,21 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
                     // Since the enemy is dead we no longer need to check projectiles.
                     projectilesIterator = projectile.end();
                 }
-            }
-            else
-            {
+            } else {
                 // Move to the next projectile.
                 ++projectilesIterator;
             }
         }
 
         // If the enemy was not deleted, update it and increment the iterator.
-        if (!enemyWasDeleted)
-        {
+        if (!enemyWasDeleted) {
             enemy.Update(timeDelta, level);
             ++enemyIterator;
         }
 
         // Check for collision with player.
-        if (enemyTile == playerTile)
-        {
-            if (player->CanTakeDamage())
-            {
+        if (enemyTile == playerTile) {
+            if (player->CanTakeDamage()) {
                 player->Damage(enemy.CalculateDamage());
             }
         }
@@ -662,21 +609,17 @@ void Game::UpdateEnemies(sf::Vector2f playerPosition, float timeDelta, Level &le
 
 void Game::UpdateProjectiles(float timeDelta) {
     auto projectileIterator = projectile.begin();
-    while (projectileIterator != projectile.end())
-    {
+    while (projectileIterator != projectile.end()) {
         // Get the projectile object from the iterator.
-        Projectile& projectiles = **projectileIterator;
+        Projectile &projectiles = **projectileIterator;
 
         // Get the tile that the projectile is on.
         TILE projectileTileType = level.GetTile(projectiles.GetPosition())->type;
 
         // If the tile the projectile is on is not floor, delete it.
-        if ((projectileTileType != TILE::FLOOR) && (projectileTileType != TILE::FLOOR_ALT))
-        {
+        if ((projectileTileType != TILE::FLOOR) && (projectileTileType != TILE::FLOOR_ALT)) {
             projectileIterator = projectile.erase(projectileIterator);
-        }
-        else
-        {
+        } else {
             // Update the projectile and move to the next one.
             projectiles.Update(timeDelta);
             ++projectileIterator;
@@ -693,7 +636,7 @@ void Game::UpdateItems(sf::Vector2f playerPosition) {
         Items &item = **itemIterator;
 
         // Check if the player is within pickup range of the item.
-        if (DistanceBetweenPoints(item.GetPosition(), playerPosition) < 40.f) {
+        if (DistanceBetweenPoints(item.GetPosition(), playerPosition) < PICKUP_DISTANCE) {
             switch (item.GetType()) {
                 case ITEM::GOLD: {
                     // Get the amount of gold.
@@ -706,8 +649,7 @@ void Game::UpdateItems(sf::Vector2f playerPosition) {
                 }
                     break;
 
-                case ITEM::POTION:
-                {
+                case ITEM::POTION: {
                     // Cast to heart and get health.
                     auto potion = dynamic_cast<Items &>(item).GetValue();
                     player->gainHp(potion);

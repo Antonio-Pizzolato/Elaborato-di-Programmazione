@@ -15,8 +15,7 @@
 #include <SFML/System.hpp>
 #include "Util.h"
 
-class TextureManager
-{
+class TextureManager {
 public:
     /**
      * Default constructor.
@@ -28,7 +27,7 @@ public:
      * @param The path to the image to load.
      * @return The id to the texture created, or the id in the map if it already exists.
      */
-    static int AddTexture(const std::string& filePath);
+    static int AddTexture(const std::string &filePath);
 
     /**
      * Removes a texture from the manager from a given id.
@@ -41,7 +40,7 @@ public:
      * @param textureId The id of the texture to return.
      * @return A const reference to the texture.
     */
-    static sf::Texture& GetTexture(int textureId);
+    static sf::Texture &GetTexture(int textureId);
 
 private:
     /**

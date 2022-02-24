@@ -6,6 +6,7 @@
 class Observer {
 public:
     virtual ~Observer() = default;;
+
     virtual void update(float _killNumber, float _gold) = 0;
 
 };
