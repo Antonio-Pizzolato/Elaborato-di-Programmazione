@@ -11,21 +11,16 @@ TextureManager::TextureManager()
 int TextureManager::AddTexture(const std::string &filePath) {
     // First check if the texture has already been created. If so, simply return that one.
     auto it = textures.find(filePath);
-
     if (it != textures.end()) {
         return it->second.first;
     }
-
     // At this point the texture doesn't exists, so we'll create and add it.
     currentId++;
-
     std::unique_ptr<sf::Texture> texture = std::make_unique<sf::Texture>();
     if (!texture->loadFromFile(filePath)) {
         return -1;
     }
-
     textures.insert(std::make_pair(filePath, std::make_pair(currentId, std::move(texture))));
-
     // Return the texture.
     return currentId;
 }
@@ -46,5 +41,4 @@ sf::Texture &TextureManager::GetTexture(int textureID) {
             return *m_texture.second.second;
         }
     }
-
 }

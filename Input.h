@@ -3,7 +3,6 @@
 
 class Input {
 public:
-
     /**
      * An enum denoting all possible input keys.
      */
@@ -19,7 +18,6 @@ public:
         KEY_I,
         KEY_P
     };
-
     /**
      * Checks if a given key is currently pressed.
      * @param keycode The key to check.

@@ -4,7 +4,6 @@
 
 #include "Observable.h"
 
-
 void Observable::addObserver(Observer *observer) {
     observerList.push_back(observer);
 }
@@ -12,6 +11,5 @@ void Observable::addObserver(Observer *observer) {
 void Observable::removeObserver(Observer *observer) {
     observerList.remove(observer);
 }
-
 
 Observable::~Observable() = default;
