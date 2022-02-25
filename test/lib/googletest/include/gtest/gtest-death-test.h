@@ -27,12 +27,15 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-//
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
 // This header file defines the public API for death tests.  It is
 // #included by gtest.h so a user doesn't need to include this
 // directly.
+
+// IWYU pragma: private, include "gtest/gtest.h"
+// IWYU pragma: friend gtest/.*
+// IWYU pragma: friend gmock/.*
 
 #ifndef GOOGLETEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
 #define GOOGLETEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
@@ -50,16 +53,16 @@ namespace testing {
 
 #if GTEST_HAS_DEATH_TEST
 
-    namespace internal {
+namespace internal {
 
 // Returns a Boolean value indicating whether the caller is currently
 // executing in the context of the death test child process.  Tools such as
 // Valgrind heap checkers may need this to modify their behavior in death
 // tests.  IMPORTANT: This is an internal utility.  Using it may break the
 // implementation of death tests.  User code MUST NOT use it.
-        GTEST_API_ bool InDeathTestChild();
+GTEST_API_ bool InDeathTestChild();
 
-    }  // namespace internal
+}  // namespace internal
 
 // The following macros are useful for writing death tests.
 
@@ -189,30 +192,26 @@ namespace testing {
 // Two predicate classes that can be used in {ASSERT,EXPECT}_EXIT*:
 
 // Tests that an exit code describes a normal exit with a given exit code.
-    class GTEST_API_ ExitedWithCode {
-    public:
-        explicit ExitedWithCode(int exit_code);
-
-        ExitedWithCode(const ExitedWithCode &) = default;
-
-        void operator=(const ExitedWithCode &other) = delete;
-
-        bool operator()(int exit_status) const;
-
-    private:
-        const int exit_code_;
-    };
+class GTEST_API_ ExitedWithCode {
+ public:
+  explicit ExitedWithCode(int exit_code);
+  ExitedWithCode(const ExitedWithCode&) = default;
+  void operator=(const ExitedWithCode& other) = delete;
+  bool operator()(int exit_status) const;
+ private:
+  const int exit_code_;
+};
 
 # if !GTEST_OS_WINDOWS && !GTEST_OS_FUCHSIA
-    // Tests that an exit code describes an exit due to termination by a
-    // given signal.
-    class GTEST_API_ KilledBySignal {
-     public:
-      explicit KilledBySignal(int signum);
-      bool operator()(int exit_status) const;
-     private:
-      const int signum_;
-    };
+// Tests that an exit code describes an exit due to termination by a
+// given signal.
+class GTEST_API_ KilledBySignal {
+ public:
+  explicit KilledBySignal(int signum);
+  bool operator()(int exit_status) const;
+ private:
+  const int signum_;
+};
 # endif  // !GTEST_OS_WINDOWS
 
 // EXPECT_DEBUG_DEATH asserts that the given statements die in debug mode.

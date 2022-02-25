@@ -26,7 +26,7 @@
 // THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-//
+
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
 // This header file defines the GTEST_OS_* macro.
@@ -57,8 +57,8 @@
 #   define GTEST_OS_WINDOWS_PHONE 1
 #   define GTEST_OS_WINDOWS_TV_TITLE 1
 #  else
-// WINAPI_FAMILY defined but no known partition matched.
-// Default to desktop.
+    // WINAPI_FAMILY defined but no known partition matched.
+    // Default to desktop.
 #   define GTEST_OS_WINDOWS_DESKTOP 1
 #  endif
 # else

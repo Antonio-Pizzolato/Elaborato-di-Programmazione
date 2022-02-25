@@ -9,15 +9,10 @@ void Achievements::update(float _killNumber, float _gold) {
     killNumber = _killNumber;
     gold = _gold;
     if (killNumber == 3) {
-
         unlockAchievement(Event::Kill);
-
     }
     if (gold >= 10) {
-
         unlockAchievement(Event::Gold);
-
-
     }
 }
 
@@ -62,6 +57,10 @@ void Achievements::unlockAchievement(Event event) {
             }
         }
     }
+}
+
+bool Achievements::getKill(){
+    return kill;
 }
 
 

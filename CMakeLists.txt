@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.5)
 set(PROJECT_NAME Elaborato-di-Programmazione)
 
 project(${PROJECT_NAME})
@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_package(SFML REQUIRED COMPONENTS audio network graphics window system)
 
+add_subdirectory(test)
 if (NOT SFML_FOUND)
     message(FATAL_ERROR "SFML NOT FOUND!")
 else ()
