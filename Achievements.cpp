@@ -1,6 +1,6 @@
 #include "Achievements.h"
 
-Achievements::Achievements(Observable *conditionAchievement) : conditionAchievement(conditionAchievement), killNumber(0), gold(0), lifetime(600), kill(false), golda(false), CanDraw(false) {
+Achievements::Achievements(Observable *conditionAchievement) : conditionAchievement(conditionAchievement), killNumber(0), gold(0), lifetime(600), kill(false), gainGold(false), CanDraw(false) {
     conditionAchievement->addObserver(this);
     sprite.setPosition(800, 0);
 }
@@ -49,14 +49,30 @@ void Achievements::unlockAchievement(Event event) {
         }
             break;
         case Event::Gold: {
-            if (!golda) {
-                golda = true;
+            if (!gainGold) {
+                gainGold = true;
                 texture.loadFromFile("Resources/goldAchiev.png");
                 sprite.setTexture(texture);
                 CanDraw = true;
             }
         }
     }
+}
+
+bool Achievements::getKill() const {
+    return kill;
+}
+
+bool Achievements::getGainGold() const {
+    return gainGold;
+}
+
+bool Achievements::isExpired() const {
+    return lifetime <= 0.f;
+}
+
+bool Achievements::getExpired() const {
+    return CanDraw;
 }
 
 

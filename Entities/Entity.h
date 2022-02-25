@@ -20,18 +20,12 @@ protected:
     * The object's sprite.
     */
     sf::Sprite sprite;
-    /**
-     * The position of the object in the game window.
-     */
-    sf::Vector2f position;
+
     /**
 	 * A vector of all texture IDs.
 	 */
     int textureIDs[static_cast<int>(ANIMATION_STATE::COUNT)];
     sf::Vector2f velocity;
-
-    bool CausesCollision(sf::Vector2f movement, Level &level);
-
 public:
     /**
      * The animation speed of the image if applicable.
@@ -62,6 +56,10 @@ public:
      * An aggregate of the time passed between draw calls.
      */
     float timeDelta;
+    /**
+     * The position of the object in the game window.
+     */
+    sf::Vector2f position;
 
     explicit Entity(int level = 0);
     virtual ~Entity();
@@ -101,6 +99,8 @@ public:
      * Advances the sprite by a frame.
      */
     void NextFrame();
+
+    bool CausesCollision(sf::Vector2f movement, Level &level);
 };
 
 #endif //SFML_TEMPLATE_ENTITY_H

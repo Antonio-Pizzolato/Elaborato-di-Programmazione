@@ -15,6 +15,7 @@ protected:
     sf::Clock damageTimer;
     sf::Int32 damageTimerMax;
     float damageDelta;
+    sf::Vector2f previousPosition;
     /**
      * The sprite for the player's aim cross hair.
      */
@@ -27,11 +28,13 @@ protected:
      * Can the player take damage.
      */
     bool canTakeDamage;
+    bool up;
 public:
     Player(sf::Texture &texture_sheet, PLAYER_CLASS m_class);
     ~Player() override;
 
     //Accessors
+    void SetUp();
     int getDamage() const;
     AttributeComponent *getAttributeComponent();
     PLAYER_CLASS GetClass() const;
@@ -47,6 +50,7 @@ public:
     bool CanTakeDamage() const;
     bool getDamageTimer();
     bool IsAttacking();
+    sf::Vector2f GetPreviousPosition();
     //Functions
     void loseHp(int hp);
     void gainHp(int hp);
@@ -64,6 +68,8 @@ public:
     virtual void updateAnimation(const float &dt, ANIMATION_STATE animState) = 0;
 public:
     int killNumber;
+
+
 };
 
 #endif //SFML_TEMPLATE_PLAYER_H

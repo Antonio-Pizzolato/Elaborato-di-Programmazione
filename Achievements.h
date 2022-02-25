@@ -19,7 +19,9 @@ public:
     ~Achievements() override;
 
     //Update Treasure
-    bool getKill() const {return kill;}
+    bool getKill() const;
+    bool getGainGold() const;
+    bool getExpired() const;
     void update(float _killNumber, float _gold) override;
     //Animation
     void render(sf::RenderWindow &window);
@@ -32,9 +34,9 @@ private:
     sf::Texture texture;
     sf::Sprite sprite;
     bool kill;
-    bool golda;
+    bool gainGold;
     bool CanDraw;
-    inline bool isExpired() const { return lifetime <= 0.f; }
+    bool isExpired() const;
     void unlockAchievement(Event event);
 };
 

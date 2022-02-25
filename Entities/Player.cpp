@@ -3,7 +3,7 @@
 
 //Constructors/Destructors
 Player::Player(sf::Texture &texture_sheet, PLAYER_CLASS type)
-        : classType(type), initAttack(false), isAttacking(false), isDash(false), attackDelta(0.f), damageDelta(0.f), damageTimerMax(500), canTakeDamage(true), killNumber(0) {
+        : classType(type), initAttack(false), isAttacking(false), isDash(false), attackDelta(0.f), damageDelta(0.f), damageTimerMax(500), canTakeDamage(true), killNumber(0), up(false) {
     speed = 200;
     // Create the player's aim sprite.
     int textureID = TextureManager::AddTexture("Resources/ui/53263.png");
@@ -89,7 +89,7 @@ bool Player::isDead() const {
 void Player::Update(float timeDelta, Level &level) {
     // Calculate movement speed based on the timeDelta since the last update.
     sf::Vector2f movementSpeed(0.f, 0.f);
-    sf::Vector2f previousPosition = position;
+    previousPosition = position;
     auto animState = ANIMATION_STATE::IDLE_UP;
     if (Input::IsKeyPressed(Input::KEY::KEY_LEFT)) {
         // Set movement speed.
@@ -103,7 +103,7 @@ void Player::Update(float timeDelta, Level &level) {
         // Chose animation state.
         animState = ANIMATION_STATE::WALK_RIGHT;
     }
-    if (Input::IsKeyPressed(Input::KEY::KEY_UP)) {
+    if (Input::IsKeyPressed(Input::KEY::KEY_UP) || up) {
         // Set movement speed.
         movementSpeed.y = -speed * timeDelta;
         // Chose animation state.
@@ -166,4 +166,12 @@ sf::Sprite &Player::GetAimSprite() {
 
 void Player::Draw(sf::RenderWindow &window, float _timeDelta) {
     window.draw(sprite);
+}
+
+sf::Vector2f Player::GetPreviousPosition() {
+    return previousPosition;
+}
+
+void Player::SetUp() {
+    up = true;
 }
