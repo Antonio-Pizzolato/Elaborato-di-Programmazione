@@ -59,11 +59,6 @@ void Achievements::unlockAchievement(Event event) {
     }
 }
 
-bool Achievements::getKill(){
-    return kill;
-}
-
-
 
 
 

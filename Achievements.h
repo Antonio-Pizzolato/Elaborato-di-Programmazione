@@ -19,7 +19,7 @@ public:
     ~Achievements() override;
 
     //Update Treasure
-    bool getKill();
+    bool getKill() const {return kill;}
     void update(float _killNumber, float _gold) override;
     //Animation
     void render(sf::RenderWindow &window);
